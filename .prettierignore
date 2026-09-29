@@ -1,0 +1,7 @@
+node_modules
+dist
+data/bp3d
+pipeline/.venv
+public/models
+public/data
+*.glb

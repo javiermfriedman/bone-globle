@@ -1,0 +1,20 @@
+# dependencies / build
+node_modules
+dist
+dist-ssr
+*.local
+*.tsbuildinfo
+
+# BodyParts3D raw download (136 MB zip + extracted OBJs), never committed
+data/bp3d
+
+# python venv for the asset pipeline
+pipeline/.venv
+__pycache__
+
+# logs / editor / os
+*.log
+.DS_Store
+.idea
+.vscode/*
+!.vscode/extensions.json

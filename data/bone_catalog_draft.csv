@@ -1,0 +1,121 @@
+slug,display_name,synonyms,region,subregion,paired,optional,bp3d_name_pattern,count_in_body
+frontal-bone,Frontal bone,frontal|frontal bone|forehead bone,axial,skull,false,false,frontal bone,1
+parietal-bone,Parietal bone,parietal|parietal bone,axial,skull,true,false,left parietal bone|right parietal bone,2
+temporal-bone,Temporal bone,temporal|temporal bone,axial,skull,true,false,left temporal bone|right temporal bone,2
+occipital-bone,Occipital bone,occipital|occipital bone|back of skull bone,axial,skull,false,false,occipital bone,1
+sphenoid-bone,Sphenoid bone,sphenoid|sphenoid bone|butterfly bone,axial,skull,false,false,sphenoid bone,1
+ethmoid-bone,Ethmoid bone,ethmoid|ethmoid bone,axial,skull,false,false,ethmoid bone,1
+maxilla,Maxilla,maxilla|maxillary bone|upper jaw|upper jaw bone,axial,skull,true,false,left maxilla|right maxilla,2
+zygomatic-bone,Zygomatic bone,zygomatic|zygomatic bone|cheekbone|cheek bone|malar bone,axial,skull,true,false,left zygomatic bone|right zygomatic bone,2
+nasal-bone,Nasal bone,nasal|nasal bone|bridge of nose,axial,skull,true,false,left nasal bone|right nasal bone,2
+lacrimal-bone,Lacrimal bone,lacrimal|lacrimal bone|lachrymal bone|tear bone,axial,skull,true,false,left lacrimal bone|right lacrimal bone,2
+palatine-bone,Palatine bone,palatine|palatine bone,axial,skull,true,false,left palatine bone|right palatine bone,2
+inferior-nasal-concha,Inferior nasal concha,inferior nasal concha|inferior concha|inferior turbinate|inferior turbinate bone|turbinate,axial,skull,true,false,left inferior nasal concha|right inferior nasal concha,2
+vomer,Vomer,vomer|vomer bone|nasal septum bone,axial,skull,false,false,vomer,1
+mandible,Mandible,mandible|jawbone|jaw bone|lower jaw|lower jaw bone|jaw,axial,skull,false,false,mandible,1
+hyoid,Hyoid bone,hyoid|hyoid bone|lingual bone|tongue bone,axial,neck,false,false,hyoid bone,1
+vertebra-c1,Atlas (C1),c1|atlas|first cervical vertebra|cervical vertebra 1,axial,vertebral-column,false,false,first cervical vertebra,1
+vertebra-c2,Axis (C2),c2|axis|epistropheus|second cervical vertebra|cervical vertebra 2,axial,vertebral-column,false,false,second cervical vertebra,1
+vertebra-c3,Third cervical vertebra (C3),c3|third cervical vertebra|cervical vertebra 3,axial,vertebral-column,false,false,third cervical vertebra,1
+vertebra-c4,Fourth cervical vertebra (C4),c4|fourth cervical vertebra|cervical vertebra 4,axial,vertebral-column,false,false,fourth cervical vertebra,1
+vertebra-c5,Fifth cervical vertebra (C5),c5|fifth cervical vertebra|cervical vertebra 5,axial,vertebral-column,false,false,fifth cervical vertebra,1
+vertebra-c6,Sixth cervical vertebra (C6),c6|sixth cervical vertebra|cervical vertebra 6,axial,vertebral-column,false,false,sixth cervical vertebra,1
+vertebra-c7,Seventh cervical vertebra (C7),c7|vertebra prominens|seventh cervical vertebra|cervical vertebra 7,axial,vertebral-column,false,false,seventh cervical vertebra,1
+vertebra-t1,First thoracic vertebra (T1),t1|th1|first thoracic vertebra|thoracic vertebra 1|dorsal vertebra 1,axial,vertebral-column,false,false,first thoracic vertebra,1
+vertebra-t2,Second thoracic vertebra (T2),t2|th2|second thoracic vertebra|thoracic vertebra 2|dorsal vertebra 2,axial,vertebral-column,false,false,second thoracic vertebra,1
+vertebra-t3,Third thoracic vertebra (T3),t3|th3|third thoracic vertebra|thoracic vertebra 3|dorsal vertebra 3,axial,vertebral-column,false,false,third thoracic vertebra,1
+vertebra-t4,Fourth thoracic vertebra (T4),t4|th4|fourth thoracic vertebra|thoracic vertebra 4|dorsal vertebra 4,axial,vertebral-column,false,false,fourth thoracic vertebra,1
+vertebra-t5,Fifth thoracic vertebra (T5),t5|th5|fifth thoracic vertebra|thoracic vertebra 5|dorsal vertebra 5,axial,vertebral-column,false,false,fifth thoracic vertebra,1
+vertebra-t6,Sixth thoracic vertebra (T6),t6|th6|sixth thoracic vertebra|thoracic vertebra 6|dorsal vertebra 6,axial,vertebral-column,false,false,sixth thoracic vertebra,1
+vertebra-t7,Seventh thoracic vertebra (T7),t7|th7|seventh thoracic vertebra|thoracic vertebra 7|dorsal vertebra 7,axial,vertebral-column,false,false,seventh thoracic vertebra,1
+vertebra-t8,Eighth thoracic vertebra (T8),t8|th8|eighth thoracic vertebra|thoracic vertebra 8|dorsal vertebra 8,axial,vertebral-column,false,false,eighth thoracic vertebra,1
+vertebra-t9,Ninth thoracic vertebra (T9),t9|th9|ninth thoracic vertebra|thoracic vertebra 9|dorsal vertebra 9,axial,vertebral-column,false,false,ninth thoracic vertebra,1
+vertebra-t10,Tenth thoracic vertebra (T10),t10|th10|tenth thoracic vertebra|thoracic vertebra 10|dorsal vertebra 10,axial,vertebral-column,false,false,tenth thoracic vertebra,1
+vertebra-t11,Eleventh thoracic vertebra (T11),t11|th11|eleventh thoracic vertebra|thoracic vertebra 11|dorsal vertebra 11,axial,vertebral-column,false,false,eleventh thoracic vertebra,1
+vertebra-t12,Twelfth thoracic vertebra (T12),t12|th12|twelfth thoracic vertebra|thoracic vertebra 12|dorsal vertebra 12,axial,vertebral-column,false,false,twelfth thoracic vertebra,1
+vertebra-l1,First lumbar vertebra (L1),l1|first lumbar vertebra|lumbar vertebra 1,axial,vertebral-column,false,false,first lumbar vertebra,1
+vertebra-l2,Second lumbar vertebra (L2),l2|second lumbar vertebra|lumbar vertebra 2,axial,vertebral-column,false,false,second lumbar vertebra,1
+vertebra-l3,Third lumbar vertebra (L3),l3|third lumbar vertebra|lumbar vertebra 3,axial,vertebral-column,false,false,third lumbar vertebra,1
+vertebra-l4,Fourth lumbar vertebra (L4),l4|fourth lumbar vertebra|lumbar vertebra 4,axial,vertebral-column,false,false,fourth lumbar vertebra,1
+vertebra-l5,Fifth lumbar vertebra (L5),l5|fifth lumbar vertebra|lumbar vertebra 5,axial,vertebral-column,false,false,fifth lumbar vertebra,1
+sacrum,Sacrum,sacrum|sacral bone|sacral vertebrae|s1-s5,axial,vertebral-column,false,false,sacrum,1
+coccyx,Coccyx,coccyx|tailbone|tail bone|coccygeal bone,axial,vertebral-column,false,false,coccyx,1
+rib-01,First rib,rib 1|1st rib|first rib|true rib 1,axial,thoracic-cage,true,false,right first rib|left first rib,2
+rib-02,Second rib,rib 2|2nd rib|second rib|true rib 2,axial,thoracic-cage,true,false,right second rib|left second rib,2
+rib-03,Third rib,rib 3|3rd rib|third rib|true rib 3,axial,thoracic-cage,true,false,right third rib|left third rib,2
+rib-04,Fourth rib,rib 4|4th rib|fourth rib|true rib 4,axial,thoracic-cage,true,false,right fourth rib|left fourth rib,2
+rib-05,Fifth rib,rib 5|5th rib|fifth rib|true rib 5,axial,thoracic-cage,true,false,right fifth rib|left fifth rib,2
+rib-06,Sixth rib,rib 6|6th rib|sixth rib|true rib 6,axial,thoracic-cage,true,false,right sixth rib|left sixth rib,2
+rib-07,Seventh rib,rib 7|7th rib|seventh rib|true rib 7,axial,thoracic-cage,true,false,right seventh rib|left seventh rib,2
+rib-08,Eighth rib,rib 8|8th rib|eighth rib|false rib 8,axial,thoracic-cage,true,false,right eighth rib|left eighth rib,2
+rib-09,Ninth rib,rib 9|9th rib|ninth rib|false rib 9,axial,thoracic-cage,true,false,right ninth rib|left ninth rib,2
+rib-10,Tenth rib,rib 10|10th rib|tenth rib|false rib 10,axial,thoracic-cage,true,false,right tenth rib|left tenth rib,2
+rib-11,Eleventh rib,rib 11|11th rib|eleventh rib|floating rib 11|false rib 11,axial,thoracic-cage,true,false,right eleventh rib|left eleventh rib,2
+rib-12,Twelfth rib,rib 12|12th rib|twelfth rib|floating rib 12|false rib 12,axial,thoracic-cage,true,false,right twelfth rib|left twelfth rib,2
+sternum,Sternum,sternum|breastbone|breast bone|manubrium|body of sternum|xiphoid process,axial,thoracic-cage,false,false,sternum,1
+clavicle,Clavicle,clavicle|collarbone|collar bone,appendicular,shoulder-girdle,true,false,left clavicle|right clavicle,2
+scapula,Scapula,scapula|shoulder blade|shoulderblade|wing bone,appendicular,shoulder-girdle,true,false,left scapula|right scapula,2
+humerus,Humerus,humerus|upper arm bone|arm bone|funny bone,appendicular,arm,true,false,left humerus|right humerus,2
+radius,Radius,radius|radius bone|forearm bone,appendicular,forearm,true,false,left radius|right radius,2
+ulna,Ulna,ulna|ulna bone|elbow bone,appendicular,forearm,true,false,left ulna|right ulna,2
+carpal-scaphoid,Scaphoid,scaphoid|scaphoid bone|navicular bone of hand|carpal navicular,appendicular,hand,true,false,left scaphoid|right scaphoid,2
+carpal-lunate,Lunate,lunate|lunate bone|semilunar bone,appendicular,hand,true,false,left lunate|right lunate,2
+carpal-triquetrum,Triquetrum,triquetrum|triquetral|triquetral bone|triangular bone|pyramidal bone,appendicular,hand,true,false,left triquetrum|right triquetrum,2
+carpal-pisiform,Pisiform,pisiform|pisiform bone,appendicular,hand,true,false,left pisiform|right pisiform,2
+carpal-trapezium,Trapezium,trapezium|trapezium bone|greater multangular,appendicular,hand,true,false,left trapezium|right trapezium,2
+carpal-trapezoid,Trapezoid,trapezoid|trapezoid bone|lesser multangular,appendicular,hand,true,false,left trapezoid|right trapezoid,2
+carpal-capitate,Capitate,capitate|capitate bone|os magnum,appendicular,hand,true,false,left capitate|right capitate,2
+carpal-hamate,Hamate,hamate|hamate bone|unciform bone,appendicular,hand,true,false,left hamate|right hamate,2
+metacarpal-1,First metacarpal,metacarpal 1|1st metacarpal|first metacarpal|metacarpal bone 1|mc1|metacarpal of thumb,appendicular,hand,true,false,first metacarpal bone of left hand|first metacarpal bone of right hand,2
+metacarpal-2,Second metacarpal,metacarpal 2|2nd metacarpal|second metacarpal|metacarpal bone 2|mc2|metacarpal of index finger,appendicular,hand,true,false,second metacarpal bone of left hand|second metacarpal bone of right hand,2
+metacarpal-3,Third metacarpal,metacarpal 3|3rd metacarpal|third metacarpal|metacarpal bone 3|mc3|metacarpal of middle finger,appendicular,hand,true,false,third metacarpal bone of left hand|third metacarpal bone of right hand,2
+metacarpal-4,Fourth metacarpal,metacarpal 4|4th metacarpal|fourth metacarpal|metacarpal bone 4|mc4|metacarpal of ring finger,appendicular,hand,true,false,fourth metacarpal bone of left hand|fourth metacarpal bone of right hand,2
+metacarpal-5,Fifth metacarpal,metacarpal 5|5th metacarpal|fifth metacarpal|metacarpal bone 5|mc5|metacarpal of little finger,appendicular,hand,true,false,fifth metacarpal bone of left hand|fifth metacarpal bone of right hand,2
+phalanx-proximal-thumb,Proximal phalanx of thumb,proximal phalanx of thumb|proximal phalanx of digit 1|proximal phalanx 1 hand|thumb proximal phalanx|proximal phalanx of thumb,appendicular,hand,true,false,proximal phalanx of left thumb|proximal phalanx of right thumb,2
+phalanx-distal-thumb,Distal phalanx of thumb,distal phalanx of thumb|distal phalanx of digit 1|distal phalanx 1 hand|thumb distal phalanx|distal phalanx of thumb,appendicular,hand,true,false,distal phalanx of left thumb|distal phalanx of right thumb,2
+phalanx-proximal-index,Proximal phalanx of index finger,proximal phalanx of index finger|proximal phalanx of digit 2|proximal phalanx 2 hand|index finger proximal phalanx|proximal phalanx of index finger finger,appendicular,hand,true,false,proximal phalanx of left index finger|proximal phalanx of right index finger,2
+phalanx-middle-index,Middle phalanx of index finger,middle phalanx of index finger|middle phalanx of digit 2|middle phalanx 2 hand|index finger middle phalanx|middle phalanx of index finger finger,appendicular,hand,true,false,middle phalanx of left index finger|middle phalanx of right index finger,2
+phalanx-distal-index,Distal phalanx of index finger,distal phalanx of index finger|distal phalanx of digit 2|distal phalanx 2 hand|index finger distal phalanx|distal phalanx of index finger finger,appendicular,hand,true,false,distal phalanx of left index finger|distal phalanx of right index finger,2
+phalanx-proximal-middle,Proximal phalanx of middle finger,proximal phalanx of middle finger|proximal phalanx of digit 3|proximal phalanx 3 hand|middle finger proximal phalanx|proximal phalanx of middle finger finger,appendicular,hand,true,false,proximal phalanx of left middle finger|proximal phalanx of right middle finger,2
+phalanx-middle-middle,Middle phalanx of middle finger,middle phalanx of middle finger|middle phalanx of digit 3|middle phalanx 3 hand|middle finger middle phalanx|middle phalanx of middle finger finger,appendicular,hand,true,false,middle phalanx of left middle finger|middle phalanx of right middle finger,2
+phalanx-distal-middle,Distal phalanx of middle finger,distal phalanx of middle finger|distal phalanx of digit 3|distal phalanx 3 hand|middle finger distal phalanx|distal phalanx of middle finger finger,appendicular,hand,true,false,distal phalanx of left middle finger|distal phalanx of right middle finger,2
+phalanx-proximal-ring,Proximal phalanx of ring finger,proximal phalanx of ring finger|proximal phalanx of digit 4|proximal phalanx 4 hand|ring finger proximal phalanx|proximal phalanx of ring finger finger,appendicular,hand,true,false,proximal phalanx of left ring finger|proximal phalanx of right ring finger,2
+phalanx-middle-ring,Middle phalanx of ring finger,middle phalanx of ring finger|middle phalanx of digit 4|middle phalanx 4 hand|ring finger middle phalanx|middle phalanx of ring finger finger,appendicular,hand,true,false,middle phalanx of left ring finger|middle phalanx of right ring finger,2
+phalanx-distal-ring,Distal phalanx of ring finger,distal phalanx of ring finger|distal phalanx of digit 4|distal phalanx 4 hand|ring finger distal phalanx|distal phalanx of ring finger finger,appendicular,hand,true,false,distal phalanx of left ring finger|distal phalanx of right ring finger,2
+phalanx-proximal-little,Proximal phalanx of little finger,proximal phalanx of little finger|proximal phalanx of digit 5|proximal phalanx 5 hand|little finger proximal phalanx|proximal phalanx of little finger finger,appendicular,hand,true,false,proximal phalanx of left little finger|proximal phalanx of right little finger,2
+phalanx-middle-little,Middle phalanx of little finger,middle phalanx of little finger|middle phalanx of digit 5|middle phalanx 5 hand|little finger middle phalanx|middle phalanx of little finger finger,appendicular,hand,true,false,middle phalanx of left little finger|middle phalanx of right little finger,2
+phalanx-distal-little,Distal phalanx of little finger,distal phalanx of little finger|distal phalanx of digit 5|distal phalanx 5 hand|little finger distal phalanx|distal phalanx of little finger finger,appendicular,hand,true,false,distal phalanx of left little finger|distal phalanx of right little finger,2
+hip-bone,Hip bone,hip bone|hipbone|coxal bone|os coxae|innominate bone|pelvic bone|pelvis,appendicular,pelvic-girdle,true,false,left hip bone|right hip bone,2
+ilium,Ilium,ilium|iliac bone|iliac crest bone,appendicular,pelvic-girdle,true,true,left ilium|right ilium,2
+ischium,Ischium,ischium|ischial bone|sit bone|sitting bone,appendicular,pelvic-girdle,true,true,left ischium|right ischium,2
+pubis,Pubis,pubis|pubic bone|os pubis,appendicular,pelvic-girdle,true,true,left pubis|right pubis,2
+femur,Femur,femur|thigh bone|thighbone|upper leg bone,appendicular,thigh,true,false,left femur|right femur,2
+patella,Patella,patella|kneecap|knee cap|knee bone,appendicular,thigh,true,false,left patella|right patella,2
+tibia,Tibia,tibia|shin bone|shinbone|shank bone,appendicular,leg,true,false,left tibia|right tibia,2
+fibula,Fibula,fibula|calf bone|splint bone,appendicular,leg,true,false,left fibula|right fibula,2
+tarsal-calcaneus,Calcaneus,calcaneus|heel bone|heelbone|os calcis|calcaneum,appendicular,foot,true,false,left calcaneus|right calcaneus,2
+tarsal-talus,Talus,talus|ankle bone|anklebone|astragalus,appendicular,foot,true,false,left talus|right talus,2
+tarsal-navicular,Navicular,navicular|navicular bone|navicular bone of foot|scaphoid of foot,appendicular,foot,true,false,left navicular bone of foot|right navicular bone of foot,2
+tarsal-cuboid,Cuboid,cuboid|cuboid bone,appendicular,foot,true,false,left cuboid|right cuboid,2
+tarsal-cuneiform-medial,Medial cuneiform,medial cuneiform|first cuneiform|1st cuneiform|internal cuneiform|medial cuneiform bone,appendicular,foot,true,false,left medial cuneiform bone|right medial cuneiform bone,2
+tarsal-cuneiform-intermediate,Intermediate cuneiform,intermediate cuneiform|middle cuneiform|second cuneiform|2nd cuneiform|intermediate cuneiform bone,appendicular,foot,true,false,left intermediate cuneiform bone|right intermediate cuneiform bone,2
+tarsal-cuneiform-lateral,Lateral cuneiform,lateral cuneiform|third cuneiform|3rd cuneiform|external cuneiform|lateral cuneiform bone,appendicular,foot,true,false,left lateral cuneiform bone|right lateral cuneiform bone,2
+metatarsal-1,First metatarsal,metatarsal 1|1st metatarsal|first metatarsal|metatarsal bone 1|mt1|metatarsal of great toe,appendicular,foot,true,false,first metatarsal bone of left foot|first metatarsal bone of right foot,2
+metatarsal-2,Second metatarsal,metatarsal 2|2nd metatarsal|second metatarsal|metatarsal bone 2|mt2|metatarsal of second toe,appendicular,foot,true,false,second metatarsal bone of left foot|second metatarsal bone of right foot,2
+metatarsal-3,Third metatarsal,metatarsal 3|3rd metatarsal|third metatarsal|metatarsal bone 3|mt3|metatarsal of third toe,appendicular,foot,true,false,third metatarsal bone of left foot|third metatarsal bone of right foot,2
+metatarsal-4,Fourth metatarsal,metatarsal 4|4th metatarsal|fourth metatarsal|metatarsal bone 4|mt4|metatarsal of fourth toe,appendicular,foot,true,false,fourth metatarsal bone of left foot|fourth metatarsal bone of right foot,2
+metatarsal-5,Fifth metatarsal,metatarsal 5|5th metatarsal|fifth metatarsal|metatarsal bone 5|mt5|metatarsal of fifth toe,appendicular,foot,true,false,fifth metatarsal bone of left foot|fifth metatarsal bone of right foot,2
+phalanx-proximal-hallux,Proximal phalanx of great toe,proximal phalanx of great toe|proximal phalanx of digit 1 of foot|proximal phalanx 1 foot|proximal phalanx of toe 1|great toe proximal phalanx,appendicular,foot,true,false,proximal phalanx of left great toe|proximal phalanx of right great toe,2
+phalanx-distal-hallux,Distal phalanx of great toe,distal phalanx of great toe|distal phalanx of digit 1 of foot|distal phalanx 1 foot|distal phalanx of toe 1|great toe distal phalanx,appendicular,foot,true,false,distal phalanx of left great toe|distal phalanx of right great toe,2
+phalanx-proximal-toe-2,Proximal phalanx of second toe,proximal phalanx of second toe|proximal phalanx of digit 2 of foot|proximal phalanx 2 foot|proximal phalanx of toe 2|second toe proximal phalanx,appendicular,foot,true,false,proximal phalanx of left second toe|proximal phalanx of right second toe,2
+phalanx-middle-toe-2,Middle phalanx of second toe,middle phalanx of second toe|middle phalanx of digit 2 of foot|middle phalanx 2 foot|middle phalanx of toe 2|second toe middle phalanx,appendicular,foot,true,false,middle phalanx of left second toe|middle phalanx of right second toe,2
+phalanx-distal-toe-2,Distal phalanx of second toe,distal phalanx of second toe|distal phalanx of digit 2 of foot|distal phalanx 2 foot|distal phalanx of toe 2|second toe distal phalanx,appendicular,foot,true,false,distal phalanx of left second toe|distal phalanx of right second toe,2
+phalanx-proximal-toe-3,Proximal phalanx of third toe,proximal phalanx of third toe|proximal phalanx of digit 3 of foot|proximal phalanx 3 foot|proximal phalanx of toe 3|third toe proximal phalanx,appendicular,foot,true,false,proximal phalanx of left third toe|proximal phalanx of right third toe,2
+phalanx-middle-toe-3,Middle phalanx of third toe,middle phalanx of third toe|middle phalanx of digit 3 of foot|middle phalanx 3 foot|middle phalanx of toe 3|third toe middle phalanx,appendicular,foot,true,false,middle phalanx of left third toe|middle phalanx of right third toe,2
+phalanx-distal-toe-3,Distal phalanx of third toe,distal phalanx of third toe|distal phalanx of digit 3 of foot|distal phalanx 3 foot|distal phalanx of toe 3|third toe distal phalanx,appendicular,foot,true,false,distal phalanx of left third toe|distal phalanx of right third toe,2
+phalanx-proximal-toe-4,Proximal phalanx of fourth toe,proximal phalanx of fourth toe|proximal phalanx of digit 4 of foot|proximal phalanx 4 foot|proximal phalanx of toe 4|fourth toe proximal phalanx,appendicular,foot,true,false,proximal phalanx of left fourth toe|proximal phalanx of right fourth toe,2
+phalanx-middle-toe-4,Middle phalanx of fourth toe,middle phalanx of fourth toe|middle phalanx of digit 4 of foot|middle phalanx 4 foot|middle phalanx of toe 4|fourth toe middle phalanx,appendicular,foot,true,false,middle phalanx of left fourth toe|middle phalanx of right fourth toe,2
+phalanx-distal-toe-4,Distal phalanx of fourth toe,distal phalanx of fourth toe|distal phalanx of digit 4 of foot|distal phalanx 4 foot|distal phalanx of toe 4|fourth toe distal phalanx,appendicular,foot,true,false,distal phalanx of left fourth toe|distal phalanx of right fourth toe,2
+phalanx-proximal-toe-5,Proximal phalanx of fifth toe,proximal phalanx of fifth toe|proximal phalanx of digit 5 of foot|proximal phalanx 5 foot|proximal phalanx of toe 5|fifth toe proximal phalanx,appendicular,foot,true,false,proximal phalanx of left fifth toe|proximal phalanx of right fifth toe,2
+phalanx-middle-toe-5,Middle phalanx of fifth toe,middle phalanx of fifth toe|middle phalanx of digit 5 of foot|middle phalanx 5 foot|middle phalanx of toe 5|fifth toe middle phalanx,appendicular,foot,true,false,middle phalanx of left fifth toe|middle phalanx of right fifth toe,2
+phalanx-distal-toe-5,Distal phalanx of fifth toe,distal phalanx of fifth toe|distal phalanx of digit 5 of foot|distal phalanx 5 foot|distal phalanx of toe 5|fifth toe distal phalanx,appendicular,foot,true,false,distal phalanx of left fifth toe|distal phalanx of right fifth toe,2
