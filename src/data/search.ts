@@ -34,6 +34,26 @@ export function normalize(input: string): string {
     .join(' ')
 }
 
+/**
+ * Query spellings to try in order: as typed, without a leading "left"/"right" (students
+ * copy sides off labelled diagrams), and with a trailing "bone" toggled ("femur bone",
+ * "hip"). Only the query is varied, so the index itself stays strict.
+ */
+export function queryVariants(normalized: string): string[] {
+  const out: string[] = []
+  const push = (v: string) => {
+    if (v && !out.includes(v)) out.push(v)
+  }
+  push(normalized)
+  const sideless = normalized.replace(/^(left|right|l|r) /, '')
+  push(sideless)
+  for (const v of [normalized, sideless]) {
+    if (v.endsWith(' bone')) push(v.slice(0, -5))
+    else if (v !== 'bone') push(`${v} bone`)
+  }
+  return out
+}
+
 /** Levenshtein distance with early exit once it exceeds `max`. */
 export function levenshtein(a: string, b: string, max = Infinity): number {
   if (a === b) return 0
@@ -85,18 +105,26 @@ export class SearchIndex {
 
   /** Exact (normalized) lookup, e.g. on Enter. */
   resolve(query: string): SearchHit | null {
-    const q = normalize(query)
-    const t = this.exact.get(q)
-    return t ? { slug: t.slug, displayName: t.displayName, term: t.term, score: 1 } : null
+    for (const q of queryVariants(normalize(query))) {
+      const t = this.exact.get(q)
+      if (t) return { slug: t.slug, displayName: t.displayName, term: t.term, score: 1 }
+    }
+    return null
   }
 
   /**
-   * Ranked suggestions: prefix matches first (whole-string, then word-start), then fuzzy
-   * (Levenshtein within a small budget). One hit per slug.
+   * Typo-tolerant "did you mean" matches, used only after Enter on a name that did not
+   * resolve exactly. An exact term scores 1; everything else has to be within a small
+   * Levenshtein budget of the whole term or one of its words. There is deliberately no
+   * prefix or substring matching, so partial input like "fem" suggests nothing — the game
+   * tests recall, not typing. One hit per slug.
    */
   search(query: string, limit = 8): SearchHit[] {
-    const q = normalize(query)
-    if (!q) return []
+    const raw = normalize(query)
+    if (!raw) return []
+    // Fuzzy-match the sideless / bone-less form when there is one, else the query as typed.
+    const variants = queryVariants(raw)
+    const q = variants.find((v) => v !== raw && !v.endsWith(' bone')) ?? raw
     const best = new Map<string, SearchHit>()
     const consider = (t: IndexedTerm, score: number) => {
       const prev = best.get(t.slug)
@@ -108,9 +136,6 @@ export class SearchIndex {
     for (const t of this.terms) {
       const primaryBonus = t.isPrimary ? 0.01 : 0
       if (t.term === q) consider(t, 1)
-      else if (t.term.startsWith(q)) consider(t, 0.9 - t.term.length / 1000 + primaryBonus)
-      else if (t.term.includes(' ' + q)) consider(t, 0.8 - t.term.length / 1000 + primaryBonus)
-      else if (t.term.includes(q)) consider(t, 0.7 - t.term.length / 1000 + primaryBonus)
       else if (q.length >= 3) {
         // Compare against the whole term and against each word for typos like "femer".
         let d = levenshtein(q, t.term, budget)

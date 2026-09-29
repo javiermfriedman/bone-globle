@@ -1,10 +1,10 @@
 interface Props {
   onHelp: () => void
-  onStats: () => void
+  onBones: () => void
   onHome: () => void
 }
 
-export function Header({ onHelp, onStats, onHome }: Props) {
+export function Header({ onHelp, onBones, onHome }: Props) {
   return (
     <header className="header">
       <h1>
@@ -14,8 +14,8 @@ export function Header({ onHelp, onStats, onHome }: Props) {
         <button title="Reset camera" aria-label="Reset camera" onClick={onHome}>
           ⌂
         </button>
-        <button title="Statistics" aria-label="Statistics" onClick={onStats}>
-          ▥
+        <button title="All bones" aria-label="All bones" onClick={onBones}>
+          🦴
         </button>
         <button title="How to play" aria-label="How to play" onClick={onHelp}>
           ?

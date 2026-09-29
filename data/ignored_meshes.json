@@ -1,9 +1,4 @@
 {
-  "ignored": [
-    "Sesamoid bone of left foot (FJ3266)",
-    "Sesamoid bone of left foot (FJ3270)",
-    "Sesamoid bone of right foot (FJ3372)",
-    "Sesamoid bone of right foot (FJ3376)"
-  ],
-  "notes": "GLB mesh node names that are real bone nodes in public/models/skeleton.glb but are NOT game answers. Verified against pipeline/node_names.txt: every name here exists in the GLB, and no name here is also mapped by data/bone_catalog.json. The four foot sesamoids are variable in presence and number between individuals (the patella, the other large sesamoid, IS an answer). BodyParts3D 4.0 contains no auditory ossicles and no coccyx, so those are absent rather than ignored. Sternum parts (Manubrium / Body of sternum / Xiphoid process) are NOT ignored: slug 'sternum' maps to all three. The hip bone is a single mesh per side, so slug 'hip-bone' owns it and there are no ilium/ischium/pubis entries."
+  "ignored": [],
+  "notes": "GLB mesh node names that are real bone nodes in public/models/skeleton.glb but are NOT game answers. Currently empty: every node is mapped by data/bone_catalog.json (the four foot sesamoids are pooled into slug 'sesamoid-hallux'). BodyParts3D 4.0 contains no auditory ossicles and no coccyx, so those catalog entries are optional with no mesh. Sternum parts (Manubrium / Body of sternum / Xiphoid process) map to slug 'sternum'. The hip bone is a single mesh per side, so slug 'hip-bone' owns it and ilium/ischium/pubis are synonyms of it."
 }

@@ -7,8 +7,8 @@ export function HelpModal({ onClose }: { onClose: () => void }) {
   return (
     <Modal title="How to play" onClose={onClose}>
       <p>
-        A mystery bone is hidden somewhere in the skeleton. Type the name of any bone and press
-        Enter to guess it.
+        A mystery bone is hidden somewhere in the skeleton. Type the name of any bone. Press Enter to check. If the spelling is close but not exact you get a
+        short list of similar names to pick from; there are no hints while you type.
       </p>
       <p>
         Every guess lights up on the model. The colour tells you how close that bone is to the
@@ -33,6 +33,9 @@ export function HelpModal({ onClose }: { onClose: () => void }) {
         Drag to orbit, scroll to zoom, right-drag to pan. Unguessed bones are see-through so guesses
         inside the skull or chest still show.
       </p>
+      <h3>Why this exists</h3>
+      <img className="about-img" src="/chud.png" alt="My sister" />
+      <p>I made this webapp for my chud sister so she can study for her anatomy class.</p>
       <p className="muted small">
         Skeleton model from BodyParts3D, © The Database Center for Life Science, CC BY 4.0.
       </p>

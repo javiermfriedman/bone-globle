@@ -2,7 +2,6 @@ import { describe, expect, it } from 'vitest'
 import type { Geometry } from '../src/data/catalog'
 import { initialState, reduce, sortedByHeat } from '../src/game/state'
 import { pickAnswer, pushRecent, readRecent, RECENT_LIMIT, type Storage } from '../src/game/random'
-import { emptyStats, hardestBones, readStats, recordWin, writeStats } from '../src/game/stats'
 
 const geometry: Geometry = {
   unit: 'm',
@@ -78,20 +77,5 @@ describe('random answer selection', () => {
     const st = new MemStorage()
     st.setItem('bonegloble.recentAnswers', '{not json')
     expect(readRecent(st)).toEqual([])
-  })
-})
-
-describe('stats', () => {
-  it('accumulates wins and round-trips through storage', () => {
-    const st = new MemStorage()
-    let s = emptyStats()
-    s = recordWin(s, 'femur', 4)
-    s = recordWin(s, 'femur', 2)
-    s = recordWin(s, 'patella', 9)
-    writeStats(s, st)
-    const back = readStats(st)
-    expect(back.gamesPlayed).toBe(3)
-    expect(back.totalGuesses).toBe(15)
-    expect(hardestBones(back)[0]).toMatchObject({ slug: 'patella', avg: 9 })
   })
 })

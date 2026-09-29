@@ -60,3 +60,45 @@ export function loadGeometry(): Promise<Geometry> {
   }
   return geometryPromise
 }
+
+/** Anatomical subregions in rough top-to-bottom order, for grouped listings. */
+export const SUBREGION_ORDER: { key: string; label: string }[] = [
+  { key: 'skull', label: 'Skull' },
+  { key: 'neck', label: 'Hyoid' },
+  { key: 'vertebral-column', label: 'Vertebral column' },
+  { key: 'thoracic-cage', label: 'Thoracic cage' },
+  { key: 'shoulder-girdle', label: 'Shoulder girdle' },
+  { key: 'arm', label: 'Arm' },
+  { key: 'forearm', label: 'Forearm' },
+  { key: 'hand', label: 'Hand' },
+  { key: 'pelvic-girdle', label: 'Pelvic girdle' },
+  { key: 'thigh', label: 'Thigh' },
+  { key: 'leg', label: 'Leg' },
+  { key: 'foot', label: 'Foot' },
+]
+
+/**
+ * Groups the given slugs by subregion, ordered by SUBREGION_ORDER and, within a
+ * group, by catalog order. Empty groups are omitted; unknown subregions are
+ * appended last, labelled with their raw key.
+ */
+export function groupBySubregion(
+  slugs: string[],
+): { key: string; label: string; bones: BoneEntry[] }[] {
+  const wanted = new Set(slugs)
+  const buckets = new Map<string, BoneEntry[]>()
+  for (const b of catalog) {
+    if (!wanted.has(b.slug)) continue
+    const bucket = buckets.get(b.subregion)
+    if (bucket) bucket.push(b)
+    else buckets.set(b.subregion, [b])
+  }
+
+  const known = new Set(SUBREGION_ORDER.map((s) => s.key))
+  const extras = [...buckets.keys()].filter((k) => !known.has(k)).map((k) => ({ key: k, label: k }))
+
+  return [...SUBREGION_ORDER, ...extras].flatMap(({ key, label }) => {
+    const bones = buckets.get(key)
+    return bones && bones.length > 0 ? [{ key, label, bones }] : []
+  })
+}

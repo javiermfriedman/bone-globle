@@ -2,12 +2,19 @@
   {
     "slug": "frontal-bone",
     "displayName": "Frontal bone",
-    "synonyms": ["frontal", "frontal bone", "forehead bone"],
+    "synonyms": [
+      "frontal",
+      "frontal bone",
+      "forehead bone",
+      "os frontale"
+    ],
     "region": "axial",
     "subregion": "skull",
     "paired": false,
     "optional": false,
-    "meshNames": ["Frontal bone"],
+    "meshNames": [
+      "Frontal bone"
+    ],
     "info": {
       "articulations": "Both parietal bones at the coronal suture, plus the sphenoid, ethmoid, nasal, lacrimal, zygomatic and maxillary bones.",
       "landmarks": "Supraorbital margin and supraorbital foramen or notch, glabella, superciliary arches, zygomatic process, and the frontal sinus.",
@@ -17,12 +24,19 @@
   {
     "slug": "parietal-bone",
     "displayName": "Parietal bone",
-    "synonyms": ["parietal", "parietal bone"],
+    "synonyms": [
+      "parietal",
+      "parietal bone",
+      "os parietale"
+    ],
     "region": "axial",
     "subregion": "skull",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left parietal bone", "Right parietal bone"],
+    "meshNames": [
+      "Left parietal bone",
+      "Right parietal bone"
+    ],
     "info": {
       "articulations": "The opposite parietal at the sagittal suture, the frontal, occipital, temporal and the greater wing of the sphenoid.",
       "landmarks": "Parietal eminence, superior and inferior temporal lines, parietal foramen, and internal grooves for the middle meningeal vessels.",
@@ -32,12 +46,22 @@
   {
     "slug": "temporal-bone",
     "displayName": "Temporal bone",
-    "synonyms": ["temporal", "temporal bone"],
+    "synonyms": [
+      "temporal",
+      "temporal bone",
+      "temple bone",
+      "petrous bone",
+      "petrous temporal bone",
+      "os temporale"
+    ],
     "region": "axial",
     "subregion": "skull",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left temporal bone", "Right temporal bone"],
+    "meshNames": [
+      "Left temporal bone",
+      "Right temporal bone"
+    ],
     "info": {
       "articulations": "The parietal, occipital, sphenoid and zygomatic bones, and the mandible at the temporomandibular joint.",
       "landmarks": "External acoustic meatus, mastoid and styloid processes, zygomatic process, mandibular fossa, carotid canal, and stylomastoid foramen.",
@@ -47,12 +71,20 @@
   {
     "slug": "occipital-bone",
     "displayName": "Occipital bone",
-    "synonyms": ["occipital", "occipital bone", "back of skull bone", "back of the skull"],
+    "synonyms": [
+      "occipital",
+      "occipital bone",
+      "back of skull bone",
+      "back of the skull",
+      "os occipitale"
+    ],
     "region": "axial",
     "subregion": "skull",
     "paired": false,
     "optional": false,
-    "meshNames": ["Occipital bone"],
+    "meshNames": [
+      "Occipital bone"
+    ],
     "info": {
       "articulations": "Both parietal bones at the lambdoid suture, both temporal bones, the sphenoid, and the atlas at the occipital condyles.",
       "landmarks": "Foramen magnum, occipital condyles, hypoglossal canal, external occipital protuberance, and the internal grooves for the dural venous sinuses.",
@@ -62,12 +94,20 @@
   {
     "slug": "sphenoid-bone",
     "displayName": "Sphenoid bone",
-    "synonyms": ["sphenoid", "sphenoid bone", "butterfly bone", "wasp bone"],
+    "synonyms": [
+      "sphenoid",
+      "sphenoid bone",
+      "butterfly bone",
+      "wasp bone",
+      "os sphenoidale"
+    ],
     "region": "axial",
     "subregion": "skull",
     "paired": false,
     "optional": false,
-    "meshNames": ["Sphenoid bone"],
+    "meshNames": [
+      "Sphenoid bone"
+    ],
     "info": {
       "articulations": "The frontal, parietal, temporal, occipital, ethmoid, vomer, zygomatic, palatine and maxillary bones, twelve bones in all.",
       "landmarks": "Sella turcica and hypophyseal fossa, greater and lesser wings, optic canal, superior orbital fissure, foramina rotundum, ovale and spinosum, pterygoid processes.",
@@ -77,12 +117,18 @@
   {
     "slug": "ethmoid-bone",
     "displayName": "Ethmoid bone",
-    "synonyms": ["ethmoid", "ethmoid bone"],
+    "synonyms": [
+      "ethmoid",
+      "ethmoid bone",
+      "os ethmoidale"
+    ],
     "region": "axial",
     "subregion": "skull",
     "paired": false,
     "optional": false,
-    "meshNames": ["Ethmoid"],
+    "meshNames": [
+      "Ethmoid"
+    ],
     "info": {
       "articulations": "The frontal and sphenoid above, and the nasal, lacrimal, maxillary, palatine, inferior conchal bones and vomer of the face.",
       "landmarks": "Cribriform plate, crista galli, perpendicular plate, superior and middle nasal conchae, and the ethmoidal air cells.",
@@ -92,12 +138,22 @@
   {
     "slug": "maxilla",
     "displayName": "Maxilla",
-    "synonyms": ["maxilla", "maxillary bone", "upper jaw", "upper jaw bone", "upper jawbone"],
+    "synonyms": [
+      "maxilla",
+      "maxillary bone",
+      "upper jaw",
+      "upper jaw bone",
+      "upper jawbone",
+      "maxilla bone"
+    ],
     "region": "axial",
     "subregion": "skull",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left maxilla", "Right maxilla"],
+    "meshNames": [
+      "Left maxilla",
+      "Right maxilla"
+    ],
     "info": {
       "articulations": "The opposite maxilla, plus the frontal, ethmoid, nasal, lacrimal, zygomatic, palatine, inferior nasal concha and vomer.",
       "landmarks": "Infraorbital foramen, alveolar process, frontal, zygomatic and palatine processes, anterior nasal spine, and the maxillary sinus.",
@@ -107,12 +163,23 @@
   {
     "slug": "zygomatic-bone",
     "displayName": "Zygomatic bone",
-    "synonyms": ["zygomatic", "zygomatic bone", "cheekbone", "cheek bone", "malar bone", "zygoma"],
+    "synonyms": [
+      "zygomatic",
+      "zygomatic bone",
+      "cheekbone",
+      "cheek bone",
+      "malar bone",
+      "zygoma",
+      "os zygomaticum"
+    ],
     "region": "axial",
     "subregion": "skull",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left zygomatic bone", "Right zygomatic bone"],
+    "meshNames": [
+      "Left zygomatic bone",
+      "Right zygomatic bone"
+    ],
     "info": {
       "articulations": "The frontal bone, the greater wing of the sphenoid, the temporal bone at the zygomatic arch, and the maxilla.",
       "landmarks": "Temporal process forming the zygomatic arch, frontal process, orbital surface, and the zygomaticofacial and zygomaticotemporal foramina.",
@@ -122,12 +189,22 @@
   {
     "slug": "nasal-bone",
     "displayName": "Nasal bone",
-    "synonyms": ["nasal", "nasal bone", "bridge of nose", "bridge of the nose"],
+    "synonyms": [
+      "nasal",
+      "nasal bone",
+      "bridge of nose",
+      "bridge of the nose",
+      "nose bone",
+      "os nasale"
+    ],
     "region": "axial",
     "subregion": "skull",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left nasal bone", "Right nasal bone"],
+    "meshNames": [
+      "Left nasal bone",
+      "Right nasal bone"
+    ],
     "info": {
       "articulations": "The frontal bone above, the perpendicular plate of the ethmoid behind, the opposite nasal bone, and the maxilla laterally.",
       "landmarks": "Internasal suture, the nasion at its junction with the frontal bone, nasal foramen, and the free inferior border for the nasal cartilages.",
@@ -137,12 +214,21 @@
   {
     "slug": "lacrimal-bone",
     "displayName": "Lacrimal bone",
-    "synonyms": ["lacrimal", "lacrimal bone", "lachrymal bone", "tear bone"],
+    "synonyms": [
+      "lacrimal",
+      "lacrimal bone",
+      "lachrymal bone",
+      "tear bone",
+      "os lacrimale"
+    ],
     "region": "axial",
     "subregion": "skull",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left lacrimal bone", "Right lacrimal bone"],
+    "meshNames": [
+      "Left lacrimal bone",
+      "Right lacrimal bone"
+    ],
     "info": {
       "articulations": "The frontal bone above, the ethmoid behind, the maxilla in front, and the inferior nasal concha below.",
       "landmarks": "Lacrimal groove or fossa for the lacrimal sac, posterior lacrimal crest, and the lacrimal hamulus completing the nasolacrimal canal.",
@@ -152,12 +238,21 @@
   {
     "slug": "palatine-bone",
     "displayName": "Palatine bone",
-    "synonyms": ["palatine", "palatine bone"],
+    "synonyms": [
+      "palatine",
+      "palatine bone",
+      "palate bone",
+      "hard palate bone",
+      "os palatinum"
+    ],
     "region": "axial",
     "subregion": "skull",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left palatine bone", "Right palatine bone"],
+    "meshNames": [
+      "Left palatine bone",
+      "Right palatine bone"
+    ],
     "info": {
       "articulations": "The opposite palatine bone, the maxilla, sphenoid, ethmoid, inferior nasal concha and vomer.",
       "landmarks": "Horizontal and perpendicular plates, pyramidal process, orbital and sphenoidal processes, and the greater and lesser palatine foramina.",
@@ -178,7 +273,10 @@
     "subregion": "skull",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left inferior nasal concha", "Right inferior nasal concha"],
+    "meshNames": [
+      "Left inferior nasal concha",
+      "Right inferior nasal concha"
+    ],
     "info": {
       "articulations": "The ethmoid, maxilla, lacrimal bone and palatine bone of the same side of the lateral nasal wall.",
       "landmarks": "Lacrimal, maxillary and ethmoidal processes, and the curved shelf overhanging the inferior meatus.",
@@ -188,12 +286,20 @@
   {
     "slug": "vomer",
     "displayName": "Vomer",
-    "synonyms": ["vomer", "vomer bone", "nasal septum bone"],
+    "synonyms": [
+      "vomer",
+      "vomer bone",
+      "nasal septum bone",
+      "plowshare bone",
+      "ploughshare bone"
+    ],
     "region": "axial",
     "subregion": "skull",
     "paired": false,
     "optional": false,
-    "meshNames": ["Vomer"],
+    "meshNames": [
+      "Vomer"
+    ],
     "info": {
       "articulations": "The sphenoid and ethmoid above, both maxillae and both palatine bones below, and the septal cartilage in front.",
       "landmarks": "Alae that grip the sphenoid rostrum, the thin vertical plate, and the free posterior border separating the choanae.",
@@ -210,13 +316,16 @@
       "lower jaw",
       "lower jaw bone",
       "jaw",
-      "lower jawbone"
+      "lower jawbone",
+      "mandible bone"
     ],
     "region": "axial",
     "subregion": "skull",
     "paired": false,
     "optional": false,
-    "meshNames": ["Mandible"],
+    "meshNames": [
+      "Mandible"
+    ],
     "info": {
       "articulations": "Only the two temporal bones, at the temporomandibular joints between its condyles and the mandibular fossae.",
       "landmarks": "Body, ramus and angle, condylar and coronoid processes, mental foramen, mandibular foramen with its lingula, and the mylohyoid line.",
@@ -224,14 +333,86 @@
     }
   },
   {
+    "slug": "malleus",
+    "displayName": "Malleus",
+    "synonyms": [
+      "malleus",
+      "hammer",
+      "hammer bone",
+      "ear hammer",
+      "auditory ossicle"
+    ],
+    "region": "axial",
+    "subregion": "skull",
+    "paired": true,
+    "optional": true,
+    "meshNames": [],
+    "info": {
+      "articulations": "The incus at the incudomallear joint; its handle is embedded in the tympanic membrane.",
+      "landmarks": "Head, neck, handle (manubrium), and the anterior and lateral processes.",
+      "fact": "The largest of the three ossicles at about 8 mm, it is pulled by tensor tympani to damp loud sounds."
+    }
+  },
+  {
+    "slug": "incus",
+    "displayName": "Incus",
+    "synonyms": [
+      "incus",
+      "anvil",
+      "anvil bone",
+      "ear anvil"
+    ],
+    "region": "axial",
+    "subregion": "skull",
+    "paired": true,
+    "optional": true,
+    "meshNames": [],
+    "info": {
+      "articulations": "The malleus at the incudomallear joint and the stapes at the incudostapedial joint.",
+      "landmarks": "Body, a short limb pointing backward, and a long limb ending in the lenticular process.",
+      "fact": "Named for its anvil shape, it sits between hammer and stirrup and relays vibration across the middle ear."
+    }
+  },
+  {
+    "slug": "stapes",
+    "displayName": "Stapes",
+    "synonyms": [
+      "stapes",
+      "stirrup",
+      "stirrup bone",
+      "ear stirrup",
+      "smallest bone",
+      "smallest bone in the body"
+    ],
+    "region": "axial",
+    "subregion": "skull",
+    "paired": true,
+    "optional": true,
+    "meshNames": [],
+    "info": {
+      "articulations": "The incus at the incudostapedial joint; its footplate sits in the oval window of the inner ear.",
+      "landmarks": "Head, anterior and posterior crura, and the oval footplate.",
+      "fact": "The smallest bone in the body at about 3 mm; the stapedius, the smallest skeletal muscle, steadies it."
+    }
+  },
+  {
     "slug": "hyoid",
     "displayName": "Hyoid bone",
-    "synonyms": ["hyoid", "hyoid bone", "lingual bone", "tongue bone"],
+    "synonyms": [
+      "hyoid",
+      "hyoid bone",
+      "lingual bone",
+      "tongue bone",
+      "os hyoideum"
+    ],
     "region": "axial",
     "subregion": "neck",
     "paired": false,
     "optional": false,
-    "meshNames": ["Hyoid bone (FJ2772)", "Hyoid bone (FJ3201)"],
+    "meshNames": [
+      "Hyoid bone (FJ2772)",
+      "Hyoid bone (FJ3201)"
+    ],
     "info": {
       "articulations": "It articulates with no other bone, being slung from the styloid processes of the temporal bones by the stylohyoid ligaments.",
       "landmarks": "Body, paired greater horns and paired lesser horns, giving attachment to the suprahyoid and infrahyoid muscles.",
@@ -254,7 +435,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Atlas"],
+    "meshNames": [
+      "Atlas"
+    ],
     "info": {
       "articulations": "The occipital condyles above at the atlanto-occipital joints, and the axis below at the lateral and median atlanto-axial joints.",
       "landmarks": "Anterior and posterior arches with their tubercles, lateral masses, transverse foramina, facet for the dens, and the groove for the vertebral artery.",
@@ -278,7 +461,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Axis"],
+    "meshNames": [
+      "Axis"
+    ],
     "info": {
       "articulations": "The atlas above at the median and lateral atlanto-axial joints, and C3 below by an intervertebral disc and facet joints.",
       "landmarks": "Dens or odontoid process, superior articular facets on the body, strong bifid spinous process, and transverse foramina.",
@@ -300,7 +485,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Third cervical vertebra"],
+    "meshNames": [
+      "Third cervical vertebra"
+    ],
     "info": {
       "articulations": "C2 above and C4 below, each by an intervertebral disc and a pair of zygapophysial facet joints.",
       "landmarks": "Small broad body with uncinate processes, bifid spinous process, transverse foramen, and anterior and posterior tubercles of the transverse process.",
@@ -322,7 +509,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Fourth cervical vertebra"],
+    "meshNames": [
+      "Fourth cervical vertebra"
+    ],
     "info": {
       "articulations": "C3 above and C5 below, each by an intervertebral disc and a pair of zygapophysial facet joints.",
       "landmarks": "Uncinate processes on the body, bifid spinous process, transverse foramen for the vertebral artery, and grooved transverse process for the spinal nerve.",
@@ -344,7 +533,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Fifth cervical vertebra"],
+    "meshNames": [
+      "Fifth cervical vertebra"
+    ],
     "info": {
       "articulations": "C4 above and C6 below, each by an intervertebral disc and a pair of zygapophysial facet joints.",
       "landmarks": "Uncinate processes, bifid spinous process, transverse foramen, and superior articular facets facing backward and upward.",
@@ -366,7 +557,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Sixth cervical vertebra"],
+    "meshNames": [
+      "Sixth cervical vertebra"
+    ],
     "info": {
       "articulations": "C5 above and C7 below, each by an intervertebral disc and a pair of zygapophysial facet joints.",
       "landmarks": "Prominent anterior tubercle of the transverse process, the carotid tubercle, plus transverse foramen, uncinate processes and a bifid spinous process.",
@@ -389,7 +582,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Seventh cervical vertebra"],
+    "meshNames": [
+      "Seventh cervical vertebra"
+    ],
     "info": {
       "articulations": "C6 above and T1 below, each by an intervertebral disc and a pair of zygapophysial facet joints.",
       "landmarks": "Long non-bifid spinous process, small transverse foramen, prominent posterior tubercle, and uncinate processes on the body.",
@@ -413,7 +608,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["First thoracic vertebra"],
+    "meshNames": [
+      "First thoracic vertebra"
+    ],
     "info": {
       "articulations": "C7 above and T2 below by discs and facet joints, and with the heads of the first and second ribs.",
       "landmarks": "Full costal facet for rib one with an inferior demifacet for rib two, long horizontal spinous process, and transverse costal facets.",
@@ -437,7 +634,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Second thoracic vertebra"],
+    "meshNames": [
+      "Second thoracic vertebra"
+    ],
     "info": {
       "articulations": "T1 above and T3 below by discs and facet joints, and with the heads of the second and third ribs.",
       "landmarks": "Superior and inferior costal demifacets, transverse process costal facets, heart-shaped body, and a long downward-sloping spinous process.",
@@ -461,7 +660,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Third thoracic vertebra"],
+    "meshNames": [
+      "Third thoracic vertebra"
+    ],
     "info": {
       "articulations": "T2 above and T4 below by discs and facet joints, and with the heads of the third and fourth ribs.",
       "landmarks": "Paired superior and inferior costal demifacets, costal facets on the transverse processes, and a long overlapping spinous process.",
@@ -485,7 +686,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Fourth thoracic vertebra"],
+    "meshNames": [
+      "Fourth thoracic vertebra"
+    ],
     "info": {
       "articulations": "T3 above and T5 below by discs and facet joints, and with the heads of the fourth and fifth ribs.",
       "landmarks": "Superior and inferior costal demifacets, transverse costal facets, heart-shaped body, and an obliquely downward spinous process.",
@@ -509,7 +712,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Fifth thoracic vertebra"],
+    "meshNames": [
+      "Fifth thoracic vertebra"
+    ],
     "info": {
       "articulations": "T4 above and T6 below by discs and facet joints, and with the heads of the fifth and sixth ribs.",
       "landmarks": "Superior and inferior costal demifacets, costal facets on the transverse processes, and a long steeply sloping spinous process.",
@@ -533,7 +738,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Sixth thoracic vertebra"],
+    "meshNames": [
+      "Sixth thoracic vertebra"
+    ],
     "info": {
       "articulations": "T5 above and T7 below by discs and facet joints, and with the heads of the sixth and seventh ribs.",
       "landmarks": "Heart-shaped body with superior and inferior costal demifacets, transverse costal facets, and a long overlapping spinous process.",
@@ -557,7 +764,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Seventh thoracic vertebra"],
+    "meshNames": [
+      "Seventh thoracic vertebra"
+    ],
     "info": {
       "articulations": "T6 above and T8 below by discs and facet joints, and with the heads of the seventh and eighth ribs.",
       "landmarks": "Superior and inferior costal demifacets, costal facets on the transverse processes, and the longest, most steeply angled spinous process.",
@@ -581,7 +790,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Eighth thoracic vertebra"],
+    "meshNames": [
+      "Eighth thoracic vertebra"
+    ],
     "info": {
       "articulations": "T7 above and T9 below by discs and facet joints, and with the heads of the eighth and ninth ribs.",
       "landmarks": "Superior and inferior costal demifacets, transverse process costal facets, and a long downward-directed spinous process.",
@@ -605,7 +816,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Ninth thoracic vertebra"],
+    "meshNames": [
+      "Ninth thoracic vertebra"
+    ],
     "info": {
       "articulations": "T8 above and T10 below by discs and facet joints, and with the head of the ninth rib and often the tenth.",
       "landmarks": "Superior costal demifacets, frequently absent inferior demifacets, transverse costal facets, and a long sloping spinous process.",
@@ -629,7 +842,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Tenth thoracic vertebra"],
+    "meshNames": [
+      "Tenth thoracic vertebra"
+    ],
     "info": {
       "articulations": "T9 above and T11 below by discs and facet joints, and with the head of the tenth rib.",
       "landmarks": "A single complete costal facet on each side of the body, costal facets on the transverse processes, and a shorter spinous process.",
@@ -653,7 +868,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Eleventh thoracic vertebra"],
+    "meshNames": [
+      "Eleventh thoracic vertebra"
+    ],
     "info": {
       "articulations": "T10 above and T12 below by discs and facet joints, and with the head of the eleventh rib.",
       "landmarks": "A single large complete costal facet on each side, transverse processes without costal facets, and a short triangular spinous process.",
@@ -677,7 +894,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Twelfth thoracic vertebra"],
+    "meshNames": [
+      "Twelfth thoracic vertebra"
+    ],
     "info": {
       "articulations": "T11 above and L1 below by discs and facet joints, and with the head of the twelfth rib.",
       "landmarks": "Single complete costal facet each side, no transverse costal facets, short spinous process, and lumbar-type inferior articular facets.",
@@ -699,7 +918,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["First lumbar vertebra"],
+    "meshNames": [
+      "First lumbar vertebra"
+    ],
     "info": {
       "articulations": "T12 above and L2 below, each by an intervertebral disc and a pair of zygapophysial facet joints.",
       "landmarks": "Large kidney-shaped body, hatchet-shaped spinous process, transverse costal processes, and mammillary and accessory processes.",
@@ -721,7 +942,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Second lumbar vertebra"],
+    "meshNames": [
+      "Second lumbar vertebra"
+    ],
     "info": {
       "articulations": "L1 above and L3 below, each by an intervertebral disc and a pair of zygapophysial facet joints.",
       "landmarks": "Kidney-shaped body, triangular vertebral foramen, blunt spinous process, transverse process, and mammillary and accessory processes.",
@@ -743,7 +966,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Third lumbar vertebra"],
+    "meshNames": [
+      "Third lumbar vertebra"
+    ],
     "info": {
       "articulations": "L2 above and L4 below, each by an intervertebral disc and a pair of zygapophysial facet joints.",
       "landmarks": "Broad body, short sturdy spinous process, long transverse processes, superior articular facets facing medially, and the pars interarticularis.",
@@ -765,7 +990,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Fourth lumbar vertebra"],
+    "meshNames": [
+      "Fourth lumbar vertebra"
+    ],
     "info": {
       "articulations": "L3 above and L5 below, each by an intervertebral disc and a pair of zygapophysial facet joints.",
       "landmarks": "Kidney-shaped body, hatchet-shaped spinous process, transverse processes, mammillary and accessory processes, and medially facing superior facets.",
@@ -787,7 +1014,9 @@
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Fifth lumbar vertebra"],
+    "meshNames": [
+      "Fifth lumbar vertebra"
+    ],
     "info": {
       "articulations": "L4 above by a disc and facet joints, and the sacrum below at the lumbosacral joint.",
       "landmarks": "The deepest body, taller in front than behind, massive transverse processes reaching the pedicles, and a small blunt spinous process.",
@@ -797,12 +1026,21 @@
   {
     "slug": "sacrum",
     "displayName": "Sacrum",
-    "synonyms": ["sacrum", "sacral bone", "sacral vertebrae", "s1-s5"],
+    "synonyms": [
+      "sacrum",
+      "sacral bone",
+      "sacral vertebrae",
+      "s1-s5",
+      "os sacrum",
+      "sacrum bone"
+    ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": ["Sacrum"],
+    "meshNames": [
+      "Sacrum"
+    ],
     "info": {
       "articulations": "L5 above at the lumbosacral joint, both hip bones at the sacroiliac joints, and the coccyx below.",
       "landmarks": "Sacral promontory, alae, anterior and posterior sacral foramina, median sacral crest, sacral canal, sacral hiatus, and auricular surface.",
@@ -812,7 +1050,15 @@
   {
     "slug": "coccyx",
     "displayName": "Coccyx",
-    "synonyms": ["coccyx", "tailbone", "tail bone", "coccygeal bone", "coccygeal vertebrae"],
+    "synonyms": [
+      "coccyx",
+      "tailbone",
+      "tail bone",
+      "coccygeal bone",
+      "coccygeal vertebrae",
+      "os coccygis",
+      "coccyx bone"
+    ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
@@ -823,12 +1069,20 @@
   {
     "slug": "rib-01",
     "displayName": "First rib",
-    "synonyms": ["rib 1", "1st rib", "first rib", "true rib 1"],
+    "synonyms": [
+      "rib 1",
+      "1st rib",
+      "first rib",
+      "true rib 1"
+    ],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": ["Right first rib", "Left first rib"],
+    "meshNames": [
+      "Right first rib",
+      "Left first rib"
+    ],
     "info": {
       "articulations": "Body of T1 by a single facet on its head, the transverse process of T1 at its tubercle, and the manubrium through its costal cartilage.",
       "landmarks": "Single facet on the head, scalene tubercle on the superior surface, and the grooves for the subclavian vein in front and artery behind.",
@@ -838,12 +1092,20 @@
   {
     "slug": "rib-02",
     "displayName": "Second rib",
-    "synonyms": ["rib 2", "2nd rib", "second rib", "true rib 2"],
+    "synonyms": [
+      "rib 2",
+      "2nd rib",
+      "second rib",
+      "true rib 2"
+    ],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": ["Right second rib", "Left second rib"],
+    "meshNames": [
+      "Right second rib",
+      "Left second rib"
+    ],
     "info": {
       "articulations": "Bodies of T1 and T2 by two facets on its head, the transverse process of T2 at its tubercle, and the sternum through its costal cartilage.",
       "landmarks": "Two-faceted head, tubercle, angle close to the tubercle, and the tuberosity for serratus anterior on its outer surface.",
@@ -853,12 +1115,20 @@
   {
     "slug": "rib-03",
     "displayName": "Third rib",
-    "synonyms": ["rib 3", "3rd rib", "third rib", "true rib 3"],
+    "synonyms": [
+      "rib 3",
+      "3rd rib",
+      "third rib",
+      "true rib 3"
+    ],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": ["Right third rib", "Left third rib"],
+    "meshNames": [
+      "Right third rib",
+      "Left third rib"
+    ],
     "info": {
       "articulations": "Bodies of T2 and T3 by two facets on its head, the transverse process of T3 at its tubercle, and the sternal body through its own costal cartilage.",
       "landmarks": "Head with two facets, neck, tubercle with articular and non-articular parts, angle, and the costal groove on the inner lower border.",
@@ -868,12 +1138,20 @@
   {
     "slug": "rib-04",
     "displayName": "Fourth rib",
-    "synonyms": ["rib 4", "4th rib", "fourth rib", "true rib 4"],
+    "synonyms": [
+      "rib 4",
+      "4th rib",
+      "fourth rib",
+      "true rib 4"
+    ],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": ["Right fourth rib", "Left fourth rib"],
+    "meshNames": [
+      "Right fourth rib",
+      "Left fourth rib"
+    ],
     "info": {
       "articulations": "Bodies of T3 and T4 by two facets on its head, the transverse process of T4 at its tubercle, and the sternal body through its own costal cartilage.",
       "landmarks": "Two-faceted head, neck, tubercle, angle, and costal groove sheltering the intercostal neurovascular bundle.",
@@ -883,12 +1161,20 @@
   {
     "slug": "rib-05",
     "displayName": "Fifth rib",
-    "synonyms": ["rib 5", "5th rib", "fifth rib", "true rib 5"],
+    "synonyms": [
+      "rib 5",
+      "5th rib",
+      "fifth rib",
+      "true rib 5"
+    ],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": ["Right fifth rib", "Left fifth rib"],
+    "meshNames": [
+      "Right fifth rib",
+      "Left fifth rib"
+    ],
     "info": {
       "articulations": "Bodies of T4 and T5 by two facets on its head, the transverse process of T5 at its tubercle, and the sternal body through its own costal cartilage.",
       "landmarks": "Two-faceted head, neck, tubercle, angle, and the costal groove along the inner inferior margin.",
@@ -898,12 +1184,20 @@
   {
     "slug": "rib-06",
     "displayName": "Sixth rib",
-    "synonyms": ["rib 6", "6th rib", "sixth rib", "true rib 6"],
+    "synonyms": [
+      "rib 6",
+      "6th rib",
+      "sixth rib",
+      "true rib 6"
+    ],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": ["Right sixth rib", "Left sixth rib"],
+    "meshNames": [
+      "Right sixth rib",
+      "Left sixth rib"
+    ],
     "info": {
       "articulations": "Bodies of T5 and T6 by two facets on its head, the transverse process of T6 at its tubercle, and the sternal body through its own costal cartilage.",
       "landmarks": "Two-faceted head, neck, tubercle, angle, and costal groove; the shaft twists sharply at the angle.",
@@ -913,12 +1207,20 @@
   {
     "slug": "rib-07",
     "displayName": "Seventh rib",
-    "synonyms": ["rib 7", "7th rib", "seventh rib", "true rib 7"],
+    "synonyms": [
+      "rib 7",
+      "7th rib",
+      "seventh rib",
+      "true rib 7"
+    ],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": ["Right seventh rib", "Left seventh rib"],
+    "meshNames": [
+      "Right seventh rib",
+      "Left seventh rib"
+    ],
     "info": {
       "articulations": "Bodies of T6 and T7 by two facets on its head, the transverse process of T7 at its tubercle, and the sternal body through its own costal cartilage.",
       "landmarks": "Two-faceted head, neck, tubercle, prominent angle, and costal groove on the inner inferior border.",
@@ -928,12 +1230,20 @@
   {
     "slug": "rib-08",
     "displayName": "Eighth rib",
-    "synonyms": ["rib 8", "8th rib", "eighth rib", "false rib 8"],
+    "synonyms": [
+      "rib 8",
+      "8th rib",
+      "eighth rib",
+      "false rib 8"
+    ],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": ["Right eighth rib", "Left eighth rib"],
+    "meshNames": [
+      "Right eighth rib",
+      "Left eighth rib"
+    ],
     "info": {
       "articulations": "Bodies of T7 and T8 by two facets on its head, the transverse process of T8 at its tubercle, and indirectly the sternum via the seventh costal cartilage.",
       "landmarks": "Two-faceted head, neck, tubercle, angle, and costal groove carrying the intercostal bundle.",
@@ -943,12 +1253,20 @@
   {
     "slug": "rib-09",
     "displayName": "Ninth rib",
-    "synonyms": ["rib 9", "9th rib", "ninth rib", "false rib 9"],
+    "synonyms": [
+      "rib 9",
+      "9th rib",
+      "ninth rib",
+      "false rib 9"
+    ],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": ["Right ninth rib", "Left ninth rib"],
+    "meshNames": [
+      "Right ninth rib",
+      "Left ninth rib"
+    ],
     "info": {
       "articulations": "Bodies of T8 and T9 by two facets on its head, the transverse process of T9 at its tubercle, and indirectly the sternum via the eighth costal cartilage.",
       "landmarks": "Two-faceted head, neck, tubercle, angle, and costal groove on the inner inferior surface.",
@@ -958,12 +1276,20 @@
   {
     "slug": "rib-10",
     "displayName": "Tenth rib",
-    "synonyms": ["rib 10", "10th rib", "tenth rib", "false rib 10"],
+    "synonyms": [
+      "rib 10",
+      "10th rib",
+      "tenth rib",
+      "false rib 10"
+    ],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": ["Right tenth rib", "Left tenth rib"],
+    "meshNames": [
+      "Right tenth rib",
+      "Left tenth rib"
+    ],
     "info": {
       "articulations": "Body of T10 by a single facet on its head, the transverse process of T10 at its tubercle, and indirectly the sternum via the ninth costal cartilage.",
       "landmarks": "Single-faceted head, neck, tubercle, angle, and a costal groove; the shaft is short and gently curved.",
@@ -973,12 +1299,21 @@
   {
     "slug": "rib-11",
     "displayName": "Eleventh rib",
-    "synonyms": ["rib 11", "11th rib", "eleventh rib", "floating rib 11", "false rib 11"],
+    "synonyms": [
+      "rib 11",
+      "11th rib",
+      "eleventh rib",
+      "floating rib 11",
+      "false rib 11"
+    ],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": ["Right eleventh rib", "Left eleventh rib"],
+    "meshNames": [
+      "Right eleventh rib",
+      "Left eleventh rib"
+    ],
     "info": {
       "articulations": "Body of T11 only, by a single facet on its head; it has no tubercle for a transverse process and its tip ends freely.",
       "landmarks": "Single-faceted head, no articular tubercle, a slight angle, a shallow costal groove, and a pointed cartilage-capped anterior tip.",
@@ -988,12 +1323,21 @@
   {
     "slug": "rib-12",
     "displayName": "Twelfth rib",
-    "synonyms": ["rib 12", "12th rib", "twelfth rib", "floating rib 12", "false rib 12"],
+    "synonyms": [
+      "rib 12",
+      "12th rib",
+      "twelfth rib",
+      "floating rib 12",
+      "false rib 12"
+    ],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": ["Right twelfth rib", "Left twelfth rib"],
+    "meshNames": [
+      "Right twelfth rib",
+      "Left twelfth rib"
+    ],
     "info": {
       "articulations": "Body of T12 only, by a single facet on its head; it has no tubercle, and its anterior end lies free in the abdominal muscles.",
       "landmarks": "Single-faceted head, no tubercle, no angle and no costal groove; a short tapering shaft with a free pointed tip.",
@@ -1009,13 +1353,21 @@
       "breast bone",
       "manubrium",
       "body of sternum",
-      "xiphoid process"
+      "xiphoid process",
+      "xiphoid",
+      "xiphisternum",
+      "chest bone",
+      "sternum bone"
     ],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": false,
     "optional": false,
-    "meshNames": ["Manubrium", "Body of sternum", "Xiphoid process"],
+    "meshNames": [
+      "Manubrium",
+      "Body of sternum",
+      "Xiphoid process"
+    ],
     "info": {
       "articulations": "Both clavicles at the sternoclavicular joints and the costal cartilages of the first seven ribs on each side.",
       "landmarks": "Jugular notch, clavicular notches, manubrium, sternal angle of Louis, body, and the xiphoid process.",
@@ -1025,12 +1377,20 @@
   {
     "slug": "clavicle",
     "displayName": "Clavicle",
-    "synonyms": ["clavicle", "collarbone", "collar bone"],
+    "synonyms": [
+      "clavicle",
+      "collarbone",
+      "collar bone",
+      "clavicle bone"
+    ],
     "region": "appendicular",
     "subregion": "shoulder-girdle",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left clavicle", "Right clavicle"],
+    "meshNames": [
+      "Left clavicle",
+      "Right clavicle"
+    ],
     "info": {
       "articulations": "The manubrium and first costal cartilage medially at the sternoclavicular joint, and the acromion of the scapula laterally at the acromioclavicular joint.",
       "landmarks": "Sternal end, acromial end, conoid tubercle and trapezoid line below the lateral third, and the subclavian groove for subclavius.",
@@ -1040,12 +1400,21 @@
   {
     "slug": "scapula",
     "displayName": "Scapula",
-    "synonyms": ["scapula", "shoulder blade", "shoulderblade", "wing bone"],
+    "synonyms": [
+      "scapula",
+      "shoulder blade",
+      "shoulderblade",
+      "wing bone",
+      "scapula bone"
+    ],
     "region": "appendicular",
     "subregion": "shoulder-girdle",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left scapula", "Right scapula"],
+    "meshNames": [
+      "Left scapula",
+      "Right scapula"
+    ],
     "info": {
       "articulations": "The head of the humerus at the glenohumeral joint and the clavicle at the acromioclavicular joint.",
       "landmarks": "Glenoid cavity with supraglenoid and infraglenoid tubercles, spine, acromion, coracoid process, and the supraspinous, infraspinous and subscapular fossae.",
@@ -1055,12 +1424,20 @@
   {
     "slug": "humerus",
     "displayName": "Humerus",
-    "synonyms": ["humerus", "upper arm bone", "arm bone"],
+    "synonyms": [
+      "humerus",
+      "upper arm bone",
+      "arm bone",
+      "humerus bone"
+    ],
     "region": "appendicular",
     "subregion": "arm",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left humerus", "Right humerus"],
+    "meshNames": [
+      "Left humerus",
+      "Right humerus"
+    ],
     "info": {
       "articulations": "The glenoid cavity of the scapula at the shoulder, the ulnar trochlear notch and the head of the radius at the elbow.",
       "landmarks": "Head, anatomical and surgical necks, greater and lesser tubercles with the intertubercular groove, deltoid tuberosity, radial groove, capitulum, trochlea and both epicondyles.",
@@ -1070,12 +1447,21 @@
   {
     "slug": "radius",
     "displayName": "Radius",
-    "synonyms": ["radius", "radius bone", "forearm bone"],
+    "synonyms": [
+      "radius",
+      "radius bone",
+      "forearm bone",
+      "lateral forearm bone",
+      "thumb side forearm bone"
+    ],
     "region": "appendicular",
     "subregion": "forearm",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left radius", "Right radius"],
+    "meshNames": [
+      "Left radius",
+      "Right radius"
+    ],
     "info": {
       "articulations": "The capitulum of the humerus, the ulna at the proximal and distal radioulnar joints, and the scaphoid and lunate at the wrist.",
       "landmarks": "Disc-shaped head, neck, radial tuberosity for biceps, interosseous border, dorsal tubercle of Lister, ulnar notch and styloid process.",
@@ -1085,12 +1471,21 @@
   {
     "slug": "ulna",
     "displayName": "Ulna",
-    "synonyms": ["ulna", "ulna bone", "elbow bone"],
+    "synonyms": [
+      "ulna",
+      "ulna bone",
+      "elbow bone",
+      "medial forearm bone",
+      "pinky side forearm bone"
+    ],
     "region": "appendicular",
     "subregion": "forearm",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left ulna", "Right ulna"],
+    "meshNames": [
+      "Left ulna",
+      "Right ulna"
+    ],
     "info": {
       "articulations": "The trochlea of the humerus at the elbow and the radius at the proximal and distal radioulnar joints; an articular disc separates it from the carpus.",
       "landmarks": "Olecranon, coronoid process, trochlear notch, radial notch, ulnar tuberosity, head and styloid process.",
@@ -1111,7 +1506,10 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left scaphoid", "Right scaphoid"],
+    "meshNames": [
+      "Left scaphoid",
+      "Right scaphoid"
+    ],
     "info": {
       "articulations": "The radius proximally, and the lunate, capitate, trapezium and trapezoid distally and medially.",
       "landmarks": "Proximal and distal poles, the narrow waist, and the palmar tubercle of the scaphoid.",
@@ -1121,12 +1519,19 @@
   {
     "slug": "carpal-lunate",
     "displayName": "Lunate",
-    "synonyms": ["lunate", "lunate bone", "semilunar bone"],
+    "synonyms": [
+      "lunate",
+      "lunate bone",
+      "semilunar bone"
+    ],
     "region": "appendicular",
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left lunate", "Right lunate"],
+    "meshNames": [
+      "Left lunate",
+      "Right lunate"
+    ],
     "info": {
       "articulations": "The radius proximally, scaphoid laterally, triquetrum medially, and the capitate and hamate distally.",
       "landmarks": "Crescent-shaped convex proximal surface, deeply concave distal surface for the capitate, and palmar and dorsal horns.",
@@ -1141,13 +1546,17 @@
       "triquetral",
       "triquetral bone",
       "triangular bone",
-      "pyramidal bone"
+      "pyramidal bone",
+      "triquetrum bone"
     ],
     "region": "appendicular",
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left triquetral", "Right triquetral"],
+    "meshNames": [
+      "Left triquetral",
+      "Right triquetral"
+    ],
     "info": {
       "articulations": "The lunate laterally, the pisiform on its palmar surface, and the hamate distally; the articular disc separates it from the ulna.",
       "landmarks": "Pyramidal body, oval palmar facet for the pisiform, and the proximal facet that meets the triangular articular disc.",
@@ -1157,12 +1566,19 @@
   {
     "slug": "carpal-pisiform",
     "displayName": "Pisiform",
-    "synonyms": ["pisiform", "pisiform bone"],
+    "synonyms": [
+      "pisiform",
+      "pisiform bone",
+      "pea bone"
+    ],
     "region": "appendicular",
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left pisiform", "Right pisiform"],
+    "meshNames": [
+      "Left pisiform",
+      "Right pisiform"
+    ],
     "info": {
       "articulations": "The triquetrum alone, by a single flat facet on its dorsal surface.",
       "landmarks": "Pea-shaped body with one flat dorsal facet, and the palmar attachments of flexor carpi ulnaris and the pisohamate and pisometacarpal ligaments.",
@@ -1172,12 +1588,19 @@
   {
     "slug": "carpal-trapezium",
     "displayName": "Trapezium",
-    "synonyms": ["trapezium", "trapezium bone", "greater multangular"],
+    "synonyms": [
+      "trapezium",
+      "trapezium bone",
+      "greater multangular"
+    ],
     "region": "appendicular",
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left trapezium", "Right trapezium"],
+    "meshNames": [
+      "Left trapezium",
+      "Right trapezium"
+    ],
     "info": {
       "articulations": "The scaphoid proximally, the trapezoid medially, and the first and second metacarpals distally.",
       "landmarks": "Saddle-shaped distal facet for the thumb, tubercle of the trapezium, and the groove for the flexor carpi radialis tendon.",
@@ -1187,12 +1610,19 @@
   {
     "slug": "carpal-trapezoid",
     "displayName": "Trapezoid",
-    "synonyms": ["trapezoid", "trapezoid bone", "lesser multangular"],
+    "synonyms": [
+      "trapezoid",
+      "trapezoid bone",
+      "lesser multangular"
+    ],
     "region": "appendicular",
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left trapezoid", "Right trapezoid"],
+    "meshNames": [
+      "Left trapezoid",
+      "Right trapezoid"
+    ],
     "info": {
       "articulations": "The scaphoid proximally, the trapezium laterally, the capitate medially, and the second metacarpal distally.",
       "landmarks": "Wedge or boot shape with a broad dorsal and narrow palmar surface, and a saddle-shaped distal facet for the second metacarpal.",
@@ -1202,12 +1632,19 @@
   {
     "slug": "carpal-capitate",
     "displayName": "Capitate",
-    "synonyms": ["capitate", "capitate bone", "os magnum"],
+    "synonyms": [
+      "capitate",
+      "capitate bone",
+      "os magnum"
+    ],
     "region": "appendicular",
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left capitate", "Right capitate"],
+    "meshNames": [
+      "Left capitate",
+      "Right capitate"
+    ],
     "info": {
       "articulations": "The scaphoid and lunate proximally, the trapezoid laterally, the hamate medially, and the second, third and fourth metacarpals distally.",
       "landmarks": "Rounded head, constricted neck, body, and the broad distal facet for the third metacarpal.",
@@ -1217,12 +1654,19 @@
   {
     "slug": "carpal-hamate",
     "displayName": "Hamate",
-    "synonyms": ["hamate", "hamate bone", "unciform bone"],
+    "synonyms": [
+      "hamate",
+      "hamate bone",
+      "unciform bone"
+    ],
     "region": "appendicular",
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left hamate", "Right hamate"],
+    "meshNames": [
+      "Left hamate",
+      "Right hamate"
+    ],
     "info": {
       "articulations": "The lunate and triquetrum proximally, the capitate laterally, and the fourth and fifth metacarpals distally.",
       "landmarks": "Wedge-shaped body, the hook or hamulus projecting from the palmar surface, and two distal facets for the ulnar two metacarpals.",
@@ -1246,7 +1690,10 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left first metacarpal bone", "Right first metacarpal bone"],
+    "meshNames": [
+      "Left first metacarpal bone",
+      "Right first metacarpal bone"
+    ],
     "info": {
       "articulations": "The trapezium at the saddle-shaped carpometacarpal joint and the proximal phalanx of the thumb at the metacarpophalangeal joint.",
       "landmarks": "Saddle-shaped base, short stout shaft, rounded head, and two sesamoid bones on the palmar side of the head.",
@@ -1269,7 +1716,10 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left second metacarpal bone", "Right second metacarpal bone"],
+    "meshNames": [
+      "Left second metacarpal bone",
+      "Right second metacarpal bone"
+    ],
     "info": {
       "articulations": "The trapezoid mainly, plus the trapezium and capitate, the third metacarpal, and the proximal phalanx of the index finger.",
       "landmarks": "Deeply notched base gripping the trapezoid, long slender shaft, and a rounded head forming the index knuckle.",
@@ -1292,7 +1742,10 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left third metacarpal bone", "Right third metacarpal bone"],
+    "meshNames": [
+      "Left third metacarpal bone",
+      "Right third metacarpal bone"
+    ],
     "info": {
       "articulations": "The capitate proximally, the second and fourth metacarpals on either side, and the proximal phalanx of the middle finger.",
       "landmarks": "Base with a dorsolateral styloid process, shaft, and rounded head forming the most prominent knuckle.",
@@ -1315,7 +1768,10 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left fourth metacarpal bone", "Right fourth metacarpal bone"],
+    "meshNames": [
+      "Left fourth metacarpal bone",
+      "Right fourth metacarpal bone"
+    ],
     "info": {
       "articulations": "The capitate and hamate proximally, the third and fifth metacarpals on either side, and the proximal phalanx of the ring finger.",
       "landmarks": "Small square base with two proximal facets, the slimmest shaft of the metacarpals, and a rounded head.",
@@ -1339,7 +1795,10 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left fifth metacarpal bone", "Right fifth metacarpal bone"],
+    "meshNames": [
+      "Left fifth metacarpal bone",
+      "Right fifth metacarpal bone"
+    ],
     "info": {
       "articulations": "The hamate proximally, the fourth metacarpal laterally, and the proximal phalanx of the little finger distally.",
       "landmarks": "Base with a single hamate facet and a tubercle for extensor carpi ulnaris, shaft, and rounded head.",
@@ -1359,7 +1818,10 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Proximal phalanx of left thumb", "Proximal phalanx of right thumb"],
+    "meshNames": [
+      "Proximal phalanx of left thumb",
+      "Proximal phalanx of right thumb"
+    ],
     "info": {
       "articulations": "The head of the first metacarpal at the metacarpophalangeal joint and the distal phalanx of the thumb at the interphalangeal joint.",
       "landmarks": "Concave oval base, palmar-flattened shaft, and a pulley-like trochlear head.",
@@ -1379,7 +1841,10 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Distal phalanx of left thumb", "Distal phalanx of right thumb"],
+    "meshNames": [
+      "Distal phalanx of left thumb",
+      "Distal phalanx of right thumb"
+    ],
     "info": {
       "articulations": "The proximal phalanx of the thumb alone, at the interphalangeal joint.",
       "landmarks": "Base, short broad shaft, and the distal tuberosity supporting the nail bed and pulp.",
@@ -1422,7 +1887,10 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Middle phalanx of left index finger", "Middle phalanx of right index finger"],
+    "meshNames": [
+      "Middle phalanx of left index finger",
+      "Middle phalanx of right index finger"
+    ],
     "info": {
       "articulations": "The proximal phalanx of the index finger at the proximal interphalangeal joint and its distal phalanx at the distal interphalangeal joint.",
       "landmarks": "Base with two shallow concavities, shaft bearing the flexor digitorum superficialis slips, and a trochlear head.",
@@ -1442,7 +1910,10 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Distal phalanx of left index finger", "Distal phalanx of right index finger"],
+    "meshNames": [
+      "Distal phalanx of left index finger",
+      "Distal phalanx of right index finger"
+    ],
     "info": {
       "articulations": "The middle phalanx of the index finger alone, at the distal interphalangeal joint.",
       "landmarks": "Base, short flattened shaft, and the distal tuberosity, the apical tuft that supports the nail bed and fingertip pulp.",
@@ -1485,7 +1956,10 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Middle phalanx of left middle finger", "Middle phalanx of right middle finger"],
+    "meshNames": [
+      "Middle phalanx of left middle finger",
+      "Middle phalanx of right middle finger"
+    ],
     "info": {
       "articulations": "The proximal phalanx of the middle finger at the proximal interphalangeal joint and its distal phalanx at the distal interphalangeal joint.",
       "landmarks": "Base with two shallow concavities, shaft bearing the flexor digitorum superficialis slips, and a trochlear head.",
@@ -1505,7 +1979,10 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Distal phalanx of left middle finger", "Distal phalanx of right middle finger"],
+    "meshNames": [
+      "Distal phalanx of left middle finger",
+      "Distal phalanx of right middle finger"
+    ],
     "info": {
       "articulations": "The middle phalanx of the middle finger alone, at the distal interphalangeal joint.",
       "landmarks": "Base, short flattened shaft, and the distal tuberosity, the apical tuft that supports the nail bed and fingertip pulp.",
@@ -1525,7 +2002,10 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Proximal phalanx of left ring finger", "Proximal phalanx of right ring finger"],
+    "meshNames": [
+      "Proximal phalanx of left ring finger",
+      "Proximal phalanx of right ring finger"
+    ],
     "info": {
       "articulations": "The head of the fourth metacarpal at the metacarpophalangeal joint and the middle phalanx of the ring finger at the proximal interphalangeal joint.",
       "landmarks": "Concave oval base for the metacarpal head, palmar-flattened shaft with ridges for the fibrous flexor sheath, and a trochlear head.",
@@ -1545,7 +2025,10 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Middle phalanx of left ring finger", "Middle phalanx of right ring finger"],
+    "meshNames": [
+      "Middle phalanx of left ring finger",
+      "Middle phalanx of right ring finger"
+    ],
     "info": {
       "articulations": "The proximal phalanx of the ring finger at the proximal interphalangeal joint and its distal phalanx at the distal interphalangeal joint.",
       "landmarks": "Base with two shallow concavities, shaft bearing the flexor digitorum superficialis slips, and a trochlear head.",
@@ -1565,7 +2048,10 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Distal phalanx of left ring finger", "Distal phalanx of right ring finger"],
+    "meshNames": [
+      "Distal phalanx of left ring finger",
+      "Distal phalanx of right ring finger"
+    ],
     "info": {
       "articulations": "The middle phalanx of the ring finger alone, at the distal interphalangeal joint.",
       "landmarks": "Base, short flattened shaft, and the distal tuberosity, the apical tuft that supports the nail bed and fingertip pulp.",
@@ -1608,7 +2094,10 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Middle phalanx of left little finger", "Middle phalanx of right little finger"],
+    "meshNames": [
+      "Middle phalanx of left little finger",
+      "Middle phalanx of right little finger"
+    ],
     "info": {
       "articulations": "The proximal phalanx of the little finger at the proximal interphalangeal joint and its distal phalanx at the distal interphalangeal joint.",
       "landmarks": "Base with two shallow concavities, shaft bearing the flexor digitorum superficialis slips, and a trochlear head.",
@@ -1628,7 +2117,10 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": ["Distal phalanx of left little finger", "Distal phalanx of right little finger"],
+    "meshNames": [
+      "Distal phalanx of left little finger",
+      "Distal phalanx of right little finger"
+    ],
     "info": {
       "articulations": "The middle phalanx of the little finger alone, at the distal interphalangeal joint.",
       "landmarks": "Base, short flattened shaft, and the distal tuberosity, the apical tuft that supports the nail bed and fingertip pulp.",
@@ -1638,12 +2130,30 @@
   {
     "slug": "hip-bone",
     "displayName": "Hip bone",
-    "synonyms": ["hip bone", "hipbone", "coxal bone", "os coxae", "innominate bone", "pelvic bone"],
+    "synonyms": [
+      "hip bone",
+      "hipbone",
+      "coxal bone",
+      "os coxae",
+      "innominate bone",
+      "pelvic bone",
+      "ilium",
+      "ischium",
+      "pubis",
+      "pubic bone",
+      "innominate",
+      "os innominatum",
+      "coxa",
+      "iliac bone"
+    ],
     "region": "appendicular",
     "subregion": "pelvic-girdle",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left hip bone", "Right hip bone"],
+    "meshNames": [
+      "Left hip bone",
+      "Right hip bone"
+    ],
     "info": {
       "articulations": "Femur at the acetabulum, the sacrum at the sacroiliac joint, and the opposite hip bone at the pubic symphysis.",
       "landmarks": "A fusion of ilium, ischium and pubis; note the acetabulum, obturator foramen, iliac crest and ischial tuberosity.",
@@ -1653,12 +2163,22 @@
   {
     "slug": "femur",
     "displayName": "Femur",
-    "synonyms": ["femur", "thigh bone", "thighbone", "upper leg bone"],
+    "synonyms": [
+      "femur",
+      "thigh bone",
+      "thighbone",
+      "upper leg bone",
+      "os femoris",
+      "femur bone"
+    ],
     "region": "appendicular",
     "subregion": "thigh",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left femur", "Right femur"],
+    "meshNames": [
+      "Left femur",
+      "Right femur"
+    ],
     "info": {
       "articulations": "Hip bone at the acetabulum, the tibia at the knee, and the patella in front; it never touches the fibula.",
       "landmarks": "Head with its fovea, neck, greater and lesser trochanters, linea aspera, and the medial and lateral condyles.",
@@ -1668,12 +2188,21 @@
   {
     "slug": "patella",
     "displayName": "Patella",
-    "synonyms": ["patella", "kneecap", "knee cap", "knee bone"],
+    "synonyms": [
+      "patella",
+      "kneecap",
+      "knee cap",
+      "knee bone",
+      "patella bone"
+    ],
     "region": "appendicular",
     "subregion": "thigh",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left patella", "Right patella"],
+    "meshNames": [
+      "Left patella",
+      "Right patella"
+    ],
     "info": {
       "articulations": "Only the femur, gliding on the patellar surface between the femoral condyles; it does not touch the tibia.",
       "landmarks": "Broad base above, pointed apex below, and posterior medial and lateral facets separated by a vertical ridge.",
@@ -1683,12 +2212,22 @@
   {
     "slug": "tibia",
     "displayName": "Tibia",
-    "synonyms": ["tibia", "shin bone", "shinbone", "shank bone"],
+    "synonyms": [
+      "tibia",
+      "shin bone",
+      "shinbone",
+      "shank bone",
+      "shin",
+      "tibia bone"
+    ],
     "region": "appendicular",
     "subregion": "leg",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left tibia", "Right tibia"],
+    "meshNames": [
+      "Left tibia",
+      "Right tibia"
+    ],
     "info": {
       "articulations": "Femur at the knee, the fibula at the proximal and distal tibiofibular joints, and the talus at the ankle.",
       "landmarks": "Medial and lateral condyles, intercondylar eminence, tibial tuberosity, sharp subcutaneous anterior border, and the medial malleolus.",
@@ -1698,12 +2237,22 @@
   {
     "slug": "fibula",
     "displayName": "Fibula",
-    "synonyms": ["fibula", "calf bone", "splint bone"],
+    "synonyms": [
+      "fibula",
+      "calf bone",
+      "splint bone",
+      "fibula bone",
+      "peroneal bone",
+      "perone"
+    ],
     "region": "appendicular",
     "subregion": "leg",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left fibula", "Right fibula"],
+    "meshNames": [
+      "Left fibula",
+      "Right fibula"
+    ],
     "info": {
       "articulations": "Tibia above and below at the tibiofibular joints, and the talus laterally through the lateral malleolus.",
       "landmarks": "Head with its apex, the neck, a slender shaft, and the lateral malleolus with its malleolar fossa.",
@@ -1713,12 +2262,22 @@
   {
     "slug": "tarsal-calcaneus",
     "displayName": "Calcaneus",
-    "synonyms": ["calcaneus", "heel bone", "heelbone", "os calcis", "calcaneum"],
+    "synonyms": [
+      "calcaneus",
+      "heel bone",
+      "heelbone",
+      "os calcis",
+      "calcaneum",
+      "calcaneus bone"
+    ],
     "region": "appendicular",
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left calcaneus", "Right calcaneus"],
+    "meshNames": [
+      "Left calcaneus",
+      "Right calcaneus"
+    ],
     "info": {
       "articulations": "Talus above at the subtalar joint and the cuboid in front at the calcaneocuboid joint.",
       "landmarks": "Calcaneal tuberosity, sustentaculum tali, the fibular (peroneal) trochlea, and the groove for flexor hallucis longus.",
@@ -1728,12 +2287,21 @@
   {
     "slug": "tarsal-talus",
     "displayName": "Talus",
-    "synonyms": ["talus", "ankle bone", "anklebone", "astragalus"],
+    "synonyms": [
+      "talus",
+      "ankle bone",
+      "anklebone",
+      "astragalus",
+      "talus bone"
+    ],
     "region": "appendicular",
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left talus", "Right talus"],
+    "meshNames": [
+      "Left talus",
+      "Right talus"
+    ],
     "info": {
       "articulations": "Tibia and fibula above at the ankle, the calcaneus below, and the navicular in front.",
       "landmarks": "Head, neck and body, with the trochlea above plus lateral and posterior processes grooved for flexor hallucis longus.",
@@ -1748,13 +2316,19 @@
       "navicular bone",
       "navicular bone of foot",
       "scaphoid of foot",
-      "scaphoid of the foot"
+      "scaphoid of the foot",
+      "navicular of the foot",
+      "foot navicular",
+      "navicular of foot"
     ],
     "region": "appendicular",
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Navicular bone of left foot", "Navicular bone of right foot"],
+    "meshNames": [
+      "Navicular bone of left foot",
+      "Navicular bone of right foot"
+    ],
     "info": {
       "articulations": "Talus behind, the three cuneiforms in front, and sometimes the cuboid laterally.",
       "landmarks": "Concave posterior facet for the talar head, three anterior cuneiform facets, and the prominent navicular tuberosity medially.",
@@ -1764,12 +2338,18 @@
   {
     "slug": "tarsal-cuboid",
     "displayName": "Cuboid",
-    "synonyms": ["cuboid", "cuboid bone"],
+    "synonyms": [
+      "cuboid",
+      "cuboid bone"
+    ],
     "region": "appendicular",
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left cuboid bone", "Right cuboid bone"],
+    "meshNames": [
+      "Left cuboid bone",
+      "Right cuboid bone"
+    ],
     "info": {
       "articulations": "Calcaneus behind, the fourth and fifth metatarsals in front, the lateral cuneiform medially, and sometimes the navicular.",
       "landmarks": "Cuboid tuberosity and, on the plantar surface, the distinctive groove for the fibularis longus tendon.",
@@ -1790,7 +2370,10 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left medial cuneiform bone", "Right medial cuneiform bone"],
+    "meshNames": [
+      "Left medial cuneiform bone",
+      "Right medial cuneiform bone"
+    ],
     "info": {
       "articulations": "Navicular behind, the first metatarsal in front, the intermediate cuneiform laterally, and the base of the second metatarsal.",
       "landmarks": "Wedge shape with its broad base plantar, a kidney-shaped anterior facet, and the tibialis anterior insertion medially.",
@@ -1811,7 +2394,10 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left intermediate cuneiform bone", "Right intermediate cuneiform bone"],
+    "meshNames": [
+      "Left intermediate cuneiform bone",
+      "Right intermediate cuneiform bone"
+    ],
     "info": {
       "articulations": "Navicular behind, the second metatarsal in front, and the medial and lateral cuneiforms on either side.",
       "landmarks": "Wedge shape with its broad base facing dorsally, a small anterior facet, and flanking medial and lateral facets.",
@@ -1832,7 +2418,10 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left lateral cuneiform bone", "Right lateral cuneiform bone"],
+    "meshNames": [
+      "Left lateral cuneiform bone",
+      "Right lateral cuneiform bone"
+    ],
     "info": {
       "articulations": "Navicular behind, third metatarsal in front, intermediate cuneiform and cuboid at its sides, plus the second and fourth metatarsal bases.",
       "landmarks": "Wedge shape with its base dorsal, an anterior facet for the third metatarsal, and a lateral facet for the cuboid.",
@@ -1856,7 +2445,10 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left first metatarsal bone", "Right first metatarsal bone"],
+    "meshNames": [
+      "Left first metatarsal bone",
+      "Right first metatarsal bone"
+    ],
     "info": {
       "articulations": "Medial cuneiform at its base and the proximal phalanx of the great toe at its head.",
       "landmarks": "Base with a kidney-shaped cuneiform facet, a short thick shaft, and a head grooved below for two sesamoids.",
@@ -1878,7 +2470,10 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left second metatarsal bone", "Right second metatarsal bone"],
+    "meshNames": [
+      "Left second metatarsal bone",
+      "Right second metatarsal bone"
+    ],
     "info": {
       "articulations": "All three cuneiforms at its recessed base, the first and third metatarsals at its sides, and its proximal phalanx.",
       "landmarks": "Base wedged between the cuneiforms, the longest shaft of the metatarsals, and a rounded head.",
@@ -1900,7 +2495,10 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left third metatarsal bone", "Right third metatarsal bone"],
+    "meshNames": [
+      "Left third metatarsal bone",
+      "Right third metatarsal bone"
+    ],
     "info": {
       "articulations": "Lateral cuneiform at its base, the second and fourth metatarsals at its sides, and its proximal phalanx in front.",
       "landmarks": "Base with facets for the lateral cuneiform and neighbouring metatarsals, a slender shaft, and a rounded head.",
@@ -1922,7 +2520,10 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left fourth metatarsal bone", "Right fourth metatarsal bone"],
+    "meshNames": [
+      "Left fourth metatarsal bone",
+      "Right fourth metatarsal bone"
+    ],
     "info": {
       "articulations": "Cuboid at its base, the lateral cuneiform medially, the third and fifth metatarsals beside it, and its proximal phalanx.",
       "landmarks": "Base carrying both cuboid and cuneiform facets, a slender shaft, and a rounded head.",
@@ -1946,11 +2547,55 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Left fifth metatarsal bone", "Right fifth metatarsal bone"],
+    "meshNames": [
+      "Left fifth metatarsal bone",
+      "Right fifth metatarsal bone"
+    ],
     "info": {
       "articulations": "Cuboid at its base, the fourth metatarsal medially, and the proximal phalanx of the fifth toe.",
       "landmarks": "Prominent tuberosity (styloid process) on the lateral base for fibularis brevis, plus the shaft and head.",
       "fact": "Inversion injury can avulse that tuberosity; a fracture just distal to it is the Jones fracture."
+    }
+  },
+  {
+    "slug": "sesamoid-hallux",
+    "displayName": "Hallux sesamoids",
+    "synonyms": [
+      "hallux sesamoids",
+      "hallux sesamoid",
+      "hallux sesamoid bones",
+      "sesamoid",
+      "sesamoids",
+      "sesamoid bone",
+      "sesamoid bones",
+      "sesamoid bones of the foot",
+      "foot sesamoids",
+      "foot sesamoid",
+      "great toe sesamoids",
+      "great toe sesamoid",
+      "big toe sesamoids",
+      "big toe sesamoid",
+      "tibial sesamoid",
+      "fibular sesamoid",
+      "medial sesamoid",
+      "lateral sesamoid",
+      "first metatarsal sesamoids",
+      "sesamoids of the first metatarsal"
+    ],
+    "region": "appendicular",
+    "subregion": "foot",
+    "paired": true,
+    "optional": false,
+    "meshNames": [
+      "Sesamoid bone of left foot (FJ3266)",
+      "Sesamoid bone of left foot (FJ3270)",
+      "Sesamoid bone of right foot (FJ3372)",
+      "Sesamoid bone of right foot (FJ3376)"
+    ],
+    "info": {
+      "articulations": "The plantar surface of the first metatarsal head, one on each side of the flexor hallucis longus tendon.",
+      "landmarks": "A medial (tibial) and a lateral (fibular) sesamoid, each with a dorsal facet and a crista between them on the metatarsal.",
+      "fact": "Embedded in the flexor hallucis brevis tendons, they take the load in push-off; sesamoiditis and turf toe injure them."
     }
   },
   {
@@ -1970,7 +2615,10 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Proximal phalanx of left big toe", "Proximal phalanx of right big toe"],
+    "meshNames": [
+      "Proximal phalanx of left big toe",
+      "Proximal phalanx of right big toe"
+    ],
     "info": {
       "articulations": "First metatarsal at its base and the distal phalanx of the great toe at its head.",
       "landmarks": "Concave oval base, a short stout shaft, and a trochlear head; flexor hallucis brevis attaches at the base.",
@@ -1993,7 +2641,10 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Distal phalanx of left big toe", "Distal phalanx of right big toe"],
+    "meshNames": [
+      "Distal phalanx of left big toe",
+      "Distal phalanx of right big toe"
+    ],
     "info": {
       "articulations": "Only the proximal phalanx of the great toe, at its base.",
       "landmarks": "Base, a very short shaft, and a flattened distal tuberosity supporting the nail bed.",
@@ -2014,7 +2665,10 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Proximal phalanx of left second toe", "Proximal phalanx of right second toe"],
+    "meshNames": [
+      "Proximal phalanx of left second toe",
+      "Proximal phalanx of right second toe"
+    ],
     "info": {
       "articulations": "Second metatarsal at its base and the middle phalanx of the second toe at its head.",
       "landmarks": "Concave base, a slender shaft, and a trochlear head, with the extensor expansion spread over its dorsal surface.",
@@ -2035,7 +2689,10 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Middle phalanx of left second toe", "Middle phalanx of right second toe"],
+    "meshNames": [
+      "Middle phalanx of left second toe",
+      "Middle phalanx of right second toe"
+    ],
     "info": {
       "articulations": "Proximal phalanx behind and the distal phalanx of the second toe in front.",
       "landmarks": "Broad base with two concave facets, a very short shaft, and a small trochlear head.",
@@ -2056,7 +2713,10 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Distal phalanx of left second toe", "Distal phalanx of right second toe"],
+    "meshNames": [
+      "Distal phalanx of left second toe",
+      "Distal phalanx of right second toe"
+    ],
     "info": {
       "articulations": "Only the middle phalanx of the second toe, at its base.",
       "landmarks": "Base, a tiny shaft, and a distal tuberosity that broadens to support the nail.",
@@ -2077,7 +2737,10 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Proximal phalanx of left third toe", "Proximal phalanx of right third toe"],
+    "meshNames": [
+      "Proximal phalanx of left third toe",
+      "Proximal phalanx of right third toe"
+    ],
     "info": {
       "articulations": "Third metatarsal at its base and the middle phalanx of the third toe at its head.",
       "landmarks": "Concave base, slender shaft, and trochlear head, with lumbricals and interossei attaching near the base.",
@@ -2098,7 +2761,10 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Middle phalanx of left third toe", "Middle phalanx of right third toe"],
+    "meshNames": [
+      "Middle phalanx of left third toe",
+      "Middle phalanx of right third toe"
+    ],
     "info": {
       "articulations": "Proximal phalanx behind and the distal phalanx of the third toe in front.",
       "landmarks": "Broad base with paired concave facets, a short shaft, and a small trochlear head.",
@@ -2119,7 +2785,10 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Distal phalanx of left third toe", "Distal phalanx of right third toe"],
+    "meshNames": [
+      "Distal phalanx of left third toe",
+      "Distal phalanx of right third toe"
+    ],
     "info": {
       "articulations": "Only the middle phalanx of the third toe, at its base.",
       "landmarks": "Base, a very short shaft, and a flattened tuberosity lying under the nail.",
@@ -2140,7 +2809,10 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Proximal phalanx of left fourth toe", "Proximal phalanx of right fourth toe"],
+    "meshNames": [
+      "Proximal phalanx of left fourth toe",
+      "Proximal phalanx of right fourth toe"
+    ],
     "info": {
       "articulations": "Fourth metatarsal at its base and the middle phalanx of the fourth toe at its head.",
       "landmarks": "Concave base, slender shaft, and trochlear head, with the plantar plate and extensor expansion attached around it.",
@@ -2161,7 +2833,10 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Middle phalanx of left fourth toe", "Middle phalanx of right fourth toe"],
+    "meshNames": [
+      "Middle phalanx of left fourth toe",
+      "Middle phalanx of right fourth toe"
+    ],
     "info": {
       "articulations": "Proximal phalanx behind and the distal phalanx of the fourth toe in front.",
       "landmarks": "Broad base with two facets, a stubby shaft, and a small trochlear head.",
@@ -2182,7 +2857,10 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Distal phalanx of left fourth toe", "Distal phalanx of right fourth toe"],
+    "meshNames": [
+      "Distal phalanx of left fourth toe",
+      "Distal phalanx of right fourth toe"
+    ],
     "info": {
       "articulations": "Only the middle phalanx of the fourth toe, at its base.",
       "landmarks": "Base, barely any shaft, and a small distal tuberosity beneath the nail.",
@@ -2204,7 +2882,10 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Proximal phalanx of left little toe", "Proximal phalanx of right little toe"],
+    "meshNames": [
+      "Proximal phalanx of left little toe",
+      "Proximal phalanx of right little toe"
+    ],
     "info": {
       "articulations": "Fifth metatarsal at its base and the middle phalanx of the fifth toe at its head.",
       "landmarks": "Concave base, short shaft, and trochlear head, with flexor digiti minimi brevis attaching at the base.",
@@ -2226,7 +2907,10 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Middle phalanx of left little toe", "Middle phalanx of right little toe"],
+    "meshNames": [
+      "Middle phalanx of left little toe",
+      "Middle phalanx of right little toe"
+    ],
     "info": {
       "articulations": "Proximal phalanx behind and, when it stays separate, the distal phalanx of the fifth toe in front.",
       "landmarks": "Small base, almost no shaft, and a tiny head; it is often fused with the distal phalanx.",
@@ -2248,7 +2932,10 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": ["Distal phalanx of left little toe", "Distal phalanx of right little toe"],
+    "meshNames": [
+      "Distal phalanx of left little toe",
+      "Distal phalanx of right little toe"
+    ],
     "info": {
       "articulations": "Only the middle phalanx of the fifth toe, at its base, when the two have not fused.",
       "landmarks": "Base, minimal shaft, and a small tuberosity supporting the nail.",

@@ -4,14 +4,13 @@ import { SearchIndex } from './data/search'
 import { heatToColor } from './game/distance'
 import { pickAnswer, pushRecent, readRecent } from './game/random'
 import { initialState, reduce, type GameState } from './game/state'
-import { readStats, recordWin, writeStats, type Stats } from './game/stats'
 import type { BoneColors } from './three/Skeleton'
+import { BoneListModal } from './ui/BoneListModal'
 import { DebugPanel } from './ui/DebugPanel'
 import { GuessInput } from './ui/GuessInput'
 import { GuessList } from './ui/GuessList'
 import { Header } from './ui/Header'
 import { HelpModal } from './ui/HelpModal'
-import { StatsModal } from './ui/StatsModal'
 import { WinCard } from './ui/WinCard'
 
 const ANSWER_POOL = catalog.filter((b) => !b.optional && b.meshNames.length > 0).map((b) => b.slug)
@@ -19,15 +18,6 @@ const ANSWER_POOL = catalog.filter((b) => !b.optional && b.meshNames.length > 0)
 const Scene = lazy(() => import('./three/Scene').then((m) => ({ default: m.Scene })))
 
 const DEBUG = new URLSearchParams(location.search).has('debug')
-const SEEN_HELP_KEY = 'bonegloble.seenHelp'
-
-function seenHelp(): boolean {
-  try {
-    return localStorage.getItem(SEEN_HELP_KEY) === '1'
-  } catch {
-    return true
-  }
-}
 
 function newAnswer(): string {
   const answer = pickAnswer(ANSWER_POOL, readRecent())
@@ -39,12 +29,11 @@ export default function App() {
   const [geometry, setGeometry] = useState<Geometry | null>(null)
   const [loadError, setLoadError] = useState<string | null>(null)
   const [state, dispatch] = useReducer(reduce, undefined, () => initialState(newAnswer()))
-  const [stats, setStats] = useState<Stats>(() => readStats())
   const [flyTo, setFlyTo] = useState<string | null>(null)
   const [homeToken, setHomeToken] = useState(0)
   const [debugColors, setDebugColors] = useState<BoneColors>({})
-  const [modal, setModal] = useState<'help' | 'stats' | null>(() => (seenHelp() ? null : 'help'))
-  // Bones with no mesh (coccyx is absent from BodyParts3D) cannot be guessed or answered.
+  const [modal, setModal] = useState<'help' | 'bones' | null>('help')
+  // Bones with no mesh (coccyx and auditory ossicles are absent from BodyParts3D) cannot be guessed or answered.
   const index = useMemo(() => new SearchIndex(catalog.filter((b) => b.meshNames.length > 0)), [])
 
   useEffect(() => {
@@ -63,17 +52,10 @@ export default function App() {
     (slug: string) => {
       if (!geometry || state.status !== 'playing' || guessed.has(slug)) return
       dispatch({ type: 'guess', slug, geometry })
-      if (slug === state.answer) {
-        // Win: record stats and frame the answer.
-        setStats((s) => {
-          const next = recordWin(s, state.answer, state.guesses.length + 1)
-          writeStats(next)
-          return next
-        })
-        setFlyTo(slug)
-      }
+      // Win: frame the answer.
+      if (slug === state.answer) setFlyTo(slug)
     },
-    [geometry, state.status, state.answer, state.guesses.length, guessed],
+    [geometry, state.status, state.answer, guessed],
   )
 
   const playAgain = useCallback(() => {
@@ -84,14 +66,7 @@ export default function App() {
 
   const debugState = (s: GameState) => (DEBUG ? ` · answer: ${s.answer}` : '')
 
-  const closeModal = useCallback(() => {
-    setModal(null)
-    try {
-      localStorage.setItem(SEEN_HELP_KEY, '1')
-    } catch {
-      /* ignore */
-    }
-  }, [])
+  const closeModal = useCallback(() => setModal(null), [])
 
   return (
     <div className="app">
@@ -102,7 +77,7 @@ export default function App() {
       </div>
       <Header
         onHelp={() => setModal('help')}
-        onStats={() => setModal('stats')}
+        onBones={() => setModal('bones')}
         onHome={() => setHomeToken((t) => t + 1)}
       />
       <aside className="panel">
@@ -127,7 +102,7 @@ export default function App() {
         <WinCard answer={state.answer} guessCount={state.guesses.length} onPlayAgain={playAgain} />
       )}
       {modal === 'help' && <HelpModal onClose={closeModal} />}
-      {modal === 'stats' && <StatsModal stats={stats} onClose={closeModal} />}
+      {modal === 'bones' && <BoneListModal slugs={ANSWER_POOL} onClose={closeModal} />}
       {DEBUG && <DebugPanel colors={debugColors} onChange={setDebugColors} onFlyTo={setFlyTo} />}
     </div>
   )
