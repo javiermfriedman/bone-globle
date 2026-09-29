@@ -5,6 +5,14 @@ import { slugByMeshName } from '../data/catalog'
 
 export const SKELETON_URL = '/models/skeleton.glb'
 
+/** three's GLTFLoader runs every node name through PropertyBinding.sanitizeNodeName. */
+export const sanitizeNodeName = (name: string): string =>
+  THREE.PropertyBinding.sanitizeNodeName(name)
+
+const slugBySanitizedName = new Map<string, string>(
+  [...slugByMeshName].map(([mesh, slug]) => [sanitizeNodeName(mesh), slug]),
+)
+
 /** slug -> CSS color for every currently highlighted bone. */
 export type BoneColors = Record<string, string>
 
@@ -50,11 +58,13 @@ export function Skeleton({ colors, onReady }: Props) {
       if (!(obj as THREE.Mesh).isMesh) return
       const mesh = obj as THREE.Mesh
       // Node name lives on the mesh itself, or on its parent when the loader wraps it.
+      // GLTFLoader sanitizes node names ("Left femur" -> "Left_femur"), so look the
+      // catalog up through the same transform.
       const name = mesh.name || mesh.parent?.name || ''
       meshes.set(name, mesh)
       mesh.material = BASE_MATERIAL
       mesh.renderOrder = 0
-      const slug = slugByMeshName.get(name)
+      const slug = slugBySanitizedName.get(name)
       if (slug) {
         const list = meshesBySlug.get(slug) ?? []
         list.push(mesh)
