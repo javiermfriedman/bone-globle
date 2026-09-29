@@ -92,9 +92,9 @@ export default function App() {
         />
         {loadError && <div className="guess-error">Failed to load geometry: {loadError}</div>}
         {!geometry && !loadError && <div className="muted">Loading skeleton…</div>}
-        <div className="muted small">
-          {state.guesses.length} {state.guesses.length === 1 ? 'guess' : 'guesses'}
-          {debugState(state)}
+        <div className="panel-label">
+          <span>Guesses{debugState(state)}</span>
+          <span className="count">{state.guesses.length}</span>
         </div>
         <GuessList guesses={state.guesses} answer={state.answer} onSelect={setFlyTo} />
       </aside>

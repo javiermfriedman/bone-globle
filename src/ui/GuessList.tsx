@@ -15,11 +15,20 @@ export function GuessList({ guesses, answer, onSelect }: Props) {
   return (
     <ol className="guess-list">
       {sortedByHeat(guesses).map((g) => {
-        const color = heatToColor(g.heat, g.slug === answer)
+        const isAnswer = g.slug === answer
+        const color = heatToColor(g.heat, isAnswer)
+        const fill = isAnswer ? 1 : Math.max(0.04, g.heat)
         return (
-          <li key={g.slug} onClick={() => onSelect?.(g.slug)}>
-            <span className="swatch" style={{ background: color }} />
+          <li
+            key={g.slug}
+            className={isAnswer ? 'found' : undefined}
+            onClick={() => onSelect?.(g.slug)}
+          >
+            <span className="swatch" style={{ background: color, color }} />
             <span className="name">{getBone(g.slug).displayName}</span>
+            <span className="heat-bar" aria-hidden>
+              <span style={{ width: `${fill * 100}%`, background: color }} />
+            </span>
           </li>
         )
       })}

@@ -6,8 +6,7 @@ import { slugByMeshName } from '../data/catalog'
 export const SKELETON_URL = '/models/skeleton.glb'
 
 /** three's GLTFLoader runs every node name through PropertyBinding.sanitizeNodeName. */
-const sanitizeNodeName = (name: string): string =>
-  THREE.PropertyBinding.sanitizeNodeName(name)
+const sanitizeNodeName = (name: string): string => THREE.PropertyBinding.sanitizeNodeName(name)
 
 const slugBySanitizedName = new Map<string, string>(
   [...slugByMeshName].map(([mesh, slug]) => [sanitizeNodeName(mesh), slug]),

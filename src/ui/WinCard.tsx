@@ -11,21 +11,24 @@ export function WinCard({ answer, guessCount, onPlayAgain }: Props) {
   const region = `${bone.region} · ${bone.subregion.replace(/-/g, ' ')}`
   return (
     <div className="win-card" role="dialog" aria-label="You found the bone">
+      <div className="win-eyebrow">
+        <span className="win-dot" />
+        Found in {guessCount} {guessCount === 1 ? 'guess' : 'guesses'}
+      </div>
       <div className="win-title">
         {bone.displayName}
         <small>{region}</small>
       </div>
-      <p className="win-guesses">
-        Found in {guessCount} {guessCount === 1 ? 'guess' : 'guesses'}.
-      </p>
       {bone.info.articulations && (
         <p>
-          <b>Articulates with:</b> {bone.info.articulations}
+          <b>Articulates with</b>
+          {bone.info.articulations}
         </p>
       )}
       {bone.info.landmarks && (
         <p>
-          <b>Landmarks:</b> {bone.info.landmarks}
+          <b>Landmarks</b>
+          {bone.info.landmarks}
         </p>
       )}
       {bone.info.fact && <p className="win-fact">{bone.info.fact}</p>}

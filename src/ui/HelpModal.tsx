@@ -1,7 +1,7 @@
 import { heatToColor } from '../game/distance'
 import { Modal } from './Modal'
 
-const SWATCHES = [0, 0.25, 0.5, 0.75, 1]
+const RAMP_CSS = `linear-gradient(90deg, ${Array.from({ length: 11 }, (_, i) => heatToColor(i / 10)).join(', ')})`
 
 export function HelpModal({ onClose }: { onClose: () => void }) {
   return (
@@ -16,10 +16,8 @@ export function HelpModal({ onClose }: { onClose: () => void }) {
         mystery bone, measured as straight-line distance between the bones themselves:
       </p>
       <div className="ramp">
-        {SWATCHES.map((h) => (
-          <span key={h} style={{ background: heatToColor(h) }} />
-        ))}
-        <span style={{ background: heatToColor(1, true) }} />
+        <span className="ramp-heat" style={{ background: RAMP_CSS }} />
+        <span className="ramp-win" style={{ background: heatToColor(1, true) }} />
       </div>
       <div className="ramp-labels">
         <span>far</span>

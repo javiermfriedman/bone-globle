@@ -35,7 +35,7 @@ describe('heatFor', () => {
 describe('heatToColor', () => {
   it('returns hex colors and green for the answer', () => {
     expect(heatToColor(0)).toMatch(/^#[0-9a-f]{6}$/)
-    expect(heatToColor(1)).toBe('#e11e1e')
+    expect(heatToColor(1)).toBe('#dc2626')
     expect(heatToColor(0.3, true)).toBe(WIN_COLOR)
   })
   it('gets redder as heat rises', () => {
