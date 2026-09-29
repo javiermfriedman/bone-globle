@@ -2,200 +2,122 @@
   {
     "slug": "frontal-bone",
     "displayName": "Frontal bone",
-    "synonyms": [
-      "frontal",
-      "frontal bone",
-      "forehead bone"
-    ],
+    "synonyms": ["frontal", "frontal bone", "forehead bone"],
     "region": "axial",
     "subregion": "skull",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "frontal bone"
-    ],
+    "meshNames": ["Frontal bone"],
     "info": {}
   },
   {
     "slug": "parietal-bone",
     "displayName": "Parietal bone",
-    "synonyms": [
-      "parietal",
-      "parietal bone"
-    ],
+    "synonyms": ["parietal", "parietal bone"],
     "region": "axial",
     "subregion": "skull",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left parietal bone",
-      "right parietal bone"
-    ],
+    "meshNames": ["Left parietal bone", "Right parietal bone"],
     "info": {}
   },
   {
     "slug": "temporal-bone",
     "displayName": "Temporal bone",
-    "synonyms": [
-      "temporal",
-      "temporal bone"
-    ],
+    "synonyms": ["temporal", "temporal bone"],
     "region": "axial",
     "subregion": "skull",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left temporal bone",
-      "right temporal bone"
-    ],
+    "meshNames": ["Left temporal bone", "Right temporal bone"],
     "info": {}
   },
   {
     "slug": "occipital-bone",
     "displayName": "Occipital bone",
-    "synonyms": [
-      "occipital",
-      "occipital bone",
-      "back of skull bone",
-      "back of the skull"
-    ],
+    "synonyms": ["occipital", "occipital bone", "back of skull bone", "back of the skull"],
     "region": "axial",
     "subregion": "skull",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "occipital bone"
-    ],
+    "meshNames": ["Occipital bone"],
     "info": {}
   },
   {
     "slug": "sphenoid-bone",
     "displayName": "Sphenoid bone",
-    "synonyms": [
-      "sphenoid",
-      "sphenoid bone",
-      "butterfly bone",
-      "wasp bone"
-    ],
+    "synonyms": ["sphenoid", "sphenoid bone", "butterfly bone", "wasp bone"],
     "region": "axial",
     "subregion": "skull",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "sphenoid bone"
-    ],
+    "meshNames": ["Sphenoid bone"],
     "info": {}
   },
   {
     "slug": "ethmoid-bone",
     "displayName": "Ethmoid bone",
-    "synonyms": [
-      "ethmoid",
-      "ethmoid bone"
-    ],
+    "synonyms": ["ethmoid", "ethmoid bone"],
     "region": "axial",
     "subregion": "skull",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "ethmoid bone"
-    ],
+    "meshNames": ["Ethmoid"],
     "info": {}
   },
   {
     "slug": "maxilla",
     "displayName": "Maxilla",
-    "synonyms": [
-      "maxilla",
-      "maxillary bone",
-      "upper jaw",
-      "upper jaw bone",
-      "upper jawbone"
-    ],
+    "synonyms": ["maxilla", "maxillary bone", "upper jaw", "upper jaw bone", "upper jawbone"],
     "region": "axial",
     "subregion": "skull",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left maxilla",
-      "right maxilla"
-    ],
+    "meshNames": ["Left maxilla", "Right maxilla"],
     "info": {}
   },
   {
     "slug": "zygomatic-bone",
     "displayName": "Zygomatic bone",
-    "synonyms": [
-      "zygomatic",
-      "zygomatic bone",
-      "cheekbone",
-      "cheek bone",
-      "malar bone",
-      "zygoma"
-    ],
+    "synonyms": ["zygomatic", "zygomatic bone", "cheekbone", "cheek bone", "malar bone", "zygoma"],
     "region": "axial",
     "subregion": "skull",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left zygomatic bone",
-      "right zygomatic bone"
-    ],
+    "meshNames": ["Left zygomatic bone", "Right zygomatic bone"],
     "info": {}
   },
   {
     "slug": "nasal-bone",
     "displayName": "Nasal bone",
-    "synonyms": [
-      "nasal",
-      "nasal bone",
-      "bridge of nose",
-      "bridge of the nose"
-    ],
+    "synonyms": ["nasal", "nasal bone", "bridge of nose", "bridge of the nose"],
     "region": "axial",
     "subregion": "skull",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left nasal bone",
-      "right nasal bone"
-    ],
+    "meshNames": ["Left nasal bone", "Right nasal bone"],
     "info": {}
   },
   {
     "slug": "lacrimal-bone",
     "displayName": "Lacrimal bone",
-    "synonyms": [
-      "lacrimal",
-      "lacrimal bone",
-      "lachrymal bone",
-      "tear bone"
-    ],
+    "synonyms": ["lacrimal", "lacrimal bone", "lachrymal bone", "tear bone"],
     "region": "axial",
     "subregion": "skull",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left lacrimal bone",
-      "right lacrimal bone"
-    ],
+    "meshNames": ["Left lacrimal bone", "Right lacrimal bone"],
     "info": {}
   },
   {
     "slug": "palatine-bone",
     "displayName": "Palatine bone",
-    "synonyms": [
-      "palatine",
-      "palatine bone"
-    ],
+    "synonyms": ["palatine", "palatine bone"],
     "region": "axial",
     "subregion": "skull",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left palatine bone",
-      "right palatine bone"
-    ],
+    "meshNames": ["Left palatine bone", "Right palatine bone"],
     "info": {}
   },
   {
@@ -212,27 +134,18 @@
     "subregion": "skull",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left inferior nasal concha",
-      "right inferior nasal concha"
-    ],
+    "meshNames": ["Left inferior nasal concha", "Right inferior nasal concha"],
     "info": {}
   },
   {
     "slug": "vomer",
     "displayName": "Vomer",
-    "synonyms": [
-      "vomer",
-      "vomer bone",
-      "nasal septum bone"
-    ],
+    "synonyms": ["vomer", "vomer bone", "nasal septum bone"],
     "region": "axial",
     "subregion": "skull",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "vomer"
-    ],
+    "meshNames": ["Vomer"],
     "info": {}
   },
   {
@@ -251,27 +164,18 @@
     "subregion": "skull",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "mandible"
-    ],
+    "meshNames": ["Mandible"],
     "info": {}
   },
   {
     "slug": "hyoid",
     "displayName": "Hyoid bone",
-    "synonyms": [
-      "hyoid",
-      "hyoid bone",
-      "lingual bone",
-      "tongue bone"
-    ],
+    "synonyms": ["hyoid", "hyoid bone", "lingual bone", "tongue bone"],
     "region": "axial",
     "subregion": "neck",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "hyoid bone"
-    ],
+    "meshNames": ["Hyoid bone (FJ2772)", "Hyoid bone (FJ3201)"],
     "info": {}
   },
   {
@@ -283,15 +187,14 @@
       "cervical 1",
       "first cervical vertebra",
       "cervical vertebra 1",
-      "atlas"
+      "atlas",
+      "atlas (c1)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "first cervical vertebra"
-    ],
+    "meshNames": ["Atlas"],
     "info": {}
   },
   {
@@ -304,15 +207,14 @@
       "second cervical vertebra",
       "cervical vertebra 2",
       "axis",
-      "epistropheus"
+      "epistropheus",
+      "axis (c2)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "second cervical vertebra"
-    ],
+    "meshNames": ["Axis"],
     "info": {}
   },
   {
@@ -323,15 +225,14 @@
       "c-3",
       "cervical 3",
       "third cervical vertebra",
-      "cervical vertebra 3"
+      "cervical vertebra 3",
+      "third cervical vertebra (c3)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "third cervical vertebra"
-    ],
+    "meshNames": ["Third cervical vertebra"],
     "info": {}
   },
   {
@@ -342,15 +243,14 @@
       "c-4",
       "cervical 4",
       "fourth cervical vertebra",
-      "cervical vertebra 4"
+      "cervical vertebra 4",
+      "fourth cervical vertebra (c4)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "fourth cervical vertebra"
-    ],
+    "meshNames": ["Fourth cervical vertebra"],
     "info": {}
   },
   {
@@ -361,15 +261,14 @@
       "c-5",
       "cervical 5",
       "fifth cervical vertebra",
-      "cervical vertebra 5"
+      "cervical vertebra 5",
+      "fifth cervical vertebra (c5)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "fifth cervical vertebra"
-    ],
+    "meshNames": ["Fifth cervical vertebra"],
     "info": {}
   },
   {
@@ -380,15 +279,14 @@
       "c-6",
       "cervical 6",
       "sixth cervical vertebra",
-      "cervical vertebra 6"
+      "cervical vertebra 6",
+      "sixth cervical vertebra (c6)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "sixth cervical vertebra"
-    ],
+    "meshNames": ["Sixth cervical vertebra"],
     "info": {}
   },
   {
@@ -400,15 +298,14 @@
       "cervical 7",
       "seventh cervical vertebra",
       "cervical vertebra 7",
-      "vertebra prominens"
+      "vertebra prominens",
+      "seventh cervical vertebra (c7)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "seventh cervical vertebra"
-    ],
+    "meshNames": ["Seventh cervical vertebra"],
     "info": {}
   },
   {
@@ -421,15 +318,14 @@
       "th1",
       "first thoracic vertebra",
       "thoracic vertebra 1",
-      "dorsal vertebra 1"
+      "dorsal vertebra 1",
+      "first thoracic vertebra (t1)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "first thoracic vertebra"
-    ],
+    "meshNames": ["First thoracic vertebra"],
     "info": {}
   },
   {
@@ -442,15 +338,14 @@
       "th2",
       "second thoracic vertebra",
       "thoracic vertebra 2",
-      "dorsal vertebra 2"
+      "dorsal vertebra 2",
+      "second thoracic vertebra (t2)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "second thoracic vertebra"
-    ],
+    "meshNames": ["Second thoracic vertebra"],
     "info": {}
   },
   {
@@ -463,15 +358,14 @@
       "th3",
       "third thoracic vertebra",
       "thoracic vertebra 3",
-      "dorsal vertebra 3"
+      "dorsal vertebra 3",
+      "third thoracic vertebra (t3)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "third thoracic vertebra"
-    ],
+    "meshNames": ["Third thoracic vertebra"],
     "info": {}
   },
   {
@@ -484,15 +378,14 @@
       "th4",
       "fourth thoracic vertebra",
       "thoracic vertebra 4",
-      "dorsal vertebra 4"
+      "dorsal vertebra 4",
+      "fourth thoracic vertebra (t4)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "fourth thoracic vertebra"
-    ],
+    "meshNames": ["Fourth thoracic vertebra"],
     "info": {}
   },
   {
@@ -505,15 +398,14 @@
       "th5",
       "fifth thoracic vertebra",
       "thoracic vertebra 5",
-      "dorsal vertebra 5"
+      "dorsal vertebra 5",
+      "fifth thoracic vertebra (t5)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "fifth thoracic vertebra"
-    ],
+    "meshNames": ["Fifth thoracic vertebra"],
     "info": {}
   },
   {
@@ -526,15 +418,14 @@
       "th6",
       "sixth thoracic vertebra",
       "thoracic vertebra 6",
-      "dorsal vertebra 6"
+      "dorsal vertebra 6",
+      "sixth thoracic vertebra (t6)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "sixth thoracic vertebra"
-    ],
+    "meshNames": ["Sixth thoracic vertebra"],
     "info": {}
   },
   {
@@ -547,15 +438,14 @@
       "th7",
       "seventh thoracic vertebra",
       "thoracic vertebra 7",
-      "dorsal vertebra 7"
+      "dorsal vertebra 7",
+      "seventh thoracic vertebra (t7)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "seventh thoracic vertebra"
-    ],
+    "meshNames": ["Seventh thoracic vertebra"],
     "info": {}
   },
   {
@@ -568,15 +458,14 @@
       "th8",
       "eighth thoracic vertebra",
       "thoracic vertebra 8",
-      "dorsal vertebra 8"
+      "dorsal vertebra 8",
+      "eighth thoracic vertebra (t8)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "eighth thoracic vertebra"
-    ],
+    "meshNames": ["Eighth thoracic vertebra"],
     "info": {}
   },
   {
@@ -589,15 +478,14 @@
       "th9",
       "ninth thoracic vertebra",
       "thoracic vertebra 9",
-      "dorsal vertebra 9"
+      "dorsal vertebra 9",
+      "ninth thoracic vertebra (t9)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "ninth thoracic vertebra"
-    ],
+    "meshNames": ["Ninth thoracic vertebra"],
     "info": {}
   },
   {
@@ -610,15 +498,14 @@
       "th10",
       "tenth thoracic vertebra",
       "thoracic vertebra 10",
-      "dorsal vertebra 10"
+      "dorsal vertebra 10",
+      "tenth thoracic vertebra (t10)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "tenth thoracic vertebra"
-    ],
+    "meshNames": ["Tenth thoracic vertebra"],
     "info": {}
   },
   {
@@ -631,15 +518,14 @@
       "th11",
       "eleventh thoracic vertebra",
       "thoracic vertebra 11",
-      "dorsal vertebra 11"
+      "dorsal vertebra 11",
+      "eleventh thoracic vertebra (t11)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "eleventh thoracic vertebra"
-    ],
+    "meshNames": ["Eleventh thoracic vertebra"],
     "info": {}
   },
   {
@@ -652,15 +538,14 @@
       "th12",
       "twelfth thoracic vertebra",
       "thoracic vertebra 12",
-      "dorsal vertebra 12"
+      "dorsal vertebra 12",
+      "twelfth thoracic vertebra (t12)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "twelfth thoracic vertebra"
-    ],
+    "meshNames": ["Twelfth thoracic vertebra"],
     "info": {}
   },
   {
@@ -671,15 +556,14 @@
       "l-1",
       "lumbar 1",
       "first lumbar vertebra",
-      "lumbar vertebra 1"
+      "lumbar vertebra 1",
+      "first lumbar vertebra (l1)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "first lumbar vertebra"
-    ],
+    "meshNames": ["First lumbar vertebra"],
     "info": {}
   },
   {
@@ -690,15 +574,14 @@
       "l-2",
       "lumbar 2",
       "second lumbar vertebra",
-      "lumbar vertebra 2"
+      "lumbar vertebra 2",
+      "second lumbar vertebra (l2)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "second lumbar vertebra"
-    ],
+    "meshNames": ["Second lumbar vertebra"],
     "info": {}
   },
   {
@@ -709,15 +592,14 @@
       "l-3",
       "lumbar 3",
       "third lumbar vertebra",
-      "lumbar vertebra 3"
+      "lumbar vertebra 3",
+      "third lumbar vertebra (l3)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "third lumbar vertebra"
-    ],
+    "meshNames": ["Third lumbar vertebra"],
     "info": {}
   },
   {
@@ -728,15 +610,14 @@
       "l-4",
       "lumbar 4",
       "fourth lumbar vertebra",
-      "lumbar vertebra 4"
+      "lumbar vertebra 4",
+      "fourth lumbar vertebra (l4)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "fourth lumbar vertebra"
-    ],
+    "meshNames": ["Fourth lumbar vertebra"],
     "info": {}
   },
   {
@@ -747,281 +628,168 @@
       "l-5",
       "lumbar 5",
       "fifth lumbar vertebra",
-      "lumbar vertebra 5"
+      "lumbar vertebra 5",
+      "fifth lumbar vertebra (l5)"
     ],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "fifth lumbar vertebra"
-    ],
+    "meshNames": ["Fifth lumbar vertebra"],
     "info": {}
   },
   {
     "slug": "sacrum",
     "displayName": "Sacrum",
-    "synonyms": [
-      "sacrum",
-      "sacral bone",
-      "sacral vertebrae",
-      "s1-s5"
-    ],
+    "synonyms": ["sacrum", "sacral bone", "sacral vertebrae", "s1-s5"],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "sacrum"
-    ],
+    "meshNames": ["Sacrum"],
     "info": {}
   },
   {
     "slug": "coccyx",
     "displayName": "Coccyx",
-    "synonyms": [
-      "coccyx",
-      "tailbone",
-      "tail bone",
-      "coccygeal bone"
-    ],
+    "synonyms": ["coccyx", "tailbone", "tail bone", "coccygeal bone", "coccygeal vertebrae"],
     "region": "axial",
     "subregion": "vertebral-column",
     "paired": false,
-    "optional": false,
-    "meshNames": [
-      "coccyx"
-    ],
+    "optional": true,
+    "meshNames": [],
     "info": {}
   },
   {
     "slug": "rib-01",
     "displayName": "First rib",
-    "synonyms": [
-      "rib 1",
-      "1st rib",
-      "first rib",
-      "true rib 1"
-    ],
+    "synonyms": ["rib 1", "1st rib", "first rib", "true rib 1"],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "right first rib",
-      "left first rib"
-    ],
+    "meshNames": ["Right first rib", "Left first rib"],
     "info": {}
   },
   {
     "slug": "rib-02",
     "displayName": "Second rib",
-    "synonyms": [
-      "rib 2",
-      "2nd rib",
-      "second rib",
-      "true rib 2"
-    ],
+    "synonyms": ["rib 2", "2nd rib", "second rib", "true rib 2"],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "right second rib",
-      "left second rib"
-    ],
+    "meshNames": ["Right second rib", "Left second rib"],
     "info": {}
   },
   {
     "slug": "rib-03",
     "displayName": "Third rib",
-    "synonyms": [
-      "rib 3",
-      "3rd rib",
-      "third rib",
-      "true rib 3"
-    ],
+    "synonyms": ["rib 3", "3rd rib", "third rib", "true rib 3"],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "right third rib",
-      "left third rib"
-    ],
+    "meshNames": ["Right third rib", "Left third rib"],
     "info": {}
   },
   {
     "slug": "rib-04",
     "displayName": "Fourth rib",
-    "synonyms": [
-      "rib 4",
-      "4th rib",
-      "fourth rib",
-      "true rib 4"
-    ],
+    "synonyms": ["rib 4", "4th rib", "fourth rib", "true rib 4"],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "right fourth rib",
-      "left fourth rib"
-    ],
+    "meshNames": ["Right fourth rib", "Left fourth rib"],
     "info": {}
   },
   {
     "slug": "rib-05",
     "displayName": "Fifth rib",
-    "synonyms": [
-      "rib 5",
-      "5th rib",
-      "fifth rib",
-      "true rib 5"
-    ],
+    "synonyms": ["rib 5", "5th rib", "fifth rib", "true rib 5"],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "right fifth rib",
-      "left fifth rib"
-    ],
+    "meshNames": ["Right fifth rib", "Left fifth rib"],
     "info": {}
   },
   {
     "slug": "rib-06",
     "displayName": "Sixth rib",
-    "synonyms": [
-      "rib 6",
-      "6th rib",
-      "sixth rib",
-      "true rib 6"
-    ],
+    "synonyms": ["rib 6", "6th rib", "sixth rib", "true rib 6"],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "right sixth rib",
-      "left sixth rib"
-    ],
+    "meshNames": ["Right sixth rib", "Left sixth rib"],
     "info": {}
   },
   {
     "slug": "rib-07",
     "displayName": "Seventh rib",
-    "synonyms": [
-      "rib 7",
-      "7th rib",
-      "seventh rib",
-      "true rib 7"
-    ],
+    "synonyms": ["rib 7", "7th rib", "seventh rib", "true rib 7"],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "right seventh rib",
-      "left seventh rib"
-    ],
+    "meshNames": ["Right seventh rib", "Left seventh rib"],
     "info": {}
   },
   {
     "slug": "rib-08",
     "displayName": "Eighth rib",
-    "synonyms": [
-      "rib 8",
-      "8th rib",
-      "eighth rib",
-      "false rib 8"
-    ],
+    "synonyms": ["rib 8", "8th rib", "eighth rib", "false rib 8"],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "right eighth rib",
-      "left eighth rib"
-    ],
+    "meshNames": ["Right eighth rib", "Left eighth rib"],
     "info": {}
   },
   {
     "slug": "rib-09",
     "displayName": "Ninth rib",
-    "synonyms": [
-      "rib 9",
-      "9th rib",
-      "ninth rib",
-      "false rib 9"
-    ],
+    "synonyms": ["rib 9", "9th rib", "ninth rib", "false rib 9"],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "right ninth rib",
-      "left ninth rib"
-    ],
+    "meshNames": ["Right ninth rib", "Left ninth rib"],
     "info": {}
   },
   {
     "slug": "rib-10",
     "displayName": "Tenth rib",
-    "synonyms": [
-      "rib 10",
-      "10th rib",
-      "tenth rib",
-      "false rib 10"
-    ],
+    "synonyms": ["rib 10", "10th rib", "tenth rib", "false rib 10"],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "right tenth rib",
-      "left tenth rib"
-    ],
+    "meshNames": ["Right tenth rib", "Left tenth rib"],
     "info": {}
   },
   {
     "slug": "rib-11",
     "displayName": "Eleventh rib",
-    "synonyms": [
-      "rib 11",
-      "11th rib",
-      "eleventh rib",
-      "floating rib 11",
-      "false rib 11"
-    ],
+    "synonyms": ["rib 11", "11th rib", "eleventh rib", "floating rib 11", "false rib 11"],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "right eleventh rib",
-      "left eleventh rib"
-    ],
+    "meshNames": ["Right eleventh rib", "Left eleventh rib"],
     "info": {}
   },
   {
     "slug": "rib-12",
     "displayName": "Twelfth rib",
-    "synonyms": [
-      "rib 12",
-      "12th rib",
-      "twelfth rib",
-      "floating rib 12",
-      "false rib 12"
-    ],
+    "synonyms": ["rib 12", "12th rib", "twelfth rib", "floating rib 12", "false rib 12"],
     "region": "axial",
     "subregion": "thoracic-cage",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "right twelfth rib",
-      "left twelfth rib"
-    ],
+    "meshNames": ["Right twelfth rib", "Left twelfth rib"],
     "info": {}
   },
   {
@@ -1039,100 +807,62 @@
     "subregion": "thoracic-cage",
     "paired": false,
     "optional": false,
-    "meshNames": [
-      "sternum"
-    ],
+    "meshNames": ["Manubrium", "Body of sternum", "Xiphoid process"],
     "info": {}
   },
   {
     "slug": "clavicle",
     "displayName": "Clavicle",
-    "synonyms": [
-      "clavicle",
-      "collarbone",
-      "collar bone"
-    ],
+    "synonyms": ["clavicle", "collarbone", "collar bone"],
     "region": "appendicular",
     "subregion": "shoulder-girdle",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left clavicle",
-      "right clavicle"
-    ],
+    "meshNames": ["Left clavicle", "Right clavicle"],
     "info": {}
   },
   {
     "slug": "scapula",
     "displayName": "Scapula",
-    "synonyms": [
-      "scapula",
-      "shoulder blade",
-      "shoulderblade",
-      "wing bone"
-    ],
+    "synonyms": ["scapula", "shoulder blade", "shoulderblade", "wing bone"],
     "region": "appendicular",
     "subregion": "shoulder-girdle",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left scapula",
-      "right scapula"
-    ],
+    "meshNames": ["Left scapula", "Right scapula"],
     "info": {}
   },
   {
     "slug": "humerus",
     "displayName": "Humerus",
-    "synonyms": [
-      "humerus",
-      "upper arm bone",
-      "arm bone"
-    ],
+    "synonyms": ["humerus", "upper arm bone", "arm bone"],
     "region": "appendicular",
     "subregion": "arm",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left humerus",
-      "right humerus"
-    ],
+    "meshNames": ["Left humerus", "Right humerus"],
     "info": {}
   },
   {
     "slug": "radius",
     "displayName": "Radius",
-    "synonyms": [
-      "radius",
-      "radius bone",
-      "forearm bone"
-    ],
+    "synonyms": ["radius", "radius bone", "forearm bone"],
     "region": "appendicular",
     "subregion": "forearm",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left radius",
-      "right radius"
-    ],
+    "meshNames": ["Left radius", "Right radius"],
     "info": {}
   },
   {
     "slug": "ulna",
     "displayName": "Ulna",
-    "synonyms": [
-      "ulna",
-      "ulna bone",
-      "elbow bone"
-    ],
+    "synonyms": ["ulna", "ulna bone", "elbow bone"],
     "region": "appendicular",
     "subregion": "forearm",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left ulna",
-      "right ulna"
-    ],
+    "meshNames": ["Left ulna", "Right ulna"],
     "info": {}
   },
   {
@@ -1149,28 +879,18 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left scaphoid",
-      "right scaphoid"
-    ],
+    "meshNames": ["Left scaphoid", "Right scaphoid"],
     "info": {}
   },
   {
     "slug": "carpal-lunate",
     "displayName": "Lunate",
-    "synonyms": [
-      "lunate",
-      "lunate bone",
-      "semilunar bone"
-    ],
+    "synonyms": ["lunate", "lunate bone", "semilunar bone"],
     "region": "appendicular",
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left lunate",
-      "right lunate"
-    ],
+    "meshNames": ["Left lunate", "Right lunate"],
     "info": {}
   },
   {
@@ -1187,99 +907,62 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left triquetrum",
-      "right triquetrum"
-    ],
+    "meshNames": ["Left triquetral", "Right triquetral"],
     "info": {}
   },
   {
     "slug": "carpal-pisiform",
     "displayName": "Pisiform",
-    "synonyms": [
-      "pisiform",
-      "pisiform bone"
-    ],
+    "synonyms": ["pisiform", "pisiform bone"],
     "region": "appendicular",
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left pisiform",
-      "right pisiform"
-    ],
+    "meshNames": ["Left pisiform", "Right pisiform"],
     "info": {}
   },
   {
     "slug": "carpal-trapezium",
     "displayName": "Trapezium",
-    "synonyms": [
-      "trapezium",
-      "trapezium bone",
-      "greater multangular"
-    ],
+    "synonyms": ["trapezium", "trapezium bone", "greater multangular"],
     "region": "appendicular",
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left trapezium",
-      "right trapezium"
-    ],
+    "meshNames": ["Left trapezium", "Right trapezium"],
     "info": {}
   },
   {
     "slug": "carpal-trapezoid",
     "displayName": "Trapezoid",
-    "synonyms": [
-      "trapezoid",
-      "trapezoid bone",
-      "lesser multangular"
-    ],
+    "synonyms": ["trapezoid", "trapezoid bone", "lesser multangular"],
     "region": "appendicular",
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left trapezoid",
-      "right trapezoid"
-    ],
+    "meshNames": ["Left trapezoid", "Right trapezoid"],
     "info": {}
   },
   {
     "slug": "carpal-capitate",
     "displayName": "Capitate",
-    "synonyms": [
-      "capitate",
-      "capitate bone",
-      "os magnum"
-    ],
+    "synonyms": ["capitate", "capitate bone", "os magnum"],
     "region": "appendicular",
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left capitate",
-      "right capitate"
-    ],
+    "meshNames": ["Left capitate", "Right capitate"],
     "info": {}
   },
   {
     "slug": "carpal-hamate",
     "displayName": "Hamate",
-    "synonyms": [
-      "hamate",
-      "hamate bone",
-      "unciform bone"
-    ],
+    "synonyms": ["hamate", "hamate bone", "unciform bone"],
     "region": "appendicular",
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left hamate",
-      "right hamate"
-    ],
+    "meshNames": ["Left hamate", "Right hamate"],
     "info": {}
   },
   {
@@ -1299,10 +982,7 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "first metacarpal bone of left hand",
-      "first metacarpal bone of right hand"
-    ],
+    "meshNames": ["Left first metacarpal bone", "Right first metacarpal bone"],
     "info": {}
   },
   {
@@ -1321,10 +1001,7 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "second metacarpal bone of left hand",
-      "second metacarpal bone of right hand"
-    ],
+    "meshNames": ["Left second metacarpal bone", "Right second metacarpal bone"],
     "info": {}
   },
   {
@@ -1343,10 +1020,7 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "third metacarpal bone of left hand",
-      "third metacarpal bone of right hand"
-    ],
+    "meshNames": ["Left third metacarpal bone", "Right third metacarpal bone"],
     "info": {}
   },
   {
@@ -1365,10 +1039,7 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "fourth metacarpal bone of left hand",
-      "fourth metacarpal bone of right hand"
-    ],
+    "meshNames": ["Left fourth metacarpal bone", "Right fourth metacarpal bone"],
     "info": {}
   },
   {
@@ -1388,10 +1059,7 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "fifth metacarpal bone of left hand",
-      "fifth metacarpal bone of right hand"
-    ],
+    "meshNames": ["Left fifth metacarpal bone", "Right fifth metacarpal bone"],
     "info": {}
   },
   {
@@ -1407,10 +1075,7 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "proximal phalanx of left thumb",
-      "proximal phalanx of right thumb"
-    ],
+    "meshNames": ["Proximal phalanx of left thumb", "Proximal phalanx of right thumb"],
     "info": {}
   },
   {
@@ -1426,10 +1091,7 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "distal phalanx of left thumb",
-      "distal phalanx of right thumb"
-    ],
+    "meshNames": ["Distal phalanx of left thumb", "Distal phalanx of right thumb"],
     "info": {}
   },
   {
@@ -1446,8 +1108,8 @@
     "paired": true,
     "optional": false,
     "meshNames": [
-      "proximal phalanx of left index finger",
-      "proximal phalanx of right index finger"
+      "Proximal phalanx of left index finger",
+      "Proximal phalanx of right index finger"
     ],
     "info": {}
   },
@@ -1464,10 +1126,7 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "middle phalanx of left index finger",
-      "middle phalanx of right index finger"
-    ],
+    "meshNames": ["Middle phalanx of left index finger", "Middle phalanx of right index finger"],
     "info": {}
   },
   {
@@ -1483,10 +1142,7 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "distal phalanx of left index finger",
-      "distal phalanx of right index finger"
-    ],
+    "meshNames": ["Distal phalanx of left index finger", "Distal phalanx of right index finger"],
     "info": {}
   },
   {
@@ -1503,8 +1159,8 @@
     "paired": true,
     "optional": false,
     "meshNames": [
-      "proximal phalanx of left middle finger",
-      "proximal phalanx of right middle finger"
+      "Proximal phalanx of left middle finger",
+      "Proximal phalanx of right middle finger"
     ],
     "info": {}
   },
@@ -1521,10 +1177,7 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "middle phalanx of left middle finger",
-      "middle phalanx of right middle finger"
-    ],
+    "meshNames": ["Middle phalanx of left middle finger", "Middle phalanx of right middle finger"],
     "info": {}
   },
   {
@@ -1540,10 +1193,7 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "distal phalanx of left middle finger",
-      "distal phalanx of right middle finger"
-    ],
+    "meshNames": ["Distal phalanx of left middle finger", "Distal phalanx of right middle finger"],
     "info": {}
   },
   {
@@ -1559,10 +1209,7 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "proximal phalanx of left ring finger",
-      "proximal phalanx of right ring finger"
-    ],
+    "meshNames": ["Proximal phalanx of left ring finger", "Proximal phalanx of right ring finger"],
     "info": {}
   },
   {
@@ -1578,10 +1225,7 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "middle phalanx of left ring finger",
-      "middle phalanx of right ring finger"
-    ],
+    "meshNames": ["Middle phalanx of left ring finger", "Middle phalanx of right ring finger"],
     "info": {}
   },
   {
@@ -1597,10 +1241,7 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "distal phalanx of left ring finger",
-      "distal phalanx of right ring finger"
-    ],
+    "meshNames": ["Distal phalanx of left ring finger", "Distal phalanx of right ring finger"],
     "info": {}
   },
   {
@@ -1617,8 +1258,8 @@
     "paired": true,
     "optional": false,
     "meshNames": [
-      "proximal phalanx of left little finger",
-      "proximal phalanx of right little finger"
+      "Proximal phalanx of left little finger",
+      "Proximal phalanx of right little finger"
     ],
     "info": {}
   },
@@ -1635,10 +1276,7 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "middle phalanx of left little finger",
-      "middle phalanx of right little finger"
-    ],
+    "meshNames": ["Middle phalanx of left little finger", "Middle phalanx of right little finger"],
     "info": {}
   },
   {
@@ -1654,200 +1292,84 @@
     "subregion": "hand",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "distal phalanx of left little finger",
-      "distal phalanx of right little finger"
-    ],
+    "meshNames": ["Distal phalanx of left little finger", "Distal phalanx of right little finger"],
     "info": {}
   },
   {
     "slug": "hip-bone",
     "displayName": "Hip bone",
-    "synonyms": [
-      "hip bone",
-      "hipbone",
-      "coxal bone",
-      "os coxae",
-      "innominate bone",
-      "pelvic bone"
-    ],
+    "synonyms": ["hip bone", "hipbone", "coxal bone", "os coxae", "innominate bone", "pelvic bone"],
     "region": "appendicular",
     "subregion": "pelvic-girdle",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left hip bone",
-      "right hip bone"
-    ],
-    "info": {}
-  },
-  {
-    "slug": "ilium",
-    "displayName": "Ilium",
-    "synonyms": [
-      "ilium",
-      "iliac bone",
-      "iliac crest bone"
-    ],
-    "region": "appendicular",
-    "subregion": "pelvic-girdle",
-    "paired": true,
-    "optional": true,
-    "meshNames": [
-      "left ilium",
-      "right ilium"
-    ],
-    "info": {}
-  },
-  {
-    "slug": "ischium",
-    "displayName": "Ischium",
-    "synonyms": [
-      "ischium",
-      "ischial bone",
-      "sit bone",
-      "sitting bone"
-    ],
-    "region": "appendicular",
-    "subregion": "pelvic-girdle",
-    "paired": true,
-    "optional": true,
-    "meshNames": [
-      "left ischium",
-      "right ischium"
-    ],
-    "info": {}
-  },
-  {
-    "slug": "pubis",
-    "displayName": "Pubis",
-    "synonyms": [
-      "pubis",
-      "pubic bone",
-      "os pubis"
-    ],
-    "region": "appendicular",
-    "subregion": "pelvic-girdle",
-    "paired": true,
-    "optional": true,
-    "meshNames": [
-      "left pubis",
-      "right pubis"
-    ],
+    "meshNames": ["Left hip bone", "Right hip bone"],
     "info": {}
   },
   {
     "slug": "femur",
     "displayName": "Femur",
-    "synonyms": [
-      "femur",
-      "thigh bone",
-      "thighbone",
-      "upper leg bone"
-    ],
+    "synonyms": ["femur", "thigh bone", "thighbone", "upper leg bone"],
     "region": "appendicular",
     "subregion": "thigh",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left femur",
-      "right femur"
-    ],
+    "meshNames": ["Left femur", "Right femur"],
     "info": {}
   },
   {
     "slug": "patella",
     "displayName": "Patella",
-    "synonyms": [
-      "patella",
-      "kneecap",
-      "knee cap",
-      "knee bone"
-    ],
+    "synonyms": ["patella", "kneecap", "knee cap", "knee bone"],
     "region": "appendicular",
     "subregion": "thigh",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left patella",
-      "right patella"
-    ],
+    "meshNames": ["Left patella", "Right patella"],
     "info": {}
   },
   {
     "slug": "tibia",
     "displayName": "Tibia",
-    "synonyms": [
-      "tibia",
-      "shin bone",
-      "shinbone",
-      "shank bone"
-    ],
+    "synonyms": ["tibia", "shin bone", "shinbone", "shank bone"],
     "region": "appendicular",
     "subregion": "leg",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left tibia",
-      "right tibia"
-    ],
+    "meshNames": ["Left tibia", "Right tibia"],
     "info": {}
   },
   {
     "slug": "fibula",
     "displayName": "Fibula",
-    "synonyms": [
-      "fibula",
-      "calf bone",
-      "splint bone"
-    ],
+    "synonyms": ["fibula", "calf bone", "splint bone"],
     "region": "appendicular",
     "subregion": "leg",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left fibula",
-      "right fibula"
-    ],
+    "meshNames": ["Left fibula", "Right fibula"],
     "info": {}
   },
   {
     "slug": "tarsal-calcaneus",
     "displayName": "Calcaneus",
-    "synonyms": [
-      "calcaneus",
-      "heel bone",
-      "heelbone",
-      "os calcis",
-      "calcaneum"
-    ],
+    "synonyms": ["calcaneus", "heel bone", "heelbone", "os calcis", "calcaneum"],
     "region": "appendicular",
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left calcaneus",
-      "right calcaneus"
-    ],
+    "meshNames": ["Left calcaneus", "Right calcaneus"],
     "info": {}
   },
   {
     "slug": "tarsal-talus",
     "displayName": "Talus",
-    "synonyms": [
-      "talus",
-      "ankle bone",
-      "anklebone",
-      "astragalus"
-    ],
+    "synonyms": ["talus", "ankle bone", "anklebone", "astragalus"],
     "region": "appendicular",
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left talus",
-      "right talus"
-    ],
+    "meshNames": ["Left talus", "Right talus"],
     "info": {}
   },
   {
@@ -1857,33 +1379,25 @@
       "navicular",
       "navicular bone",
       "navicular bone of foot",
-      "scaphoid of foot"
+      "scaphoid of foot",
+      "scaphoid of the foot"
     ],
     "region": "appendicular",
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left navicular bone of foot",
-      "right navicular bone of foot"
-    ],
+    "meshNames": ["Navicular bone of left foot", "Navicular bone of right foot"],
     "info": {}
   },
   {
     "slug": "tarsal-cuboid",
     "displayName": "Cuboid",
-    "synonyms": [
-      "cuboid",
-      "cuboid bone"
-    ],
+    "synonyms": ["cuboid", "cuboid bone"],
     "region": "appendicular",
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left cuboid",
-      "right cuboid"
-    ],
+    "meshNames": ["Left cuboid bone", "Right cuboid bone"],
     "info": {}
   },
   {
@@ -1900,10 +1414,7 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left medial cuneiform bone",
-      "right medial cuneiform bone"
-    ],
+    "meshNames": ["Left medial cuneiform bone", "Right medial cuneiform bone"],
     "info": {}
   },
   {
@@ -1920,10 +1431,7 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left intermediate cuneiform bone",
-      "right intermediate cuneiform bone"
-    ],
+    "meshNames": ["Left intermediate cuneiform bone", "Right intermediate cuneiform bone"],
     "info": {}
   },
   {
@@ -1940,10 +1448,7 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "left lateral cuneiform bone",
-      "right lateral cuneiform bone"
-    ],
+    "meshNames": ["Left lateral cuneiform bone", "Right lateral cuneiform bone"],
     "info": {}
   },
   {
@@ -1963,10 +1468,7 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "first metatarsal bone of left foot",
-      "first metatarsal bone of right foot"
-    ],
+    "meshNames": ["Left first metatarsal bone", "Right first metatarsal bone"],
     "info": {}
   },
   {
@@ -1984,10 +1486,7 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "second metatarsal bone of left foot",
-      "second metatarsal bone of right foot"
-    ],
+    "meshNames": ["Left second metatarsal bone", "Right second metatarsal bone"],
     "info": {}
   },
   {
@@ -2005,10 +1504,7 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "third metatarsal bone of left foot",
-      "third metatarsal bone of right foot"
-    ],
+    "meshNames": ["Left third metatarsal bone", "Right third metatarsal bone"],
     "info": {}
   },
   {
@@ -2026,10 +1522,7 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "fourth metatarsal bone of left foot",
-      "fourth metatarsal bone of right foot"
-    ],
+    "meshNames": ["Left fourth metatarsal bone", "Right fourth metatarsal bone"],
     "info": {}
   },
   {
@@ -2049,10 +1542,7 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "fifth metatarsal bone of left foot",
-      "fifth metatarsal bone of right foot"
-    ],
+    "meshNames": ["Left fifth metatarsal bone", "Right fifth metatarsal bone"],
     "info": {}
   },
   {
@@ -2063,16 +1553,16 @@
       "proximal phalanx of digit 1 of foot",
       "proximal phalanx 1 foot",
       "proximal phalanx of toe 1",
-      "great toe proximal phalanx"
+      "great toe proximal phalanx",
+      "proximal phalanx of big toe",
+      "proximal phalanx of hallux",
+      "big toe"
     ],
     "region": "appendicular",
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "proximal phalanx of left great toe",
-      "proximal phalanx of right great toe"
-    ],
+    "meshNames": ["Proximal phalanx of left big toe", "Proximal phalanx of right big toe"],
     "info": {}
   },
   {
@@ -2083,16 +1573,15 @@
       "distal phalanx of digit 1 of foot",
       "distal phalanx 1 foot",
       "distal phalanx of toe 1",
-      "great toe distal phalanx"
+      "great toe distal phalanx",
+      "distal phalanx of big toe",
+      "distal phalanx of hallux"
     ],
     "region": "appendicular",
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "distal phalanx of left great toe",
-      "distal phalanx of right great toe"
-    ],
+    "meshNames": ["Distal phalanx of left big toe", "Distal phalanx of right big toe"],
     "info": {}
   },
   {
@@ -2109,10 +1598,7 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "proximal phalanx of left second toe",
-      "proximal phalanx of right second toe"
-    ],
+    "meshNames": ["Proximal phalanx of left second toe", "Proximal phalanx of right second toe"],
     "info": {}
   },
   {
@@ -2129,10 +1615,7 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "middle phalanx of left second toe",
-      "middle phalanx of right second toe"
-    ],
+    "meshNames": ["Middle phalanx of left second toe", "Middle phalanx of right second toe"],
     "info": {}
   },
   {
@@ -2149,10 +1632,7 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "distal phalanx of left second toe",
-      "distal phalanx of right second toe"
-    ],
+    "meshNames": ["Distal phalanx of left second toe", "Distal phalanx of right second toe"],
     "info": {}
   },
   {
@@ -2169,10 +1649,7 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "proximal phalanx of left third toe",
-      "proximal phalanx of right third toe"
-    ],
+    "meshNames": ["Proximal phalanx of left third toe", "Proximal phalanx of right third toe"],
     "info": {}
   },
   {
@@ -2189,10 +1666,7 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "middle phalanx of left third toe",
-      "middle phalanx of right third toe"
-    ],
+    "meshNames": ["Middle phalanx of left third toe", "Middle phalanx of right third toe"],
     "info": {}
   },
   {
@@ -2209,10 +1683,7 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "distal phalanx of left third toe",
-      "distal phalanx of right third toe"
-    ],
+    "meshNames": ["Distal phalanx of left third toe", "Distal phalanx of right third toe"],
     "info": {}
   },
   {
@@ -2229,10 +1700,7 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "proximal phalanx of left fourth toe",
-      "proximal phalanx of right fourth toe"
-    ],
+    "meshNames": ["Proximal phalanx of left fourth toe", "Proximal phalanx of right fourth toe"],
     "info": {}
   },
   {
@@ -2249,10 +1717,7 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "middle phalanx of left fourth toe",
-      "middle phalanx of right fourth toe"
-    ],
+    "meshNames": ["Middle phalanx of left fourth toe", "Middle phalanx of right fourth toe"],
     "info": {}
   },
   {
@@ -2269,10 +1734,7 @@
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "distal phalanx of left fourth toe",
-      "distal phalanx of right fourth toe"
-    ],
+    "meshNames": ["Distal phalanx of left fourth toe", "Distal phalanx of right fourth toe"],
     "info": {}
   },
   {
@@ -2283,16 +1745,14 @@
       "proximal phalanx of digit 5 of foot",
       "proximal phalanx 5 foot",
       "proximal phalanx of toe 5",
-      "fifth toe proximal phalanx"
+      "fifth toe proximal phalanx",
+      "proximal phalanx of little toe"
     ],
     "region": "appendicular",
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "proximal phalanx of left fifth toe",
-      "proximal phalanx of right fifth toe"
-    ],
+    "meshNames": ["Proximal phalanx of left little toe", "Proximal phalanx of right little toe"],
     "info": {}
   },
   {
@@ -2303,16 +1763,14 @@
       "middle phalanx of digit 5 of foot",
       "middle phalanx 5 foot",
       "middle phalanx of toe 5",
-      "fifth toe middle phalanx"
+      "fifth toe middle phalanx",
+      "middle phalanx of little toe"
     ],
     "region": "appendicular",
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "middle phalanx of left fifth toe",
-      "middle phalanx of right fifth toe"
-    ],
+    "meshNames": ["Middle phalanx of left little toe", "Middle phalanx of right little toe"],
     "info": {}
   },
   {
@@ -2323,16 +1781,14 @@
       "distal phalanx of digit 5 of foot",
       "distal phalanx 5 foot",
       "distal phalanx of toe 5",
-      "fifth toe distal phalanx"
+      "fifth toe distal phalanx",
+      "distal phalanx of little toe"
     ],
     "region": "appendicular",
     "subregion": "foot",
     "paired": true,
     "optional": false,
-    "meshNames": [
-      "distal phalanx of left fifth toe",
-      "distal phalanx of right fifth toe"
-    ],
+    "meshNames": ["Distal phalanx of left little toe", "Distal phalanx of right little toe"],
     "info": {}
   }
 ]

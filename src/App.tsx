@@ -13,7 +13,7 @@ import { GuessList } from './ui/GuessList'
 import { Header } from './ui/Header'
 import { WinCard } from './ui/WinCard'
 
-const ANSWER_POOL = catalog.filter((b) => !b.optional).map((b) => b.slug)
+const ANSWER_POOL = catalog.filter((b) => !b.optional && b.meshNames.length > 0).map((b) => b.slug)
 const DEBUG = new URLSearchParams(location.search).has('debug')
 
 function newAnswer(): string {
@@ -30,7 +30,8 @@ export default function App() {
   const [flyTo, setFlyTo] = useState<string | null>(null)
   const [homeToken, setHomeToken] = useState(0)
   const [debugColors, setDebugColors] = useState<BoneColors>({})
-  const index = useMemo(() => new SearchIndex(catalog), [])
+  // Bones with no mesh (coccyx is absent from BodyParts3D) cannot be guessed or answered.
+  const index = useMemo(() => new SearchIndex(catalog.filter((b) => b.meshNames.length > 0)), [])
 
   useEffect(() => {
     loadGeometry().then(setGeometry, (e: Error) => setLoadError(e.message))
@@ -80,6 +81,9 @@ export default function App() {
           index={index}
           guessed={guessed}
           disabled={state.status === 'won' || !geometry}
+          placeholder={
+            state.status === 'won' ? 'You found it!' : geometry ? 'Guess a bone…' : 'Loading…'
+          }
           onGuess={onGuess}
         />
         {loadError && <div className="guess-error">Failed to load geometry: {loadError}</div>}

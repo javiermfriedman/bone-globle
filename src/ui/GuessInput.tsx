@@ -5,10 +5,11 @@ interface Props {
   index: SearchIndex
   guessed: Set<string>
   disabled?: boolean
+  placeholder?: string
   onGuess: (slug: string) => void
 }
 
-export function GuessInput({ index, guessed, disabled, onGuess }: Props) {
+export function GuessInput({ index, guessed, disabled, placeholder, onGuess }: Props) {
   const [query, setQuery] = useState('')
   const [active, setActive] = useState(0)
   const [open, setOpen] = useState(false)
@@ -60,7 +61,7 @@ export function GuessInput({ index, guessed, disabled, onGuess }: Props) {
         type="text"
         autoComplete="off"
         spellCheck={false}
-        placeholder={disabled ? 'You found it!' : 'Guess a bone…'}
+        placeholder={placeholder ?? 'Guess a bone…'}
         value={query}
         disabled={disabled}
         onChange={(e) => {
