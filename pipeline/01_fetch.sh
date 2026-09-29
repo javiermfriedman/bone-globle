@@ -23,7 +23,7 @@ for f in "${FILES[@]}"; do
     continue
   fi
   echo "fetching: $f"
-  if ! curl -fL -C - --retry 3 --retry-delay 2 -o "$out" "$BASE/$f"; then
+  if ! curl -fL -# -C - --retry 3 --retry-delay 2 -o "$out" "$BASE/$f"; then
     echo "ERROR: $BASE/$f failed. Directory listing follows:" >&2
     curl -fsSL "$BASE/" | sed -e 's/<[^>]*>/ /g' | tr -s ' \n' ' \n' | grep -iE 'isa|partof|\.zip|\.txt' || true
     rm -f "$out"

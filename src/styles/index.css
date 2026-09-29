@@ -8,10 +8,250 @@
     sans-serif;
   background: #0f1115;
   color: #e6e6e6;
+  --panel: rgba(20, 22, 28, 0.88);
+  --border: #2c303a;
+  --accent: #f5b942;
 }
 html,
 body,
 #root {
   margin: 0;
   height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+button {
+  font: inherit;
+  color: inherit;
+  background: #23262f;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+button:hover {
+  background: #2c303a;
+}
+button.primary {
+  background: var(--accent);
+  color: #1a1408;
+  border-color: transparent;
+  font-weight: 600;
+}
+input[type='text'] {
+  font: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 10px 12px;
+  background: #171a21;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  outline: none;
+}
+input[type='text']:focus {
+  border-color: var(--accent);
+}
+.muted {
+  color: #8a90a0;
+}
+.small {
+  font-size: 12px;
+}
+
+.app {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.scene {
+  position: absolute;
+  inset: 0;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  pointer-events: none;
+}
+.header > * {
+  pointer-events: auto;
+}
+.header h1 {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+}
+.header h1 span {
+  color: var(--accent);
+}
+.header-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.panel {
+  position: absolute;
+  top: 56px;
+  left: 16px;
+  width: 300px;
+  max-height: calc(100% - 72px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+}
+
+.guess-input {
+  position: relative;
+}
+.guess-error {
+  color: #ff7b6b;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.suggestions {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  margin: 4px 0 0;
+  padding: 4px;
+  list-style: none;
+  background: #171a21;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  max-height: 280px;
+  overflow-y: auto;
+}
+.suggestions li {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.suggestions li.active {
+  background: #2c303a;
+}
+.suggestions li.done {
+  opacity: 0.4;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+.suggestions small {
+  color: #8a90a0;
+}
+
+.guess-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-y: auto;
+  min-height: 0;
+}
+.guess-list.empty {
+  color: #8a90a0;
+  font-size: 13px;
+}
+.guess-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 4px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.guess-list li:hover {
+  background: #1d2028;
+}
+.swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  flex: none;
+}
+
+.win-card {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 340px;
+  padding: 16px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+}
+.win-title {
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+.win-title small {
+  font-size: 12px;
+  font-weight: 400;
+  color: #8a90a0;
+  text-transform: capitalize;
+}
+.win-guesses {
+  color: #2ee06a;
+  font-weight: 600;
+}
+.win-card p {
+  font-size: 14px;
+  line-height: 1.45;
+}
+.win-card button {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+}
+
+.debug-panel {
+  position: absolute;
+  top: 56px;
+  right: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 13px;
+}
+.debug-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+@media (max-width: 700px) {
+  .panel {
+    top: auto;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    width: auto;
+    max-height: 45%;
+  }
+  .win-card {
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    width: auto;
+  }
 }

@@ -1,3 +1,99 @@
+import { useCallback, useEffect, useMemo, useReducer, useState } from 'react'
+import { catalog, loadGeometry, type Geometry } from './data/catalog'
+import { SearchIndex } from './data/search'
+import { heatToColor } from './game/distance'
+import { pickAnswer, pushRecent, readRecent } from './game/random'
+import { initialState, reduce, type GameState } from './game/state'
+import { readStats, recordWin, writeStats, type Stats } from './game/stats'
+import { Scene } from './three/Scene'
+import type { BoneColors } from './three/Skeleton'
+import { DebugPanel } from './ui/DebugPanel'
+import { GuessInput } from './ui/GuessInput'
+import { GuessList } from './ui/GuessList'
+import { Header } from './ui/Header'
+import { WinCard } from './ui/WinCard'
+
+const ANSWER_POOL = catalog.filter((b) => !b.optional).map((b) => b.slug)
+const DEBUG = new URLSearchParams(location.search).has('debug')
+
+function newAnswer(): string {
+  const answer = pickAnswer(ANSWER_POOL, readRecent())
+  pushRecent(answer)
+  return answer
+}
+
 export default function App() {
-  return <div id="app" />
+  const [geometry, setGeometry] = useState<Geometry | null>(null)
+  const [loadError, setLoadError] = useState<string | null>(null)
+  const [state, dispatch] = useReducer(reduce, undefined, () => initialState(newAnswer()))
+  const [stats, setStats] = useState<Stats>(() => readStats())
+  const [flyTo, setFlyTo] = useState<string | null>(null)
+  const [homeToken, setHomeToken] = useState(0)
+  const [debugColors, setDebugColors] = useState<BoneColors>({})
+  const index = useMemo(() => new SearchIndex(catalog), [])
+
+  useEffect(() => {
+    loadGeometry().then(setGeometry, (e: Error) => setLoadError(e.message))
+  }, [])
+
+  const colors = useMemo<BoneColors>(() => {
+    const c: BoneColors = { ...debugColors }
+    for (const g of state.guesses) c[g.slug] = heatToColor(g.heat, g.slug === state.answer)
+    return c
+  }, [state.guesses, state.answer, debugColors])
+
+  const guessed = useMemo(() => new Set(state.guesses.map((g) => g.slug)), [state.guesses])
+
+  const onGuess = useCallback(
+    (slug: string) => {
+      if (!geometry || state.status !== 'playing' || guessed.has(slug)) return
+      dispatch({ type: 'guess', slug, geometry })
+      if (slug === state.answer) {
+        // Win: record stats and frame the answer.
+        setStats((s) => {
+          const next = recordWin(s, state.answer, state.guesses.length + 1)
+          writeStats(next)
+          return next
+        })
+        setFlyTo(slug)
+      }
+    },
+    [geometry, state.status, state.answer, state.guesses.length, guessed],
+  )
+
+  const playAgain = useCallback(() => {
+    dispatch({ type: 'newGame', answer: newAnswer() })
+    setFlyTo(null)
+    setHomeToken((t) => t + 1)
+  }, [])
+
+  const debugState = (s: GameState) => (DEBUG ? ` · answer: ${s.answer}` : '')
+
+  return (
+    <div className="app">
+      <div className="scene">
+        <Scene colors={colors} flyToSlug={flyTo} homeToken={homeToken} />
+      </div>
+      <Header gamesPlayed={stats.gamesPlayed} onHome={() => setHomeToken((t) => t + 1)} />
+      <aside className="panel">
+        <GuessInput
+          index={index}
+          guessed={guessed}
+          disabled={state.status === 'won' || !geometry}
+          onGuess={onGuess}
+        />
+        {loadError && <div className="guess-error">Failed to load geometry: {loadError}</div>}
+        {!geometry && !loadError && <div className="muted">Loading skeleton…</div>}
+        <div className="muted small">
+          {state.guesses.length} {state.guesses.length === 1 ? 'guess' : 'guesses'}
+          {debugState(state)}
+        </div>
+        <GuessList guesses={state.guesses} answer={state.answer} onSelect={setFlyTo} />
+      </aside>
+      {state.status === 'won' && (
+        <WinCard answer={state.answer} guessCount={state.guesses.length} onPlayAgain={playAgain} />
+      )}
+      {DEBUG && <DebugPanel colors={debugColors} onChange={setDebugColors} onFlyTo={setFlyTo} />}
+    </div>
+  )
 }

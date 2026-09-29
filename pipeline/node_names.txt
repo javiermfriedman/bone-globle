@@ -1,0 +1,206 @@
+Atlas
+Axis
+Body of sternum
+Distal phalanx of left big toe
+Distal phalanx of left fourth toe
+Distal phalanx of left index finger
+Distal phalanx of left little finger
+Distal phalanx of left little toe
+Distal phalanx of left middle finger
+Distal phalanx of left ring finger
+Distal phalanx of left second toe
+Distal phalanx of left third toe
+Distal phalanx of left thumb
+Distal phalanx of right big toe
+Distal phalanx of right fourth toe
+Distal phalanx of right index finger
+Distal phalanx of right little finger
+Distal phalanx of right little toe
+Distal phalanx of right middle finger
+Distal phalanx of right ring finger
+Distal phalanx of right second toe
+Distal phalanx of right third toe
+Distal phalanx of right thumb
+Eighth thoracic vertebra
+Eleventh thoracic vertebra
+Ethmoid
+Fifth cervical vertebra
+Fifth lumbar vertebra
+Fifth thoracic vertebra
+First lumbar vertebra
+First thoracic vertebra
+Fourth cervical vertebra
+Fourth lumbar vertebra
+Fourth thoracic vertebra
+Frontal bone
+Hyoid bone (FJ2772)
+Hyoid bone (FJ3201)
+Left calcaneus
+Left capitate
+Left clavicle
+Left cuboid bone
+Left eighth rib
+Left eleventh rib
+Left femur
+Left fibula
+Left fifth metacarpal bone
+Left fifth metatarsal bone
+Left fifth rib
+Left first metacarpal bone
+Left first metatarsal bone
+Left first rib
+Left fourth metacarpal bone
+Left fourth metatarsal bone
+Left fourth rib
+Left hamate
+Left hip bone
+Left humerus
+Left inferior nasal concha
+Left intermediate cuneiform bone
+Left lacrimal bone
+Left lateral cuneiform bone
+Left lunate
+Left maxilla
+Left medial cuneiform bone
+Left nasal bone
+Left ninth rib
+Left palatine bone
+Left parietal bone
+Left patella
+Left pisiform
+Left radius
+Left scaphoid
+Left scapula
+Left second metacarpal bone
+Left second metatarsal bone
+Left second rib
+Left seventh rib
+Left sixth rib
+Left talus
+Left temporal bone
+Left tenth rib
+Left third metacarpal bone
+Left third metatarsal bone
+Left third rib
+Left tibia
+Left trapezium
+Left trapezoid
+Left triquetral
+Left twelfth rib
+Left ulna
+Left zygomatic bone
+Mandible
+Manubrium
+Middle phalanx of left fourth toe
+Middle phalanx of left index finger
+Middle phalanx of left little finger
+Middle phalanx of left little toe
+Middle phalanx of left middle finger
+Middle phalanx of left ring finger
+Middle phalanx of left second toe
+Middle phalanx of left third toe
+Middle phalanx of right fourth toe
+Middle phalanx of right index finger
+Middle phalanx of right little finger
+Middle phalanx of right little toe
+Middle phalanx of right middle finger
+Middle phalanx of right ring finger
+Middle phalanx of right second toe
+Middle phalanx of right third toe
+Navicular bone of left foot
+Navicular bone of right foot
+Ninth thoracic vertebra
+Occipital bone
+Proximal phalanx of left big toe
+Proximal phalanx of left fourth toe
+Proximal phalanx of left index finger
+Proximal phalanx of left little finger
+Proximal phalanx of left little toe
+Proximal phalanx of left middle finger
+Proximal phalanx of left ring finger
+Proximal phalanx of left second toe
+Proximal phalanx of left third toe
+Proximal phalanx of left thumb
+Proximal phalanx of right big toe
+Proximal phalanx of right fourth toe
+Proximal phalanx of right index finger
+Proximal phalanx of right little finger
+Proximal phalanx of right little toe
+Proximal phalanx of right middle finger
+Proximal phalanx of right ring finger
+Proximal phalanx of right second toe
+Proximal phalanx of right third toe
+Proximal phalanx of right thumb
+Right calcaneus
+Right capitate
+Right clavicle
+Right cuboid bone
+Right eighth rib
+Right eleventh rib
+Right femur
+Right fibula
+Right fifth metacarpal bone
+Right fifth metatarsal bone
+Right fifth rib
+Right first metacarpal bone
+Right first metatarsal bone
+Right first rib
+Right fourth metacarpal bone
+Right fourth metatarsal bone
+Right fourth rib
+Right hamate
+Right hip bone
+Right humerus
+Right inferior nasal concha
+Right intermediate cuneiform bone
+Right lacrimal bone
+Right lateral cuneiform bone
+Right lunate
+Right maxilla
+Right medial cuneiform bone
+Right nasal bone
+Right ninth rib
+Right palatine bone
+Right parietal bone
+Right patella
+Right pisiform
+Right radius
+Right scaphoid
+Right scapula
+Right second metacarpal bone
+Right second metatarsal bone
+Right second rib
+Right seventh rib
+Right sixth rib
+Right talus
+Right temporal bone
+Right tenth rib
+Right third metacarpal bone
+Right third metatarsal bone
+Right third rib
+Right tibia
+Right trapezium
+Right trapezoid
+Right triquetral
+Right twelfth rib
+Right ulna
+Right zygomatic bone
+Sacrum
+Second lumbar vertebra
+Second thoracic vertebra
+Sesamoid bone of left foot (FJ3266)
+Sesamoid bone of left foot (FJ3270)
+Sesamoid bone of right foot (FJ3372)
+Sesamoid bone of right foot (FJ3376)
+Seventh cervical vertebra
+Seventh thoracic vertebra
+Sixth cervical vertebra
+Sixth thoracic vertebra
+Sphenoid bone
+Tenth thoracic vertebra
+Third cervical vertebra
+Third lumbar vertebra
+Third thoracic vertebra
+Twelfth thoracic vertebra
+Vomer
+Xiphoid process
