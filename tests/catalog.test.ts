@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { describe, expect, it } from 'vitest'
+import { normalize } from '../src/data/search'
 
 type Vec3 = [number, number, number]
 
@@ -80,6 +81,41 @@ describe('catalog integrity', () => {
 
     const underPaired = catalog.filter((e) => e.paired && !e.optional && e.meshNames.length < 2)
     expect(underPaired.map((e) => e.slug)).toEqual([])
+  })
+
+  it('no two entries share a normalized display name or synonym', () => {
+    // The search index is first-writer-wins, so a shared term would silently lose.
+    const owner = new Map<string, string>()
+    const clashes: string[] = []
+    for (const e of catalog) {
+      for (const term of new Set([e.displayName, ...e.synonyms].map(normalize))) {
+        const prev = owner.get(term)
+        if (prev && prev !== e.slug) clashes.push(`"${term}": ${prev} / ${e.slug}`)
+        else owner.set(term, e.slug)
+      }
+    }
+    expect(clashes).toEqual([])
+  })
+
+  it('maps all 206 meshes, with groups of the expected size', () => {
+    const all = catalog.flatMap((e) => e.meshNames)
+    expect(all).toHaveLength(206)
+    expect(new Set(all).size).toBe(206)
+    const count = (slug: string) => catalog.find((e) => e.slug === slug)?.meshNames.length
+    expect(count('ribs')).toBe(24)
+    expect(count('vertebrae-cervical')).toBe(5)
+    expect(count('vertebrae-thoracic')).toBe(12)
+    expect(count('vertebrae-lumbar')).toBe(5)
+    expect(count('metacarpals')).toBe(10)
+    expect(count('metatarsals')).toBe(10)
+    for (const limb of ['hand', 'foot']) {
+      expect(count(`phalanges-proximal-${limb}`)).toBe(10)
+      // Thumb and great toe have no middle phalanx: 4 per side.
+      expect(count(`phalanges-middle-${limb}`)).toBe(8)
+      expect(count(`phalanges-distal-${limb}`)).toBe(10)
+    }
+    const footMiddle = catalog.find((e) => e.slug === 'phalanges-middle-foot')!.meshNames
+    expect(footMiddle.some((m) => /big toe|great toe|hallux/i.test(m))).toBe(false)
   })
 
   it('every entry includes its lowercased displayName as a synonym', () => {

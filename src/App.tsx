@@ -14,14 +14,16 @@ import { HelpModal } from './ui/HelpModal'
 import { WinCard } from './ui/WinCard'
 
 const ANSWER_POOL = catalog.filter((b) => !b.optional && b.meshNames.length > 0).map((b) => b.slug)
+const ANSWER_SET: ReadonlySet<string> = new Set(ANSWER_POOL)
 // Lazy so the UI shell paints before the three.js bundle arrives.
 const Scene = lazy(() => import('./three/Scene').then((m) => ({ default: m.Scene })))
 
 const DEBUG = new URLSearchParams(location.search).has('debug')
 
 function newAnswer(): string {
-  const answer = pickAnswer(ANSWER_POOL, readRecent())
-  pushRecent(answer)
+  // Slugs stored by an older catalog version are dropped rather than trusted.
+  const answer = pickAnswer(ANSWER_POOL, readRecent(undefined, ANSWER_SET))
+  pushRecent(answer, undefined, ANSWER_SET)
   return answer
 }
 

@@ -78,4 +78,13 @@ describe('random answer selection', () => {
     st.setItem('bonegloble.recentAnswers', '{not json')
     expect(readRecent(st)).toEqual([])
   })
+  it('drops slugs from an older catalog when given the valid set', () => {
+    const st = new MemStorage()
+    st.setItem('bonegloble.recentAnswers', JSON.stringify(['rib-07', 'femur', 'vertebra-t4']))
+    const valid = new Set(['femur', 'ribs'])
+    expect(readRecent(st, valid)).toEqual(['femur'])
+    expect(pushRecent('ribs', st, valid)).toEqual(['femur', 'ribs'])
+    expect(readRecent(st)).toEqual(['femur', 'ribs'])
+    expect(pickAnswer(['femur', 'ribs', 'tibia'], readRecent(st, valid))).toBe('tibia')
+  })
 })

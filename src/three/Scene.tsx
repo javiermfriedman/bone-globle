@@ -3,6 +3,7 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib'
 import * as THREE from 'three'
+import { bySlug } from '../data/catalog'
 import { Skeleton, type BoneColors, type SkeletonHandle } from './Skeleton'
 import {
   HOME_POSITION,
@@ -40,12 +41,10 @@ function CameraRig({
     if (!flyToSlug || !handleRef.current || !controlsRef.current) return
     const meshes = handleRef.current.meshesBySlug.get(flyToSlug)
     if (!meshes?.length) return
-    anim.current = planFlyTo(
-      camera,
-      controlsRef.current,
-      boundsOf(nearestSide(meshes, camera.position)),
-      performance.now(),
-    )
+    // Only paired bones split by side: midline groups (a vertebral region, the sternum) have
+    // centres a hair either side of x = 0 and must stay whole.
+    const framed = bySlug.get(flyToSlug)?.paired ? nearestSide(meshes, camera.position) : meshes
+    anim.current = planFlyTo(camera, controlsRef.current, boundsOf(framed), performance.now())
   }, [flyToSlug, camera, handleRef, controlsRef])
 
   useEffect(() => {

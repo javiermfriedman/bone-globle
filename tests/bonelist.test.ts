@@ -5,8 +5,11 @@ import { filterBones, summarizeBones } from '../src/data/boneFilter'
 const answerPool = catalog.filter((b) => !b.optional && b.meshNames.length > 0).map((b) => b.slug)
 
 describe('groupBySubregion', () => {
-  it('the answer pool is 117 bones and excludes the mesh-less coccyx and ossicles', () => {
-    expect(answerPool).toHaveLength(117)
+  it('the answer pool is 57 entries (grouped ribs, vertebrae, metacarpals/tarsals, phalanx rows) and excludes the mesh-less coccyx and ossicles', () => {
+    expect(answerPool).toHaveLength(57)
+    expect(answerPool).toContain('ribs')
+    expect(answerPool).toContain('vertebra-c1')
+    expect(answerPool).not.toContain('rib-01')
     expect(answerPool).not.toContain('coccyx')
     expect(answerPool).not.toContain('stapes')
     expect(answerPool).toContain('sesamoid-hallux')

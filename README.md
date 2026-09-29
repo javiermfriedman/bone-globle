@@ -5,10 +5,18 @@ human skeleton. A mystery bone is chosen at random. Type bone names; each guess 
 up on an interactive 3D skeleton with a heat colour based on its straight-line distance
 to the mystery bone. Find it, read a short info card, play again.
 
-- 117 answer bones: every rib, vertebra, carpal, tarsal, metacarpal, metatarsal and
-  phalanx, the 22 skull bones, hyoid, patella and the hallux sesamoids (one answer for
-  the pair under each big toe). Paired bones count once and both sides light up. That is
-  the full standard 206 except the six auditory ossicles, which the source model lacks.
+- 57 answers covering the full standard 206 except the six auditory ossicles, which the
+  source model lacks: the 22 skull bones, hyoid, atlas, axis, sacrum, sternum, each limb
+  bone, carpal and tarsal, patella and the hallux sesamoids. Paired bones count once and
+  both sides light up.
+- Repetitive series are answered as groups: all ribs are one answer ("Ribs"); the
+  vertebrae below the axis are three (cervical C3–C7, thoracic T1–T12, lumbar L1–L5);
+  metacarpals and metatarsals are one each; and phalanges are one answer per row per limb
+  (proximal, middle, distal; hand and foot). Any individual name still works as a guess
+  ("7th rib", "C5", "third metacarpal", "distal phalanx of thumb") and lights the whole
+  group. The bare words "vertebra", "phalanx"/"phalanges", "finger bones" and "toe bones"
+  deliberately resolve to nothing, so you must name the region or row. A bare "proximal
+  phalanx" (or middle/distal) means the hand; add "of foot" or a toe name for the foot.
 - Press Enter to check a name. Exact display names and common synonyms (kneecap,
   collarbone, C1, rib 2, ilium) guess straight away; a leading "left"/"right" or a
   trailing "bone" is ignored, so "left femur" and "femur bone" both work. A near-miss

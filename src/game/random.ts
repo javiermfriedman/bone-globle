@@ -14,18 +14,30 @@ function safeStorage(): Storage | null {
   }
 }
 
-export function readRecent(storage: Storage | null = safeStorage()): string[] {
+/**
+ * Recent answers, oldest first. When `valid` is given, slugs outside it are dropped, so
+ * entries saved by an older catalog (e.g. "rib-07" before ribs became one answer) vanish.
+ */
+export function readRecent(
+  storage: Storage | null = safeStorage(),
+  valid?: ReadonlySet<string>,
+): string[] {
   try {
     const raw = storage?.getItem(RECENT_KEY)
     const parsed = raw ? (JSON.parse(raw) as unknown) : []
-    return Array.isArray(parsed) ? parsed.filter((x): x is string => typeof x === 'string') : []
+    if (!Array.isArray(parsed)) return []
+    return parsed.filter((x): x is string => typeof x === 'string' && (!valid || valid.has(x)))
   } catch {
     return []
   }
 }
 
-export function pushRecent(slug: string, storage: Storage | null = safeStorage()): string[] {
-  const next = [...readRecent(storage).filter((s) => s !== slug), slug].slice(-RECENT_LIMIT)
+export function pushRecent(
+  slug: string,
+  storage: Storage | null = safeStorage(),
+  valid?: ReadonlySet<string>,
+): string[] {
+  const next = [...readRecent(storage, valid).filter((s) => s !== slug), slug].slice(-RECENT_LIMIT)
   try {
     storage?.setItem(RECENT_KEY, JSON.stringify(next))
   } catch {

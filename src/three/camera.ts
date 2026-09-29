@@ -19,7 +19,8 @@ export function boundsOf(meshes: THREE.Mesh[]): FlyTarget {
 
 /**
  * For paired bones, frame only the side closest to the camera. Meshes are grouped by the
- * sign of their x centre so multi-part bones (sternum) still stay together.
+ * sign of their x centre, so a paired group (all 24 ribs) frames one side's set. Callers
+ * must not use this for midline bones, whose parts sit a hair either side of x = 0.
  */
 export function nearestSide(meshes: THREE.Mesh[], from: THREE.Vector3): THREE.Mesh[] {
   if (meshes.length < 2) return meshes

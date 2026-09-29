@@ -50,15 +50,51 @@ describe('SearchIndex', () => {
     expect(index.resolve('stapes')?.slug).toBe('stapes')
   })
   it('handles rib ordinals', () => {
-    expect(index.resolve('rib 2')?.slug).toBe(index.resolve('second rib')?.slug)
-    expect(index.resolve('2nd rib')?.slug).toBe(index.resolve('second rib')?.slug)
+    expect(index.resolve('rib 2')?.slug).toBe('ribs')
+    expect(index.resolve('2nd rib')?.slug).toBe('ribs')
+    expect(index.resolve('second rib')?.slug).toBe('ribs')
+  })
+  it('resolves individual names to their group entry', () => {
+    const cases: [string, string][] = [
+      ['rib', 'ribs'],
+      ['7th rib', 'ribs'],
+      ['floating rib', 'ribs'],
+      ['C5', 'vertebrae-cervical'],
+      ['vertebra prominens', 'vertebrae-cervical'],
+      ['atlas', 'vertebra-c1'],
+      ['C2', 'vertebra-c2'],
+      ['T4', 'vertebrae-thoracic'],
+      ['L4', 'vertebrae-lumbar'],
+      ['third metacarpal', 'metacarpals'],
+      ['thumb metacarpal', 'metacarpals'],
+      ['first metatarsal', 'metatarsals'],
+      ['distal phalanx of thumb', 'phalanges-distal-hand'],
+      ['middle phalanx of ring finger', 'phalanges-middle-hand'],
+      ['proximal phalanx', 'phalanges-proximal-hand'],
+      ['proximal phalanx of big toe', 'phalanges-proximal-foot'],
+      ['middle phalanx of little toe', 'phalanges-middle-foot'],
+      ['distal phalanx of foot', 'phalanges-distal-foot'],
+    ]
+    for (const [q, slug] of cases) expect(index.resolve(q)?.slug, q).toBe(slug)
+  })
+  it('leaves bare group words unresolved so the player names the region or row', () => {
+    for (const q of [
+      'vertebra',
+      'vertebrae',
+      'phalanges',
+      'phalanx',
+      'finger bones',
+      'toe bones',
+    ]) {
+      expect(index.resolve(q), q).toBeNull()
+    }
+    // The great toe has no middle phalanx.
+    expect(index.resolve('middle phalanx of big toe')).toBeNull()
   })
   it('fuzzy-matches typos of whole names', () => {
     expect(index.search('scapla').map((h) => h.slug)).toEqual(['scapula'])
     expect(index.search('scafoid').some((h) => h.slug === 'carpal-scaphoid')).toBe(true)
-    const t4 = index.resolve('T4')?.slug
-    expect(t4).toBeTruthy()
-    expect(index.search('thorasic 4').some((h) => h.slug === t4)).toBe(true)
+    expect(index.search('thorasic 4').some((h) => h.slug === 'vertebrae-thoracic')).toBe(true)
   })
   it('never suggests bones from a single word of a longer name', () => {
     expect(index.search('foot')).toEqual([])

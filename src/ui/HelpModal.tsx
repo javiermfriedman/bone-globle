@@ -31,6 +31,13 @@ export function HelpModal({ onClose }: { onClose: () => void }) {
         &quot;bone&quot; are ignored.
       </p>
       <p>
+        The ribs are one answer, the vertebrae below the axis are three (cervical, thoracic,
+        lumbar), the metacarpals and metatarsals are one each, and the phalanges are one per row
+        (proximal, middle, distal) for the hand and for the foot. Naming any single one, like C5 or
+        7th rib, guesses its whole group; a bare &ldquo;vertebra&rdquo; or &ldquo;phalanx&rdquo;
+        does not count.
+      </p>
+      <p>
         Drag to orbit, scroll to zoom, right-drag to pan. Unguessed bones are see-through so guesses
         inside the skull or chest still show.
       </p>
