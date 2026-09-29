@@ -8,8 +8,9 @@ export function HelpModal({ onClose }: { onClose: () => void }) {
     <Modal title="How to play" onClose={onClose}>
       <p>
         A mystery bone is hidden somewhere in the skeleton. Type the name of any bone. Press Enter
-        to check. If the spelling is close but not exact you get a short list of similar names to
-        pick from; there are no hints while you type.
+        to check. If you misspell a name by a letter or two you get a &ldquo;Did you mean&rdquo;
+        prompt to confirm; partial or distant names get no suggestions, and there are no hints while
+        you type.
       </p>
       <p>
         Every guess lights up on the model. The colour tells you how close that bone is to the

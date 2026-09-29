@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import type { SearchHit, SearchIndex } from '../data/search'
+import { SEARCH_LIMIT, type SearchHit, type SearchIndex } from '../data/search'
 
 interface Props {
   index: SearchIndex
@@ -56,9 +56,9 @@ export function GuessInput({ index, guessed, disabled, placeholder, onGuess }: P
         submit(exact.slug)
         return
       }
-      const near = index.search(query, 8).filter((h) => !guessed.has(h.slug))
+      const near = index.search(query, SEARCH_LIMIT).filter((h) => !guessed.has(h.slug))
       if (near.length === 0) {
-        setError('No close matches')
+        setError('Not a bone name we know')
         return
       }
       setCandidates(near)
@@ -92,7 +92,9 @@ export function GuessInput({ index, guessed, disabled, placeholder, onGuess }: P
       {error && <div className="guess-error">{error}</div>}
       {open && candidates.length > 0 && (
         <>
-          <div className="muted small">Did you mean…</div>
+          <div className="muted small">
+            Did you mean{candidates.length === 1 ? ':' : ' one of these?'}
+          </div>
           <ul className="suggestions" role="listbox">
             {candidates.map((h, i) => (
               <li

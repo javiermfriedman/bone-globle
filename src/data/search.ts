@@ -54,23 +54,35 @@ export function queryVariants(normalized: string): string[] {
   return out
 }
 
-/** Levenshtein distance with early exit once it exceeds `max`. */
+/**
+ * Edit distance with early exit once it exceeds `max`. Counts a swap of two adjacent
+ * letters ("tibai" -> "tibia") as ONE edit (optimal string alignment distance), since
+ * transpositions are the most common typo and plain Levenshtein would charge two.
+ */
 export function levenshtein(a: string, b: string, max = Infinity): number {
   if (a === b) return 0
   if (Math.abs(a.length - b.length) > max) return max + 1
-  const prev = new Array<number>(b.length + 1)
-  const cur = new Array<number>(b.length + 1)
+  let prev2 = new Array<number>(b.length + 1)
+  let prev = new Array<number>(b.length + 1)
+  let cur = new Array<number>(b.length + 1)
   for (let j = 0; j <= b.length; j++) prev[j] = j
   for (let i = 1; i <= a.length; i++) {
     cur[0] = i
     let rowMin = cur[0]
     for (let j = 1; j <= b.length; j++) {
       const cost = a[i - 1] === b[j - 1] ? 0 : 1
-      cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + cost)
-      if (cur[j] < rowMin) rowMin = cur[j]
+      let d = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + cost)
+      if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) {
+        d = Math.min(d, prev2[j - 2] + 1)
+      }
+      cur[j] = d
+      if (d < rowMin) rowMin = d
     }
     if (rowMin > max) return max + 1
-    for (let j = 0; j <= b.length; j++) prev[j] = cur[j]
+    const t = prev2
+    prev2 = prev
+    prev = cur
+    cur = t
   }
   return prev[b.length]
 }
@@ -113,42 +125,67 @@ export class SearchIndex {
   }
 
   /**
-   * Typo-tolerant "did you mean" matches, used only after Enter on a name that did not
-   * resolve exactly. An exact term scores 1; everything else has to be within a small
-   * Levenshtein budget of the whole term or one of its words. There is deliberately no
-   * prefix or substring matching, so partial input like "fem" suggests nothing — the game
-   * tests recall, not typing. One hit per slug.
+   * Spelling rescue for a name that did not resolve exactly, used only after Enter. It is
+   * NOT a hint engine: the game tests recall, so it only fixes a misspelling of a name the
+   * player was clearly already aiming at.
+   *
+   * - The query (and its queryVariants: side stripped, trailing "bone" toggled) is compared
+   *   against WHOLE terms only (display names and synonyms). No per-word, prefix or
+   *   substring matching, so "foot" or "fem" return nothing.
+   * - Edit budget: see maxEdits(). At most 1 edit when the shorter of query/term is <= 5
+   *   characters, at most 2 otherwise, never 3; and never more than floor(len / 3) of the
+   *   core query length (side and trailing "bone" removed), so queries under 3 characters get no fuzzy matches at all.
+   * - Only the best-distance tier is returned: if anything is 1 edit away, 2-edit matches
+   *   are dropped. One hit per slug, primary display name wins ties, capped at `limit`.
    */
-  search(query: string, limit = 8): SearchHit[] {
+  search(query: string, limit = SEARCH_LIMIT): SearchHit[] {
     const raw = normalize(query)
     if (!raw) return []
-    // Fuzzy-match the sideless / bone-less form when there is one, else the query as typed.
     const variants = queryVariants(raw)
-    const q = variants.find((v) => v !== raw && !v.endsWith(' bone')) ?? raw
-    const best = new Map<string, SearchHit>()
-    const consider = (t: IndexedTerm, score: number) => {
-      const prev = best.get(t.slug)
-      if (!prev || score > prev.score) {
-        best.set(t.slug, { slug: t.slug, displayName: t.displayName, term: t.term, score })
-      }
-    }
-    const budget = q.length <= 4 ? 1 : q.length <= 8 ? 2 : 3
+    // Budgets are sized from the core name the player typed (no side, no trailing "bone"),
+    // so the padded "fem bone" variant cannot earn a bigger budget than "fem" itself.
+    const core = raw.replace(/^(left|right|l|r) /, '').replace(/ bone$/, '') || raw
+    const best = new Map<string, { hit: SearchHit; dist: number }>()
     for (const t of this.terms) {
-      const primaryBonus = t.isPrimary ? 0.01 : 0
-      if (t.term === q) consider(t, 1)
-      else if (q.length >= 3) {
-        // Compare against the whole term and against each word for typos like "femer".
-        let d = levenshtein(q, t.term, budget)
-        if (d > budget) {
-          for (const w of t.term.split(' ')) {
-            if (Math.abs(w.length - q.length) > budget) continue
-            d = Math.min(d, levenshtein(q, w, budget))
-            if (d <= budget) break
-          }
-        }
-        if (d <= budget) consider(t, 0.5 - d * 0.1 - t.term.length / 1000 + primaryBonus)
+      let dist = Infinity
+      for (const q of variants) {
+        const budget = maxEdits(core, t.term)
+        if (budget < 0) continue
+        const d = levenshtein(q, t.term, budget)
+        if (d <= budget && d < dist) dist = d
+      }
+      if (dist === Infinity) continue
+      const score = 1 - dist * 0.1 + (t.isPrimary ? 0.01 : 0) - t.term.length / 1000
+      const prev = best.get(t.slug)
+      if (!prev || dist < prev.dist || (dist === prev.dist && score > prev.hit.score)) {
+        best.set(t.slug, {
+          hit: { slug: t.slug, displayName: t.displayName, term: t.term, score },
+          dist,
+        })
       }
     }
-    return [...best.values()].sort((a, b) => b.score - a.score).slice(0, limit)
+    if (best.size === 0) return []
+    const minDist = Math.min(...[...best.values()].map((b) => b.dist))
+    return [...best.values()]
+      .filter((b) => b.dist === minDist)
+      .map((b) => b.hit)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, limit)
   }
+}
+
+/** Default cap on "did you mean" hits; the common case is exactly one. */
+export const SEARCH_LIMIT = 3
+
+/**
+ * Maximum edits allowed between a query and a whole term (-1 = no fuzzy match):
+ *   shorter of the two <= 5 chars -> 1 edit, otherwise 2 edits (never 3),
+ *   and additionally capped at floor(query length / 3), so "ab" gets 0 and "fem" gets 1.
+ */
+export function maxEdits(query: string, term: string): number {
+  const shorter = Math.min(query.length, term.length)
+  const byLength = shorter <= 5 ? 1 : 2
+  const byRatio = Math.floor(query.length / 3)
+  const budget = Math.min(byLength, byRatio)
+  return budget > 0 ? budget : -1
 }

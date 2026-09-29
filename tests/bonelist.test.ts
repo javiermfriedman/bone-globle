@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { SUBREGION_ORDER, catalog, groupBySubregion } from '../src/data/catalog'
+import { filterBones, summarizeBones } from '../src/data/boneFilter'
 
 const answerPool = catalog.filter((b) => !b.optional && b.meshNames.length > 0).map((b) => b.slug)
 
@@ -41,5 +42,64 @@ describe('groupBySubregion', () => {
 
   it('returns nothing for an empty slug list', () => {
     expect(groupBySubregion([])).toEqual([])
+  })
+})
+
+describe('filterBones', () => {
+  const entries = answerPool.map((s) => catalog.find((b) => b.slug === s)!)
+  const slugs = (q: string) => filterBones(entries, q).map((m) => m.bone.slug)
+
+  it('returns every entry, in order, for an empty or blank query', () => {
+    expect(slugs('')).toEqual(answerPool)
+    expect(slugs('   ')).toEqual(answerPool)
+    expect(filterBones(entries, '').every((m) => m.via === undefined)).toBe(true)
+  })
+
+  it('matches display-name substrings', () => {
+    const hits = slugs('fem')
+    expect(hits).toContain('femur')
+    for (const m of filterBones(entries, 'fem')) {
+      expect(m.bone.displayName.toLowerCase()).toContain('fem')
+    }
+  })
+
+  it('matches synonyms and reports the synonym it matched through', () => {
+    expect(filterBones(entries, 'kneecap')).toEqual([
+      { bone: entries.find((b) => b.slug === 'patella'), via: 'kneecap' },
+    ])
+    const blade = filterBones(entries, 'shoulder bl').find((m) => m.bone.slug === 'scapula')
+    expect(blade?.via).toBe('shoulder blade')
+    // A display-name hit carries no "via" even though synonyms also match.
+    expect(filterBones(entries, 'patella').find((m) => m.bone.slug === 'patella')?.via).toBe(
+      undefined,
+    )
+  })
+
+  it('matches a subregion label, e.g. "skull" returns the whole skull group', () => {
+    const skull = entries.filter((b) => b.subregion === 'skull').map((b) => b.slug)
+    expect(skull.length).toBeGreaterThan(0)
+    for (const s of skull) expect(slugs('skull')).toContain(s)
+    expect(slugs('SKULL')).toEqual(slugs('skull'))
+  })
+
+  it('returns nothing when no bone matches', () => {
+    expect(filterBones(entries, 'xyzzy')).toEqual([])
+  })
+
+  it('ignores case and punctuation via normalize', () => {
+    expect(slugs('FEMUR!')).toEqual(slugs('femur'))
+    expect(slugs('  Fe-Mur ')).toEqual(slugs('fe mur'))
+    expect(slugs('femur.')).toContain('femur')
+  })
+})
+
+describe('summarizeBones', () => {
+  it('splits the pool into axial and appendicular without hardcoded totals', () => {
+    const entries = answerPool.map((s) => catalog.find((b) => b.slug === s)!)
+    const s = summarizeBones(entries)
+    expect(s.total).toBe(answerPool.length)
+    expect(s.axial + s.appendicular).toBe(s.total)
+    expect(s.paired).toBeGreaterThan(0)
+    expect(s.paired).toBeLessThanOrEqual(s.total)
   })
 })

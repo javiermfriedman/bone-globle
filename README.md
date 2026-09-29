@@ -12,8 +12,10 @@ to the mystery bone. Find it, read a short info card, play again.
 - Press Enter to check a name. Exact display names and common synonyms (kneecap,
   collarbone, C1, rib 2, ilium) guess straight away; a leading "left"/"right" or a
   trailing "bone" is ignored, so "left femur" and "femur bone" both work. A near-miss
-  spelling brings up a short list of similar names to pick from. No suggestions appear
-  while you type, so the game tests recall rather than typing.
+  spelling of a whole name (1 edit for short names, at most 2 for longer ones) brings up a
+  "Did you mean" prompt, usually a single option, that you confirm. Partial names ("fem"),
+  single words from longer names ("foot") and distant spellings get no suggestions, and
+  nothing appears while you type, so the game tests recall rather than typing.
 - Unguessed bones render translucent so guesses inside the skull or chest show through.
 - A 🦴 button lists every bone in the game, grouped by region.
 
