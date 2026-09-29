@@ -8,6 +8,7 @@ import {
   HOME_POSITION,
   HOME_TARGET,
   boundsOf,
+  nearestSide,
   planFlyTo,
   stepFly,
   type FlyAnimation,
@@ -39,7 +40,12 @@ function CameraRig({
     if (!flyToSlug || !handleRef.current || !controlsRef.current) return
     const meshes = handleRef.current.meshesBySlug.get(flyToSlug)
     if (!meshes?.length) return
-    anim.current = planFlyTo(camera, controlsRef.current, boundsOf(meshes), performance.now())
+    anim.current = planFlyTo(
+      camera,
+      controlsRef.current,
+      boundsOf(nearestSide(meshes, camera.position)),
+      performance.now(),
+    )
   }, [flyToSlug, camera, handleRef, controlsRef])
 
   useEffect(() => {

@@ -1,18 +1,24 @@
 interface Props {
-  gamesPlayed: number
+  onHelp: () => void
+  onStats: () => void
   onHome: () => void
 }
 
-export function Header({ gamesPlayed, onHome }: Props) {
+export function Header({ onHelp, onStats, onHome }: Props) {
   return (
     <header className="header">
       <h1>
         Bone <span>Globle</span>
       </h1>
       <div className="header-right">
-        <span className="muted">{gamesPlayed} played</span>
-        <button title="Reset camera" onClick={onHome}>
+        <button title="Reset camera" aria-label="Reset camera" onClick={onHome}>
           ⌂
+        </button>
+        <button title="Statistics" aria-label="Statistics" onClick={onStats}>
+          ▥
+        </button>
+        <button title="How to play" aria-label="How to play" onClick={onHelp}>
+          ?
         </button>
       </div>
     </header>

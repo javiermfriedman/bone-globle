@@ -17,6 +17,23 @@ export function boundsOf(meshes: THREE.Mesh[]): FlyTarget {
   return { center, radius: Math.max(sphere.radius, 0.02) }
 }
 
+/**
+ * For paired bones, frame only the side closest to the camera. Meshes are grouped by the
+ * sign of their x centre so multi-part bones (sternum) still stay together.
+ */
+export function nearestSide(meshes: THREE.Mesh[], from: THREE.Vector3): THREE.Mesh[] {
+  if (meshes.length < 2) return meshes
+  const centre = (m: THREE.Mesh) => {
+    const box = new THREE.Box3().expandByObject(m)
+    return box.getCenter(new THREE.Vector3())
+  }
+  const groups: { left: THREE.Mesh[]; right: THREE.Mesh[] } = { left: [], right: [] }
+  for (const m of meshes) (centre(m).x < 0 ? groups.left : groups.right).push(m)
+  if (!groups.left.length || !groups.right.length) return meshes
+  const dist = (g: THREE.Mesh[]) => boundsOf(g).center.distanceTo(from)
+  return dist(groups.left) <= dist(groups.right) ? groups.left : groups.right
+}
+
 export interface FlyAnimation {
   fromPos: THREE.Vector3
   toPos: THREE.Vector3

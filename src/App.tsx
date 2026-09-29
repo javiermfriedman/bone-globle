@@ -1,20 +1,33 @@
-import { useCallback, useEffect, useMemo, useReducer, useState } from 'react'
+import { Suspense, lazy, useCallback, useEffect, useMemo, useReducer, useState } from 'react'
 import { catalog, loadGeometry, type Geometry } from './data/catalog'
 import { SearchIndex } from './data/search'
 import { heatToColor } from './game/distance'
 import { pickAnswer, pushRecent, readRecent } from './game/random'
 import { initialState, reduce, type GameState } from './game/state'
 import { readStats, recordWin, writeStats, type Stats } from './game/stats'
-import { Scene } from './three/Scene'
 import type { BoneColors } from './three/Skeleton'
 import { DebugPanel } from './ui/DebugPanel'
 import { GuessInput } from './ui/GuessInput'
 import { GuessList } from './ui/GuessList'
 import { Header } from './ui/Header'
+import { HelpModal } from './ui/HelpModal'
+import { StatsModal } from './ui/StatsModal'
 import { WinCard } from './ui/WinCard'
 
 const ANSWER_POOL = catalog.filter((b) => !b.optional && b.meshNames.length > 0).map((b) => b.slug)
+// Lazy so the UI shell paints before the three.js bundle arrives.
+const Scene = lazy(() => import('./three/Scene').then((m) => ({ default: m.Scene })))
+
 const DEBUG = new URLSearchParams(location.search).has('debug')
+const SEEN_HELP_KEY = 'bonegloble.seenHelp'
+
+function seenHelp(): boolean {
+  try {
+    return localStorage.getItem(SEEN_HELP_KEY) === '1'
+  } catch {
+    return true
+  }
+}
 
 function newAnswer(): string {
   const answer = pickAnswer(ANSWER_POOL, readRecent())
@@ -30,6 +43,7 @@ export default function App() {
   const [flyTo, setFlyTo] = useState<string | null>(null)
   const [homeToken, setHomeToken] = useState(0)
   const [debugColors, setDebugColors] = useState<BoneColors>({})
+  const [modal, setModal] = useState<'help' | 'stats' | null>(() => (seenHelp() ? null : 'help'))
   // Bones with no mesh (coccyx is absent from BodyParts3D) cannot be guessed or answered.
   const index = useMemo(() => new SearchIndex(catalog.filter((b) => b.meshNames.length > 0)), [])
 
@@ -70,12 +84,27 @@ export default function App() {
 
   const debugState = (s: GameState) => (DEBUG ? ` · answer: ${s.answer}` : '')
 
+  const closeModal = useCallback(() => {
+    setModal(null)
+    try {
+      localStorage.setItem(SEEN_HELP_KEY, '1')
+    } catch {
+      /* ignore */
+    }
+  }, [])
+
   return (
     <div className="app">
       <div className="scene">
-        <Scene colors={colors} flyToSlug={flyTo} homeToken={homeToken} />
+        <Suspense fallback={null}>
+          <Scene colors={colors} flyToSlug={flyTo} homeToken={homeToken} />
+        </Suspense>
       </div>
-      <Header gamesPlayed={stats.gamesPlayed} onHome={() => setHomeToken((t) => t + 1)} />
+      <Header
+        onHelp={() => setModal('help')}
+        onStats={() => setModal('stats')}
+        onHome={() => setHomeToken((t) => t + 1)}
+      />
       <aside className="panel">
         <GuessInput
           index={index}
@@ -97,6 +126,8 @@ export default function App() {
       {state.status === 'won' && (
         <WinCard answer={state.answer} guessCount={state.guesses.length} onPlayAgain={playAgain} />
       )}
+      {modal === 'help' && <HelpModal onClose={closeModal} />}
+      {modal === 'stats' && <StatsModal stats={stats} onClose={closeModal} />}
       {DEBUG && <DebugPanel colors={debugColors} onChange={setDebugColors} onFlyTo={setFlyTo} />}
     </div>
   )
