@@ -6,12 +6,14 @@ up on an interactive 3D skeleton with a heat colour based on its straight-line d
 to the mystery bone. Find it, read a short info card, play again.
 
 - 117 answer bones: every rib, vertebra, carpal, tarsal, metacarpal, metatarsal and
-  phalanx, the 22 skull bones, hyoid, patella and the hallux sesamoids. Paired bones count once and both
-  sides light up.
+  phalanx, the 22 skull bones, hyoid, patella and the hallux sesamoids (one answer for
+  the pair under each big toe). Paired bones count once and both sides light up. That is
+  the full standard 206 except the six auditory ossicles, which the source model lacks.
 - Press Enter to check a name. Exact display names and common synonyms (kneecap,
-  collarbone, C1, rib 2) guess straight away; a near-miss spelling brings up a short list
-  of similar names to pick from. No suggestions appear while you type, so the game tests
-  recall rather than typing.
+  collarbone, C1, rib 2, ilium) guess straight away; a leading "left"/"right" or a
+  trailing "bone" is ignored, so "left femur" and "femur bone" both work. A near-miss
+  spelling brings up a short list of similar names to pick from. No suggestions appear
+  while you type, so the game tests recall rather than typing.
 - Unguessed bones render translucent so guesses inside the skull or chest show through.
 - A 🦴 button lists every bone in the game, grouped by region.
 
@@ -41,7 +43,7 @@ slug.
 
 ```
 data/bone_catalog.json     source of truth: slugs, names, synonyms, mesh names, info cards
-data/ignored_meshes.json   GLB bone nodes that are not answers (foot sesamoids)
+data/ignored_meshes.json   GLB bone nodes that are not answers (currently none)
 pipeline/                  one-time asset build from BodyParts3D (see below)
 public/models/skeleton.glb 206 named bone meshes, meshopt-compressed (3.7 MB)
 public/data/geometry.json  per-bone centroids, bounds and the pairwise distance matrix
@@ -66,9 +68,11 @@ pipeline/.venv/bin/python pipeline/03_build_glb.py    # OBJ -> one GLB, metres, 
 npm run derive                                        # -> public/data/geometry.json
 ```
 
-Notes on the source data: BodyParts3D has no coccyx or auditory ossicle meshes (those catalog entries are kept but
-never used as answers), the hip bone is one mesh per side (ilium, ischium and pubis are synonyms), and the sternum comes as
-manubrium, body and xiphoid process, which the catalog maps to a single answer.
+Notes on the source data: BodyParts3D has no coccyx or auditory ossicle meshes, so those
+catalog entries are marked optional and never used as answers or accepted as guesses. The
+hip bone is one mesh per side (ilium, ischium and pubis are synonyms of it), the sternum
+comes as manubrium, body and xiphoid process mapped to a single answer, and the four
+hallux sesamoid meshes are pooled into one answer.
 
 ## Deploy
 

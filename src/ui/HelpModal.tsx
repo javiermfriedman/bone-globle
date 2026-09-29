@@ -7,8 +7,9 @@ export function HelpModal({ onClose }: { onClose: () => void }) {
   return (
     <Modal title="How to play" onClose={onClose}>
       <p>
-        A mystery bone is hidden somewhere in the skeleton. Type the name of any bone. Press Enter to check. If the spelling is close but not exact you get a
-        short list of similar names to pick from; there are no hints while you type.
+        A mystery bone is hidden somewhere in the skeleton. Type the name of any bone. Press Enter
+        to check. If the spelling is close but not exact you get a short list of similar names to
+        pick from; there are no hints while you type.
       </p>
       <p>
         Every guess lights up on the model. The colour tells you how close that bone is to the
@@ -27,7 +28,8 @@ export function HelpModal({ onClose }: { onClose: () => void }) {
       </div>
       <p>
         Paired bones count as one answer and both sides light up. Common names work too: kneecap,
-        collarbone, C1, rib 2, thumb metacarpal.
+        collarbone, C1, rib 2, thumb metacarpal, ilium. A leading left or right and a trailing
+        &quot;bone&quot; are ignored.
       </p>
       <p>
         Drag to orbit, scroll to zoom, right-drag to pan. Unguessed bones are see-through so guesses

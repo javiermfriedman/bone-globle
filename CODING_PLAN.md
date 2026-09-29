@@ -14,7 +14,8 @@ pipeline, app modules, and milestones with acceptance checks.
   "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International".
 - **Local tooling**: Node 24, npm 11, git, gh. No Blender, no Vercel CLI. Python 3.9 available.
 - **Catalog draft**: `data/bone_catalog_draft.csv`, 120 answers (117 core + 3 optional
-  ilium/ischium/pubis), covering 200 of 206 bones (ossicles excluded).
+  ilium/ischium/pubis), covering 200 of 206 bones (ossicles excluded). Updated 2026-09-29:
+  ossicles are catalogued as optional mesh-less entries and the hallux sesamoids are an answer.
 
 ## Repo layout
 
