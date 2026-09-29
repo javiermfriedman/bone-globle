@@ -148,3 +148,15 @@ describe('geometry.json', () => {
     expect(bad).toEqual([])
   })
 })
+
+describe('info cards', () => {
+  it('every answerable bone has non-empty articulations, landmarks and fact', () => {
+    for (const b of catalog) {
+      if (b.meshNames.length === 0) continue
+      for (const k of ['articulations', 'landmarks', 'fact'] as const) {
+        expect(typeof b.info[k], `${b.slug}.${k}`).toBe('string')
+        expect((b.info[k] ?? '').trim().length, `${b.slug}.${k}`).toBeGreaterThan(10)
+      }
+    }
+  })
+})

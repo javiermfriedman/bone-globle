@@ -8,7 +8,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Frontal bone"],
-    "info": {}
+    "info": {
+      "articulations": "Both parietal bones at the coronal suture, plus the sphenoid, ethmoid, nasal, lacrimal, zygomatic and maxillary bones.",
+      "landmarks": "Supraorbital margin and supraorbital foramen or notch, glabella, superciliary arches, zygomatic process, and the frontal sinus.",
+      "fact": "A metopic suture that fails to close persists in the adult midline and can be mistaken for a fracture on radiographs."
+    }
   },
   {
     "slug": "parietal-bone",
@@ -19,7 +23,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left parietal bone", "Right parietal bone"],
-    "info": {}
+    "info": {
+      "articulations": "The opposite parietal at the sagittal suture, the frontal, occipital, temporal and the greater wing of the sphenoid.",
+      "landmarks": "Parietal eminence, superior and inferior temporal lines, parietal foramen, and internal grooves for the middle meningeal vessels.",
+      "fact": "At the pterion the parietal meets the frontal, temporal and sphenoid over the middle meningeal artery, a dangerously thin spot."
+    }
   },
   {
     "slug": "temporal-bone",
@@ -30,7 +38,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left temporal bone", "Right temporal bone"],
-    "info": {}
+    "info": {
+      "articulations": "The parietal, occipital, sphenoid and zygomatic bones, and the mandible at the temporomandibular joint.",
+      "landmarks": "External acoustic meatus, mastoid and styloid processes, zygomatic process, mandibular fossa, carotid canal, and stylomastoid foramen.",
+      "fact": "Its petrous part houses the inner ear, and the facial nerve leaves through the stylomastoid foramen just behind the styloid process."
+    }
   },
   {
     "slug": "occipital-bone",
@@ -41,7 +53,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Occipital bone"],
-    "info": {}
+    "info": {
+      "articulations": "Both parietal bones at the lambdoid suture, both temporal bones, the sphenoid, and the atlas at the occipital condyles.",
+      "landmarks": "Foramen magnum, occipital condyles, hypoglossal canal, external occipital protuberance, and the internal grooves for the dural venous sinuses.",
+      "fact": "The condyles form the atlanto-occipital joints, the yes joint of nodding, while the foramen magnum transmits the medulla."
+    }
   },
   {
     "slug": "sphenoid-bone",
@@ -52,7 +68,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Sphenoid bone"],
-    "info": {}
+    "info": {
+      "articulations": "The frontal, parietal, temporal, occipital, ethmoid, vomer, zygomatic, palatine and maxillary bones, twelve bones in all.",
+      "landmarks": "Sella turcica and hypophyseal fossa, greater and lesser wings, optic canal, superior orbital fissure, foramina rotundum, ovale and spinosum, pterygoid processes.",
+      "fact": "Shaped like a butterfly, it is the keystone of the cranial base and cradles the pituitary gland in its sella turcica."
+    }
   },
   {
     "slug": "ethmoid-bone",
@@ -63,7 +83,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Ethmoid"],
-    "info": {}
+    "info": {
+      "articulations": "The frontal and sphenoid above, and the nasal, lacrimal, maxillary, palatine, inferior conchal bones and vomer of the face.",
+      "landmarks": "Cribriform plate, crista galli, perpendicular plate, superior and middle nasal conchae, and the ethmoidal air cells.",
+      "fact": "A fractured cribriform plate can tear the olfactory nerves and leak cerebrospinal fluid from the nose, causing anosmia and CSF rhinorrhoea."
+    }
   },
   {
     "slug": "maxilla",
@@ -74,7 +98,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left maxilla", "Right maxilla"],
-    "info": {}
+    "info": {
+      "articulations": "The opposite maxilla, plus the frontal, ethmoid, nasal, lacrimal, zygomatic, palatine, inferior nasal concha and vomer.",
+      "landmarks": "Infraorbital foramen, alveolar process, frontal, zygomatic and palatine processes, anterior nasal spine, and the maxillary sinus.",
+      "fact": "The maxillary sinus drains upward into the middle meatus, so it clears poorly when upright and is the commonest site of sinusitis."
+    }
   },
   {
     "slug": "zygomatic-bone",
@@ -85,7 +113,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left zygomatic bone", "Right zygomatic bone"],
-    "info": {}
+    "info": {
+      "articulations": "The frontal bone, the greater wing of the sphenoid, the temporal bone at the zygomatic arch, and the maxilla.",
+      "landmarks": "Temporal process forming the zygomatic arch, frontal process, orbital surface, and the zygomaticofacial and zygomaticotemporal foramina.",
+      "fact": "The cheekbone is often broken in facial trauma, typically as a tripod fracture separating it from the frontal, temporal and maxillary attachments."
+    }
   },
   {
     "slug": "nasal-bone",
@@ -96,7 +128,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left nasal bone", "Right nasal bone"],
-    "info": {}
+    "info": {
+      "articulations": "The frontal bone above, the perpendicular plate of the ethmoid behind, the opposite nasal bone, and the maxilla laterally.",
+      "landmarks": "Internasal suture, the nasion at its junction with the frontal bone, nasal foramen, and the free inferior border for the nasal cartilages.",
+      "fact": "The nasal bone is the most frequently fractured bone of the face, since only its upper part is bone and the rest cartilage."
+    }
   },
   {
     "slug": "lacrimal-bone",
@@ -107,7 +143,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left lacrimal bone", "Right lacrimal bone"],
-    "info": {}
+    "info": {
+      "articulations": "The frontal bone above, the ethmoid behind, the maxilla in front, and the inferior nasal concha below.",
+      "landmarks": "Lacrimal groove or fossa for the lacrimal sac, posterior lacrimal crest, and the lacrimal hamulus completing the nasolacrimal canal.",
+      "fact": "It is the smallest and most fragile bone of the face, and its groove carries tears down into the inferior meatus of the nose."
+    }
   },
   {
     "slug": "palatine-bone",
@@ -118,7 +158,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left palatine bone", "Right palatine bone"],
-    "info": {}
+    "info": {
+      "articulations": "The opposite palatine bone, the maxilla, sphenoid, ethmoid, inferior nasal concha and vomer.",
+      "landmarks": "Horizontal and perpendicular plates, pyramidal process, orbital and sphenoidal processes, and the greater and lesser palatine foramina.",
+      "fact": "Failure of the horizontal plates and palatine processes to fuse in the midline produces cleft palate."
+    }
   },
   {
     "slug": "inferior-nasal-concha",
@@ -135,7 +179,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left inferior nasal concha", "Right inferior nasal concha"],
-    "info": {}
+    "info": {
+      "articulations": "The ethmoid, maxilla, lacrimal bone and palatine bone of the same side of the lateral nasal wall.",
+      "landmarks": "Lacrimal, maxillary and ethmoidal processes, and the curved shelf overhanging the inferior meatus.",
+      "fact": "It is the only concha that is a separate bone, since the superior and middle conchae are parts of the ethmoid."
+    }
   },
   {
     "slug": "vomer",
@@ -146,7 +194,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Vomer"],
-    "info": {}
+    "info": {
+      "articulations": "The sphenoid and ethmoid above, both maxillae and both palatine bones below, and the septal cartilage in front.",
+      "landmarks": "Alae that grip the sphenoid rostrum, the thin vertical plate, and the free posterior border separating the choanae.",
+      "fact": "Vomer is Latin for ploughshare, which its shape resembles; it forms the posteroinferior nasal septum and is often deviated."
+    }
   },
   {
     "slug": "mandible",
@@ -165,7 +217,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Mandible"],
-    "info": {}
+    "info": {
+      "articulations": "Only the two temporal bones, at the temporomandibular joints between its condyles and the mandibular fossae.",
+      "landmarks": "Body, ramus and angle, condylar and coronoid processes, mental foramen, mandibular foramen with its lingula, and the mylohyoid line.",
+      "fact": "It is the only mobile bone of the skull, and the temporomandibular joint is the skull's only synovial joint."
+    }
   },
   {
     "slug": "hyoid",
@@ -176,7 +232,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Hyoid bone (FJ2772)", "Hyoid bone (FJ3201)"],
-    "info": {}
+    "info": {
+      "articulations": "It articulates with no other bone, being slung from the styloid processes of the temporal bones by the stylohyoid ligaments.",
+      "landmarks": "Body, paired greater horns and paired lesser horns, giving attachment to the suprahyoid and infrahyoid muscles.",
+      "fact": "The only bone in the body with no bony articulation; a fractured hyoid strongly suggests manual strangulation."
+    }
   },
   {
     "slug": "vertebra-c1",
@@ -195,7 +255,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Atlas"],
-    "info": {}
+    "info": {
+      "articulations": "The occipital condyles above at the atlanto-occipital joints, and the axis below at the lateral and median atlanto-axial joints.",
+      "landmarks": "Anterior and posterior arches with their tubercles, lateral masses, transverse foramina, facet for the dens, and the groove for the vertebral artery.",
+      "fact": "The atlas has no body and no spinous process; it carries the skull and forms the yes joint of nodding."
+    }
   },
   {
     "slug": "vertebra-c2",
@@ -215,7 +279,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Axis"],
-    "info": {}
+    "info": {
+      "articulations": "The atlas above at the median and lateral atlanto-axial joints, and C3 below by an intervertebral disc and facet joints.",
+      "landmarks": "Dens or odontoid process, superior articular facets on the body, strong bifid spinous process, and transverse foramina.",
+      "fact": "The dens is the pivot for the no movement of head rotation; fracture of its pars interarticularis is the hangman's fracture."
+    }
   },
   {
     "slug": "vertebra-c3",
@@ -233,7 +301,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Third cervical vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "C2 above and C4 below, each by an intervertebral disc and a pair of zygapophysial facet joints.",
+      "landmarks": "Small broad body with uncinate processes, bifid spinous process, transverse foramen, and anterior and posterior tubercles of the transverse process.",
+      "fact": "C3 is the first typical cervical vertebra, and the hyoid bone lies at this level in the neck."
+    }
   },
   {
     "slug": "vertebra-c4",
@@ -251,7 +323,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Fourth cervical vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "C3 above and C5 below, each by an intervertebral disc and a pair of zygapophysial facet joints.",
+      "landmarks": "Uncinate processes on the body, bifid spinous process, transverse foramen for the vertebral artery, and grooved transverse process for the spinal nerve.",
+      "fact": "The common carotid artery divides at about the C4 level, at the upper border of the thyroid cartilage."
+    }
   },
   {
     "slug": "vertebra-c5",
@@ -269,7 +345,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Fifth cervical vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "C4 above and C6 below, each by an intervertebral disc and a pair of zygapophysial facet joints.",
+      "landmarks": "Uncinate processes, bifid spinous process, transverse foramen, and superior articular facets facing backward and upward.",
+      "fact": "Remember that C3, C4 and C5 keep the diaphragm alive, since these roots form the phrenic nerve."
+    }
   },
   {
     "slug": "vertebra-c6",
@@ -287,7 +367,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Sixth cervical vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "C5 above and C7 below, each by an intervertebral disc and a pair of zygapophysial facet joints.",
+      "landmarks": "Prominent anterior tubercle of the transverse process, the carotid tubercle, plus transverse foramen, uncinate processes and a bifid spinous process.",
+      "fact": "The carotid artery can be compressed against the carotid tubercle of C6, the level where the larynx becomes trachea and pharynx becomes oesophagus."
+    }
   },
   {
     "slug": "vertebra-c7",
@@ -306,7 +390,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Seventh cervical vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "C6 above and T1 below, each by an intervertebral disc and a pair of zygapophysial facet joints.",
+      "landmarks": "Long non-bifid spinous process, small transverse foramen, prominent posterior tubercle, and uncinate processes on the body.",
+      "fact": "Called the vertebra prominens for its long single-tipped spine; its transverse foramen transmits small veins, not the vertebral artery."
+    }
   },
   {
     "slug": "vertebra-t1",
@@ -326,7 +414,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["First thoracic vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "C7 above and T2 below by discs and facet joints, and with the heads of the first and second ribs.",
+      "landmarks": "Full costal facet for rib one with an inferior demifacet for rib two, long horizontal spinous process, and transverse costal facets.",
+      "fact": "T1 is atypical because it carries a complete costal facet for rib one, and its body resembles a cervical vertebra with uncinate processes."
+    }
   },
   {
     "slug": "vertebra-t2",
@@ -346,7 +438,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Second thoracic vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "T1 above and T3 below by discs and facet joints, and with the heads of the second and third ribs.",
+      "landmarks": "Superior and inferior costal demifacets, transverse process costal facets, heart-shaped body, and a long downward-sloping spinous process.",
+      "fact": "The jugular notch of the manubrium lies at about the T2 to T3 level, a useful surface landmark for counting down."
+    }
   },
   {
     "slug": "vertebra-t3",
@@ -366,7 +462,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Third thoracic vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "T2 above and T4 below by discs and facet joints, and with the heads of the third and fourth ribs.",
+      "landmarks": "Paired superior and inferior costal demifacets, costal facets on the transverse processes, and a long overlapping spinous process.",
+      "fact": "The medial end of the spine of the scapula lies at the T3 level, a handy surface landmark on the back."
+    }
   },
   {
     "slug": "vertebra-t4",
@@ -386,7 +486,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Fourth thoracic vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "T3 above and T5 below by discs and facet joints, and with the heads of the fourth and fifth ribs.",
+      "landmarks": "Superior and inferior costal demifacets, transverse costal facets, heart-shaped body, and an obliquely downward spinous process.",
+      "fact": "The sternal angle lies at the T4 to T5 disc, where the trachea divides and the arch of the aorta begins and ends."
+    }
   },
   {
     "slug": "vertebra-t5",
@@ -406,7 +510,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Fifth thoracic vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "T4 above and T6 below by discs and facet joints, and with the heads of the fifth and sixth ribs.",
+      "landmarks": "Superior and inferior costal demifacets, costal facets on the transverse processes, and a long steeply sloping spinous process.",
+      "fact": "Mid-thoracic spines slope so steeply that the tip of the T5 spinous process lies opposite the body of the vertebra below."
+    }
   },
   {
     "slug": "vertebra-t6",
@@ -426,7 +534,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Sixth thoracic vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "T5 above and T7 below by discs and facet joints, and with the heads of the sixth and seventh ribs.",
+      "landmarks": "Heart-shaped body with superior and inferior costal demifacets, transverse costal facets, and a long overlapping spinous process.",
+      "fact": "T6 is a textbook typical thoracic vertebra, with two costal demifacets each side and near-circular vertebral foramen."
+    }
   },
   {
     "slug": "vertebra-t7",
@@ -446,7 +558,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Seventh thoracic vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "T6 above and T8 below by discs and facet joints, and with the heads of the seventh and eighth ribs.",
+      "landmarks": "Superior and inferior costal demifacets, costal facets on the transverse processes, and the longest, most steeply angled spinous process.",
+      "fact": "The inferior angle of the scapula lies at the T7 spinous process when the arms hang at the sides."
+    }
   },
   {
     "slug": "vertebra-t8",
@@ -466,7 +582,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Eighth thoracic vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "T7 above and T9 below by discs and facet joints, and with the heads of the eighth and ninth ribs.",
+      "landmarks": "Superior and inferior costal demifacets, transverse process costal facets, and a long downward-directed spinous process.",
+      "fact": "The caval opening of the diaphragm lies at the T8 level, transmitting the inferior vena cava and the right phrenic nerve."
+    }
   },
   {
     "slug": "vertebra-t9",
@@ -486,7 +606,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Ninth thoracic vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "T8 above and T10 below by discs and facet joints, and with the head of the ninth rib and often the tenth.",
+      "landmarks": "Superior costal demifacets, frequently absent inferior demifacets, transverse costal facets, and a long sloping spinous process.",
+      "fact": "The xiphisternal joint lies at about the T9 level, and T9 often lacks inferior demifacets, making it atypical."
+    }
   },
   {
     "slug": "vertebra-t10",
@@ -506,7 +630,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Tenth thoracic vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "T9 above and T11 below by discs and facet joints, and with the head of the tenth rib.",
+      "landmarks": "A single complete costal facet on each side of the body, costal facets on the transverse processes, and a shorter spinous process.",
+      "fact": "The oesophageal hiatus of the diaphragm lies at T10, transmitting the oesophagus and the vagal trunks."
+    }
   },
   {
     "slug": "vertebra-t11",
@@ -526,7 +654,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Eleventh thoracic vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "T10 above and T12 below by discs and facet joints, and with the head of the eleventh rib.",
+      "landmarks": "A single large complete costal facet on each side, transverse processes without costal facets, and a short triangular spinous process.",
+      "fact": "T11 is atypical: its transverse processes bear no costal facets because rib eleven is a floating rib with no tubercle joint."
+    }
   },
   {
     "slug": "vertebra-t12",
@@ -546,7 +678,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Twelfth thoracic vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "T11 above and L1 below by discs and facet joints, and with the head of the twelfth rib.",
+      "landmarks": "Single complete costal facet each side, no transverse costal facets, short spinous process, and lumbar-type inferior articular facets.",
+      "fact": "T12 is the transition vertebra, its inferior facets facing laterally like a lumbar vertebra; the aortic hiatus lies at this level."
+    }
   },
   {
     "slug": "vertebra-l1",
@@ -564,7 +700,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["First lumbar vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "T12 above and L2 below, each by an intervertebral disc and a pair of zygapophysial facet joints.",
+      "landmarks": "Large kidney-shaped body, hatchet-shaped spinous process, transverse costal processes, and mammillary and accessory processes.",
+      "fact": "The spinal cord ends as the conus medullaris at about the L1 to L2 level, and the transpyloric plane crosses L1."
+    }
   },
   {
     "slug": "vertebra-l2",
@@ -582,7 +722,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Second lumbar vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "L1 above and L3 below, each by an intervertebral disc and a pair of zygapophysial facet joints.",
+      "landmarks": "Kidney-shaped body, triangular vertebral foramen, blunt spinous process, transverse process, and mammillary and accessory processes.",
+      "fact": "Because the conus medullaris can end as low as L2, lumbar puncture is performed at L3 to L4 or below."
+    }
   },
   {
     "slug": "vertebra-l3",
@@ -600,7 +744,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Third lumbar vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "L2 above and L4 below, each by an intervertebral disc and a pair of zygapophysial facet joints.",
+      "landmarks": "Broad body, short sturdy spinous process, long transverse processes, superior articular facets facing medially, and the pars interarticularis.",
+      "fact": "The umbilicus lies at about the L3 to L4 level in a person of average build."
+    }
   },
   {
     "slug": "vertebra-l4",
@@ -618,7 +766,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Fourth lumbar vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "L3 above and L5 below, each by an intervertebral disc and a pair of zygapophysial facet joints.",
+      "landmarks": "Kidney-shaped body, hatchet-shaped spinous process, transverse processes, mammillary and accessory processes, and medially facing superior facets.",
+      "fact": "The supracristal line joining the iliac crests crosses the L4 spine, guiding lumbar puncture; the aorta divides at this level."
+    }
   },
   {
     "slug": "vertebra-l5",
@@ -636,7 +788,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Fifth lumbar vertebra"],
-    "info": {}
+    "info": {
+      "articulations": "L4 above by a disc and facet joints, and the sacrum below at the lumbosacral joint.",
+      "landmarks": "The deepest body, taller in front than behind, massive transverse processes reaching the pedicles, and a small blunt spinous process.",
+      "fact": "L5 is the largest vertebra and its wedge-shaped body forms the lumbosacral angle; spondylolisthesis occurs most often here."
+    }
   },
   {
     "slug": "sacrum",
@@ -647,7 +803,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Sacrum"],
-    "info": {}
+    "info": {
+      "articulations": "L5 above at the lumbosacral joint, both hip bones at the sacroiliac joints, and the coccyx below.",
+      "landmarks": "Sacral promontory, alae, anterior and posterior sacral foramina, median sacral crest, sacral canal, sacral hiatus, and auricular surface.",
+      "fact": "Five fused vertebrae; the sacral hiatus at its lower end is the entry point for caudal epidural anaesthesia."
+    }
   },
   {
     "slug": "coccyx",
@@ -669,7 +829,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Right first rib", "Left first rib"],
-    "info": {}
+    "info": {
+      "articulations": "Body of T1 by a single facet on its head, the transverse process of T1 at its tubercle, and the manubrium through its costal cartilage.",
+      "landmarks": "Single facet on the head, scalene tubercle on the superior surface, and the grooves for the subclavian vein in front and artery behind.",
+      "fact": "The shortest, broadest and most sharply curved rib; the subclavian vessels and lower trunk of the brachial plexus cross its flat top."
+    }
   },
   {
     "slug": "rib-02",
@@ -680,7 +844,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Right second rib", "Left second rib"],
-    "info": {}
+    "info": {
+      "articulations": "Bodies of T1 and T2 by two facets on its head, the transverse process of T2 at its tubercle, and the sternum through its costal cartilage.",
+      "landmarks": "Two-faceted head, tubercle, angle close to the tubercle, and the tuberosity for serratus anterior on its outer surface.",
+      "fact": "Its cartilage meets the sternum at the sternal angle, the palpable landmark students use to start counting ribs downward."
+    }
   },
   {
     "slug": "rib-03",
@@ -691,7 +859,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Right third rib", "Left third rib"],
-    "info": {}
+    "info": {
+      "articulations": "Bodies of T2 and T3 by two facets on its head, the transverse process of T3 at its tubercle, and the sternal body through its own costal cartilage.",
+      "landmarks": "Head with two facets, neck, tubercle with articular and non-articular parts, angle, and the costal groove on the inner lower border.",
+      "fact": "The first fully typical rib, its costal groove shelters the intercostal vein, artery and nerve stacked in that order from above down."
+    }
   },
   {
     "slug": "rib-04",
@@ -702,7 +874,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Right fourth rib", "Left fourth rib"],
-    "info": {}
+    "info": {
+      "articulations": "Bodies of T3 and T4 by two facets on its head, the transverse process of T4 at its tubercle, and the sternal body through its own costal cartilage.",
+      "landmarks": "Two-faceted head, neck, tubercle, angle, and costal groove sheltering the intercostal neurovascular bundle.",
+      "fact": "A typical true rib; in men the nipple usually overlies the fourth intercostal space, just below this rib."
+    }
   },
   {
     "slug": "rib-05",
@@ -713,7 +889,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Right fifth rib", "Left fifth rib"],
-    "info": {}
+    "info": {
+      "articulations": "Bodies of T4 and T5 by two facets on its head, the transverse process of T5 at its tubercle, and the sternal body through its own costal cartilage.",
+      "landmarks": "Two-faceted head, neck, tubercle, angle, and the costal groove along the inner inferior margin.",
+      "fact": "The chest-drain triangle of safety sits just below it, at the fifth intercostal space in the mid-axillary line."
+    }
   },
   {
     "slug": "rib-06",
@@ -724,7 +904,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Right sixth rib", "Left sixth rib"],
-    "info": {}
+    "info": {
+      "articulations": "Bodies of T5 and T6 by two facets on its head, the transverse process of T6 at its tubercle, and the sternal body through its own costal cartilage.",
+      "landmarks": "Two-faceted head, neck, tubercle, angle, and costal groove; the shaft twists sharply at the angle.",
+      "fact": "Rectus abdominis inserts on the costal cartilages of ribs five to seven, so this cartilage anchors the front of the abdominal wall."
+    }
   },
   {
     "slug": "rib-07",
@@ -735,7 +919,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Right seventh rib", "Left seventh rib"],
-    "info": {}
+    "info": {
+      "articulations": "Bodies of T6 and T7 by two facets on its head, the transverse process of T7 at its tubercle, and the sternal body through its own costal cartilage.",
+      "landmarks": "Two-faceted head, neck, tubercle, prominent angle, and costal groove on the inner inferior border.",
+      "fact": "Usually the longest rib and the last true rib; its cartilage reaches the sternum near the xiphisternal joint."
+    }
   },
   {
     "slug": "rib-08",
@@ -746,7 +934,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Right eighth rib", "Left eighth rib"],
-    "info": {}
+    "info": {
+      "articulations": "Bodies of T7 and T8 by two facets on its head, the transverse process of T8 at its tubercle, and indirectly the sternum via the seventh costal cartilage.",
+      "landmarks": "Two-faceted head, neck, tubercle, angle, and costal groove carrying the intercostal bundle.",
+      "fact": "The first false rib: its cartilage joins the rib above rather than the sternum, beginning the palpable costal margin."
+    }
   },
   {
     "slug": "rib-09",
@@ -757,7 +949,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Right ninth rib", "Left ninth rib"],
-    "info": {}
+    "info": {
+      "articulations": "Bodies of T8 and T9 by two facets on its head, the transverse process of T9 at its tubercle, and indirectly the sternum via the eighth costal cartilage.",
+      "landmarks": "Two-faceted head, neck, tubercle, angle, and costal groove on the inner inferior surface.",
+      "fact": "The transpyloric plane, at the L1 vertebral level, passes through the tips of the ninth costal cartilages."
+    }
   },
   {
     "slug": "rib-10",
@@ -768,7 +964,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Right tenth rib", "Left tenth rib"],
-    "info": {}
+    "info": {
+      "articulations": "Body of T10 by a single facet on its head, the transverse process of T10 at its tubercle, and indirectly the sternum via the ninth costal cartilage.",
+      "landmarks": "Single-faceted head, neck, tubercle, angle, and a costal groove; the shaft is short and gently curved.",
+      "fact": "The lowest rib to reach the costal margin; the subcostal plane, at the L3 level, crosses the inferior edge of its cartilage."
+    }
   },
   {
     "slug": "rib-11",
@@ -779,7 +979,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Right eleventh rib", "Left eleventh rib"],
-    "info": {}
+    "info": {
+      "articulations": "Body of T11 only, by a single facet on its head; it has no tubercle for a transverse process and its tip ends freely.",
+      "landmarks": "Single-faceted head, no articular tubercle, a slight angle, a shallow costal groove, and a pointed cartilage-capped anterior tip.",
+      "fact": "A floating rib whose free tip lies over the kidney, so the pleura and kidney are both at risk in posterior flank approaches."
+    }
   },
   {
     "slug": "rib-12",
@@ -790,7 +994,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Right twelfth rib", "Left twelfth rib"],
-    "info": {}
+    "info": {
+      "articulations": "Body of T12 only, by a single facet on its head; it has no tubercle, and its anterior end lies free in the abdominal muscles.",
+      "landmarks": "Single-faceted head, no tubercle, no angle and no costal groove; a short tapering shaft with a free pointed tip.",
+      "fact": "The shortest rib and the guide to the lumbar approach to the kidney; the pleural reflection crosses it, risking pneumothorax."
+    }
   },
   {
     "slug": "sternum",
@@ -808,7 +1016,11 @@
     "paired": false,
     "optional": false,
     "meshNames": ["Manubrium", "Body of sternum", "Xiphoid process"],
-    "info": {}
+    "info": {
+      "articulations": "Both clavicles at the sternoclavicular joints and the costal cartilages of the first seven ribs on each side.",
+      "landmarks": "Jugular notch, clavicular notches, manubrium, sternal angle of Louis, body, and the xiphoid process.",
+      "fact": "The sternal angle marks the second costal cartilage, the T4/T5 disc, the tracheal bifurcation and both ends of the aortic arch."
+    }
   },
   {
     "slug": "clavicle",
@@ -819,7 +1031,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left clavicle", "Right clavicle"],
-    "info": {}
+    "info": {
+      "articulations": "The manubrium and first costal cartilage medially at the sternoclavicular joint, and the acromion of the scapula laterally at the acromioclavicular joint.",
+      "landmarks": "Sternal end, acromial end, conoid tubercle and trapezoid line below the lateral third, and the subclavian groove for subclavius.",
+      "fact": "The most commonly fractured long bone, usually at the junction of its middle and lateral thirds, and the first bone in the body to ossify."
+    }
   },
   {
     "slug": "scapula",
@@ -830,7 +1046,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left scapula", "Right scapula"],
-    "info": {}
+    "info": {
+      "articulations": "The head of the humerus at the glenohumeral joint and the clavicle at the acromioclavicular joint.",
+      "landmarks": "Glenoid cavity with supraglenoid and infraglenoid tubercles, spine, acromion, coracoid process, and the supraspinous, infraspinous and subscapular fossae.",
+      "fact": "Injury to the long thoracic nerve paralyses serratus anterior and lets the medial border lift off the chest as a winged scapula."
+    }
   },
   {
     "slug": "humerus",
@@ -841,7 +1061,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left humerus", "Right humerus"],
-    "info": {}
+    "info": {
+      "articulations": "The glenoid cavity of the scapula at the shoulder, the ulnar trochlear notch and the head of the radius at the elbow.",
+      "landmarks": "Head, anatomical and surgical necks, greater and lesser tubercles with the intertubercular groove, deltoid tuberosity, radial groove, capitulum, trochlea and both epicondyles.",
+      "fact": "The radial nerve hugs the radial groove, so a midshaft fracture classically produces wrist drop."
+    }
   },
   {
     "slug": "radius",
@@ -852,7 +1076,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left radius", "Right radius"],
-    "info": {}
+    "info": {
+      "articulations": "The capitulum of the humerus, the ulna at the proximal and distal radioulnar joints, and the scaphoid and lunate at the wrist.",
+      "landmarks": "Disc-shaped head, neck, radial tuberosity for biceps, interosseous border, dorsal tubercle of Lister, ulnar notch and styloid process.",
+      "fact": "A Colles fracture breaks the distal radius after a fall on an outstretched hand, tipping the fragment dorsally into a dinner-fork deformity."
+    }
   },
   {
     "slug": "ulna",
@@ -863,7 +1091,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left ulna", "Right ulna"],
-    "info": {}
+    "info": {
+      "articulations": "The trochlea of the humerus at the elbow and the radius at the proximal and distal radioulnar joints; an articular disc separates it from the carpus.",
+      "landmarks": "Olecranon, coronoid process, trochlear notch, radial notch, ulnar tuberosity, head and styloid process.",
+      "fact": "Olecranon and both epicondyles form a triangle when the elbow is flexed and a straight line when extended, a quick dislocation check."
+    }
   },
   {
     "slug": "carpal-scaphoid",
@@ -880,7 +1112,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left scaphoid", "Right scaphoid"],
-    "info": {}
+    "info": {
+      "articulations": "The radius proximally, and the lunate, capitate, trapezium and trapezoid distally and medially.",
+      "landmarks": "Proximal and distal poles, the narrow waist, and the palmar tubercle of the scaphoid.",
+      "fact": "Its blood supply enters distally, so a waist fracture, tender in the anatomical snuffbox, can starve the proximal pole into avascular necrosis."
+    }
   },
   {
     "slug": "carpal-lunate",
@@ -891,7 +1127,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left lunate", "Right lunate"],
-    "info": {}
+    "info": {
+      "articulations": "The radius proximally, scaphoid laterally, triquetrum medially, and the capitate and hamate distally.",
+      "landmarks": "Crescent-shaped convex proximal surface, deeply concave distal surface for the capitate, and palmar and dorsal horns.",
+      "fact": "The most commonly dislocated carpal bone; it slips forward into the carpal tunnel and compresses the median nerve."
+    }
   },
   {
     "slug": "carpal-triquetrum",
@@ -908,7 +1148,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left triquetral", "Right triquetral"],
-    "info": {}
+    "info": {
+      "articulations": "The lunate laterally, the pisiform on its palmar surface, and the hamate distally; the articular disc separates it from the ulna.",
+      "landmarks": "Pyramidal body, oval palmar facet for the pisiform, and the proximal facet that meets the triangular articular disc.",
+      "fact": "It never touches the ulna directly; the triangular fibrocartilage of the articular disc always lies between them."
+    }
   },
   {
     "slug": "carpal-pisiform",
@@ -919,7 +1163,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left pisiform", "Right pisiform"],
-    "info": {}
+    "info": {
+      "articulations": "The triquetrum alone, by a single flat facet on its dorsal surface.",
+      "landmarks": "Pea-shaped body with one flat dorsal facet, and the palmar attachments of flexor carpi ulnaris and the pisohamate and pisometacarpal ligaments.",
+      "fact": "A sesamoid bone within the flexor carpi ulnaris tendon, it forms the medial wall of Guyon canal, where the ulnar nerve and artery run."
+    }
   },
   {
     "slug": "carpal-trapezium",
@@ -930,7 +1178,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left trapezium", "Right trapezium"],
-    "info": {}
+    "info": {
+      "articulations": "The scaphoid proximally, the trapezoid medially, and the first and second metacarpals distally.",
+      "landmarks": "Saddle-shaped distal facet for the thumb, tubercle of the trapezium, and the groove for the flexor carpi radialis tendon.",
+      "fact": "Its saddle joint with the first metacarpal lets the thumb oppose, and it is a classic site of thumb-base osteoarthritis."
+    }
   },
   {
     "slug": "carpal-trapezoid",
@@ -941,7 +1193,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left trapezoid", "Right trapezoid"],
-    "info": {}
+    "info": {
+      "articulations": "The scaphoid proximally, the trapezium laterally, the capitate medially, and the second metacarpal distally.",
+      "landmarks": "Wedge or boot shape with a broad dorsal and narrow palmar surface, and a saddle-shaped distal facet for the second metacarpal.",
+      "fact": "The smallest bone of the distal carpal row and the least often fractured carpal, wedged tightly between its neighbours."
+    }
   },
   {
     "slug": "carpal-capitate",
@@ -952,7 +1208,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left capitate", "Right capitate"],
-    "info": {}
+    "info": {
+      "articulations": "The scaphoid and lunate proximally, the trapezoid laterally, the hamate medially, and the second, third and fourth metacarpals distally.",
+      "landmarks": "Rounded head, constricted neck, body, and the broad distal facet for the third metacarpal.",
+      "fact": "The largest carpal bone and the keystone at the centre of the wrist; its name comes from caput, meaning head."
+    }
   },
   {
     "slug": "carpal-hamate",
@@ -963,7 +1223,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left hamate", "Right hamate"],
-    "info": {}
+    "info": {
+      "articulations": "The lunate and triquetrum proximally, the capitate laterally, and the fourth and fifth metacarpals distally.",
+      "landmarks": "Wedge-shaped body, the hook or hamulus projecting from the palmar surface, and two distal facets for the ulnar two metacarpals.",
+      "fact": "The hook forms the lateral wall of Guyon canal; fracturing it on a club or racquet handle can injure the deep branch of the ulnar nerve."
+    }
   },
   {
     "slug": "metacarpal-1",
@@ -983,7 +1247,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left first metacarpal bone", "Right first metacarpal bone"],
-    "info": {}
+    "info": {
+      "articulations": "The trapezium at the saddle-shaped carpometacarpal joint and the proximal phalanx of the thumb at the metacarpophalangeal joint.",
+      "landmarks": "Saddle-shaped base, short stout shaft, rounded head, and two sesamoid bones on the palmar side of the head.",
+      "fact": "The shortest and stoutest metacarpal; a Bennett fracture is an intra-articular fracture-dislocation of its base."
+    }
   },
   {
     "slug": "metacarpal-2",
@@ -1002,7 +1270,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left second metacarpal bone", "Right second metacarpal bone"],
-    "info": {}
+    "info": {
+      "articulations": "The trapezoid mainly, plus the trapezium and capitate, the third metacarpal, and the proximal phalanx of the index finger.",
+      "landmarks": "Deeply notched base gripping the trapezoid, long slender shaft, and a rounded head forming the index knuckle.",
+      "fact": "The longest metacarpal; extensor carpi radialis longus inserts on the dorsal surface of its base."
+    }
   },
   {
     "slug": "metacarpal-3",
@@ -1021,7 +1293,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left third metacarpal bone", "Right third metacarpal bone"],
-    "info": {}
+    "info": {
+      "articulations": "The capitate proximally, the second and fourth metacarpals on either side, and the proximal phalanx of the middle finger.",
+      "landmarks": "Base with a dorsolateral styloid process, shaft, and rounded head forming the most prominent knuckle.",
+      "fact": "Extensor carpi radialis brevis inserts on its base, and its long axis is the midline about which fingers abduct and adduct."
+    }
   },
   {
     "slug": "metacarpal-4",
@@ -1040,7 +1316,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left fourth metacarpal bone", "Right fourth metacarpal bone"],
-    "info": {}
+    "info": {
+      "articulations": "The capitate and hamate proximally, the third and fifth metacarpals on either side, and the proximal phalanx of the ring finger.",
+      "landmarks": "Small square base with two proximal facets, the slimmest shaft of the metacarpals, and a rounded head.",
+      "fact": "Its mobile carpometacarpal joint, with the fifth, lets the ulnar side of the palm cup around an object during grip."
+    }
   },
   {
     "slug": "metacarpal-5",
@@ -1060,7 +1340,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left fifth metacarpal bone", "Right fifth metacarpal bone"],
-    "info": {}
+    "info": {
+      "articulations": "The hamate proximally, the fourth metacarpal laterally, and the proximal phalanx of the little finger distally.",
+      "landmarks": "Base with a single hamate facet and a tubercle for extensor carpi ulnaris, shaft, and rounded head.",
+      "fact": "The boxer fracture breaks its neck, driven by punching with a clenched fist, and the knuckle drops."
+    }
   },
   {
     "slug": "phalanx-proximal-thumb",
@@ -1076,7 +1360,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Proximal phalanx of left thumb", "Proximal phalanx of right thumb"],
-    "info": {}
+    "info": {
+      "articulations": "The head of the first metacarpal at the metacarpophalangeal joint and the distal phalanx of the thumb at the interphalangeal joint.",
+      "landmarks": "Concave oval base, palmar-flattened shaft, and a pulley-like trochlear head.",
+      "fact": "Skier or gamekeeper thumb tears the ulnar collateral ligament running to its base, leaving the thumb unable to pinch firmly."
+    }
   },
   {
     "slug": "phalanx-distal-thumb",
@@ -1092,7 +1380,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Distal phalanx of left thumb", "Distal phalanx of right thumb"],
-    "info": {}
+    "info": {
+      "articulations": "The proximal phalanx of the thumb alone, at the interphalangeal joint.",
+      "landmarks": "Base, short broad shaft, and the distal tuberosity supporting the nail bed and pulp.",
+      "fact": "The thumb has no middle phalanx, so it owns just one interphalangeal joint, flexed by flexor pollicis longus onto this base."
+    }
   },
   {
     "slug": "phalanx-proximal-index",
@@ -1111,7 +1403,11 @@
       "Proximal phalanx of left index finger",
       "Proximal phalanx of right index finger"
     ],
-    "info": {}
+    "info": {
+      "articulations": "The head of the second metacarpal at the metacarpophalangeal joint and the middle phalanx of the index finger at the proximal interphalangeal joint.",
+      "landmarks": "Concave oval base for the metacarpal head, palmar-flattened shaft with ridges for the fibrous flexor sheath, and a trochlear head.",
+      "fact": "The first dorsal interosseous inserts on the lateral side of its base and abducts the index finger away from the hand's midline."
+    }
   },
   {
     "slug": "phalanx-middle-index",
@@ -1127,7 +1423,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Middle phalanx of left index finger", "Middle phalanx of right index finger"],
-    "info": {}
+    "info": {
+      "articulations": "The proximal phalanx of the index finger at the proximal interphalangeal joint and its distal phalanx at the distal interphalangeal joint.",
+      "landmarks": "Base with two shallow concavities, shaft bearing the flexor digitorum superficialis slips, and a trochlear head.",
+      "fact": "The two slips of flexor digitorum superficialis insert on the sides of its shaft, which is what the standard FDS tendon test isolates."
+    }
   },
   {
     "slug": "phalanx-distal-index",
@@ -1143,7 +1443,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Distal phalanx of left index finger", "Distal phalanx of right index finger"],
-    "info": {}
+    "info": {
+      "articulations": "The middle phalanx of the index finger alone, at the distal interphalangeal joint.",
+      "landmarks": "Base, short flattened shaft, and the distal tuberosity, the apical tuft that supports the nail bed and fingertip pulp.",
+      "fact": "Mallet finger is avulsion of the terminal extensor tendon from its dorsal base, leaving the fingertip permanently drooped."
+    }
   },
   {
     "slug": "phalanx-proximal-middle",
@@ -1162,7 +1466,11 @@
       "Proximal phalanx of left middle finger",
       "Proximal phalanx of right middle finger"
     ],
-    "info": {}
+    "info": {
+      "articulations": "The head of the third metacarpal at the metacarpophalangeal joint and the middle phalanx of the middle finger at the proximal interphalangeal joint.",
+      "landmarks": "Concave oval base for the metacarpal head, palmar-flattened shaft with ridges for the fibrous flexor sheath, and a trochlear head.",
+      "fact": "The longest proximal phalanx of the hand; because the middle finger is the axis of the hand, only dorsal interossei move it sideways."
+    }
   },
   {
     "slug": "phalanx-middle-middle",
@@ -1178,7 +1486,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Middle phalanx of left middle finger", "Middle phalanx of right middle finger"],
-    "info": {}
+    "info": {
+      "articulations": "The proximal phalanx of the middle finger at the proximal interphalangeal joint and its distal phalanx at the distal interphalangeal joint.",
+      "landmarks": "Base with two shallow concavities, shaft bearing the flexor digitorum superficialis slips, and a trochlear head.",
+      "fact": "The longest middle phalanx; the central slip of the extensor tendon takes its dorsal base, and rupture gives a boutonniere deformity."
+    }
   },
   {
     "slug": "phalanx-distal-middle",
@@ -1194,7 +1506,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Distal phalanx of left middle finger", "Distal phalanx of right middle finger"],
-    "info": {}
+    "info": {
+      "articulations": "The middle phalanx of the middle finger alone, at the distal interphalangeal joint.",
+      "landmarks": "Base, short flattened shaft, and the distal tuberosity, the apical tuft that supports the nail bed and fingertip pulp.",
+      "fact": "Flexor digitorum profundus inserts on its palmar base, the only tendon able to bend the distal interphalangeal joint."
+    }
   },
   {
     "slug": "phalanx-proximal-ring",
@@ -1210,7 +1526,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Proximal phalanx of left ring finger", "Proximal phalanx of right ring finger"],
-    "info": {}
+    "info": {
+      "articulations": "The head of the fourth metacarpal at the metacarpophalangeal joint and the middle phalanx of the ring finger at the proximal interphalangeal joint.",
+      "landmarks": "Concave oval base for the metacarpal head, palmar-flattened shaft with ridges for the fibrous flexor sheath, and a trochlear head.",
+      "fact": "The ring finger cannot extend independently: its extensor digitorum tendon is tethered to its neighbours by the juncturae tendinum."
+    }
   },
   {
     "slug": "phalanx-middle-ring",
@@ -1226,7 +1546,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Middle phalanx of left ring finger", "Middle phalanx of right ring finger"],
-    "info": {}
+    "info": {
+      "articulations": "The proximal phalanx of the ring finger at the proximal interphalangeal joint and its distal phalanx at the distal interphalangeal joint.",
+      "landmarks": "Base with two shallow concavities, shaft bearing the flexor digitorum superficialis slips, and a trochlear head.",
+      "fact": "Flexor digitorum superficialis inserts on the sides of its shaft, and the vincula carrying tendon blood supply attach on its palmar surface."
+    }
   },
   {
     "slug": "phalanx-distal-ring",
@@ -1242,7 +1566,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Distal phalanx of left ring finger", "Distal phalanx of right ring finger"],
-    "info": {}
+    "info": {
+      "articulations": "The middle phalanx of the ring finger alone, at the distal interphalangeal joint.",
+      "landmarks": "Base, short flattened shaft, and the distal tuberosity, the apical tuft that supports the nail bed and fingertip pulp.",
+      "fact": "Jersey finger, avulsion of flexor digitorum profundus from its base, strikes the ring finger most often when a grip is torn open."
+    }
   },
   {
     "slug": "phalanx-proximal-little",
@@ -1261,7 +1589,11 @@
       "Proximal phalanx of left little finger",
       "Proximal phalanx of right little finger"
     ],
-    "info": {}
+    "info": {
+      "articulations": "The head of the fifth metacarpal at the metacarpophalangeal joint and the middle phalanx of the little finger at the proximal interphalangeal joint.",
+      "landmarks": "Concave oval base for the metacarpal head, palmar-flattened shaft with ridges for the fibrous flexor sheath, and a trochlear head.",
+      "fact": "Abductor digiti minimi, the hypothenar abductor, inserts on the medial side of its base."
+    }
   },
   {
     "slug": "phalanx-middle-little",
@@ -1277,7 +1609,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Middle phalanx of left little finger", "Middle phalanx of right little finger"],
-    "info": {}
+    "info": {
+      "articulations": "The proximal phalanx of the little finger at the proximal interphalangeal joint and its distal phalanx at the distal interphalangeal joint.",
+      "landmarks": "Base with two shallow concavities, shaft bearing the flexor digitorum superficialis slips, and a trochlear head.",
+      "fact": "The shortest middle phalanx, and the flexor digitorum superficialis slip to the little finger is often weak or absent."
+    }
   },
   {
     "slug": "phalanx-distal-little",
@@ -1293,7 +1629,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Distal phalanx of left little finger", "Distal phalanx of right little finger"],
-    "info": {}
+    "info": {
+      "articulations": "The middle phalanx of the little finger alone, at the distal interphalangeal joint.",
+      "landmarks": "Base, short flattened shaft, and the distal tuberosity, the apical tuft that supports the nail bed and fingertip pulp.",
+      "fact": "The smallest phalanx of the hand; its apical tuft anchors the nail bed, so a crush here usually splits the nail as well."
+    }
   },
   {
     "slug": "hip-bone",
@@ -1304,7 +1644,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left hip bone", "Right hip bone"],
-    "info": {}
+    "info": {
+      "articulations": "Femur at the acetabulum, the sacrum at the sacroiliac joint, and the opposite hip bone at the pubic symphysis.",
+      "landmarks": "A fusion of ilium, ischium and pubis; note the acetabulum, obturator foramen, iliac crest and ischial tuberosity.",
+      "fact": "The three parts fuse at the acetabulum during the teens, so a child's hip bone shows a Y-shaped triradiate cartilage."
+    }
   },
   {
     "slug": "femur",
@@ -1315,7 +1659,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left femur", "Right femur"],
-    "info": {}
+    "info": {
+      "articulations": "Hip bone at the acetabulum, the tibia at the knee, and the patella in front; it never touches the fibula.",
+      "landmarks": "Head with its fovea, neck, greater and lesser trochanters, linea aspera, and the medial and lateral condyles.",
+      "fact": "The longest and strongest bone in the body; its neck is the classic site of hip fracture in the elderly."
+    }
   },
   {
     "slug": "patella",
@@ -1326,7 +1674,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left patella", "Right patella"],
-    "info": {}
+    "info": {
+      "articulations": "Only the femur, gliding on the patellar surface between the femoral condyles; it does not touch the tibia.",
+      "landmarks": "Broad base above, pointed apex below, and posterior medial and lateral facets separated by a vertical ridge.",
+      "fact": "The largest sesamoid bone, formed within the quadriceps tendon, where it lengthens the extensor lever arm at the knee."
+    }
   },
   {
     "slug": "tibia",
@@ -1337,7 +1689,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left tibia", "Right tibia"],
-    "info": {}
+    "info": {
+      "articulations": "Femur at the knee, the fibula at the proximal and distal tibiofibular joints, and the talus at the ankle.",
+      "landmarks": "Medial and lateral condyles, intercondylar eminence, tibial tuberosity, sharp subcutaneous anterior border, and the medial malleolus.",
+      "fact": "The tibia transmits essentially all body weight from knee to ankle, while the fibula carries almost none."
+    }
   },
   {
     "slug": "fibula",
@@ -1348,7 +1704,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left fibula", "Right fibula"],
-    "info": {}
+    "info": {
+      "articulations": "Tibia above and below at the tibiofibular joints, and the talus laterally through the lateral malleolus.",
+      "landmarks": "Head with its apex, the neck, a slender shaft, and the lateral malleolus with its malleolar fossa.",
+      "fact": "The common fibular nerve wraps around the fibular neck, so a fracture there can cause foot drop."
+    }
   },
   {
     "slug": "tarsal-calcaneus",
@@ -1359,7 +1719,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left calcaneus", "Right calcaneus"],
-    "info": {}
+    "info": {
+      "articulations": "Talus above at the subtalar joint and the cuboid in front at the calcaneocuboid joint.",
+      "landmarks": "Calcaneal tuberosity, sustentaculum tali, the fibular (peroneal) trochlea, and the groove for flexor hallucis longus.",
+      "fact": "The largest tarsal and the heel bone; a fall from height can drive the talus down into it."
+    }
   },
   {
     "slug": "tarsal-talus",
@@ -1370,7 +1734,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left talus", "Right talus"],
-    "info": {}
+    "info": {
+      "articulations": "Tibia and fibula above at the ankle, the calcaneus below, and the navicular in front.",
+      "landmarks": "Head, neck and body, with the trochlea above plus lateral and posterior processes grooved for flexor hallucis longus.",
+      "fact": "No muscle or tendon attaches to the talus, and its retrograde blood supply risks avascular necrosis after a neck fracture."
+    }
   },
   {
     "slug": "tarsal-navicular",
@@ -1387,7 +1755,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Navicular bone of left foot", "Navicular bone of right foot"],
-    "info": {}
+    "info": {
+      "articulations": "Talus behind, the three cuneiforms in front, and sometimes the cuboid laterally.",
+      "landmarks": "Concave posterior facet for the talar head, three anterior cuneiform facets, and the prominent navicular tuberosity medially.",
+      "fact": "Named for its boat shape; tibialis posterior attaches mainly to its tuberosity, a palpable landmark on the medial foot."
+    }
   },
   {
     "slug": "tarsal-cuboid",
@@ -1398,7 +1770,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left cuboid bone", "Right cuboid bone"],
-    "info": {}
+    "info": {
+      "articulations": "Calcaneus behind, the fourth and fifth metatarsals in front, the lateral cuneiform medially, and sometimes the navicular.",
+      "landmarks": "Cuboid tuberosity and, on the plantar surface, the distinctive groove for the fibularis longus tendon.",
+      "fact": "The most lateral tarsal; the fibularis longus tendon hooks under it to cross the sole toward the first metatarsal."
+    }
   },
   {
     "slug": "tarsal-cuneiform-medial",
@@ -1415,7 +1791,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left medial cuneiform bone", "Right medial cuneiform bone"],
-    "info": {}
+    "info": {
+      "articulations": "Navicular behind, the first metatarsal in front, the intermediate cuneiform laterally, and the base of the second metatarsal.",
+      "landmarks": "Wedge shape with its broad base plantar, a kidney-shaped anterior facet, and the tibialis anterior insertion medially.",
+      "fact": "The largest cuneiform; tibialis anterior and fibularis longus attach to opposite sides of it, balancing the forefoot."
+    }
   },
   {
     "slug": "tarsal-cuneiform-intermediate",
@@ -1432,7 +1812,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left intermediate cuneiform bone", "Right intermediate cuneiform bone"],
-    "info": {}
+    "info": {
+      "articulations": "Navicular behind, the second metatarsal in front, and the medial and lateral cuneiforms on either side.",
+      "landmarks": "Wedge shape with its broad base facing dorsally, a small anterior facet, and flanking medial and lateral facets.",
+      "fact": "The smallest cuneiform; the three are named medial, intermediate and lateral counting outward from the great toe."
+    }
   },
   {
     "slug": "tarsal-cuneiform-lateral",
@@ -1449,7 +1833,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left lateral cuneiform bone", "Right lateral cuneiform bone"],
-    "info": {}
+    "info": {
+      "articulations": "Navicular behind, third metatarsal in front, intermediate cuneiform and cuboid at its sides, plus the second and fourth metatarsal bases.",
+      "landmarks": "Wedge shape with its base dorsal, an anterior facet for the third metatarsal, and a lateral facet for the cuboid.",
+      "fact": "The only cuneiform that touches the cuboid; with the medial cuneiform it forms the mortise gripping the second metatarsal base."
+    }
   },
   {
     "slug": "metatarsal-1",
@@ -1469,7 +1857,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left first metatarsal bone", "Right first metatarsal bone"],
-    "info": {}
+    "info": {
+      "articulations": "Medial cuneiform at its base and the proximal phalanx of the great toe at its head.",
+      "landmarks": "Base with a kidney-shaped cuneiform facet, a short thick shaft, and a head grooved below for two sesamoids.",
+      "fact": "The shortest and stoutest metatarsal; the sesamoids beneath its head take much of the load at push-off."
+    }
   },
   {
     "slug": "metatarsal-2",
@@ -1487,7 +1879,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left second metatarsal bone", "Right second metatarsal bone"],
-    "info": {}
+    "info": {
+      "articulations": "All three cuneiforms at its recessed base, the first and third metatarsals at its sides, and its proximal phalanx.",
+      "landmarks": "Base wedged between the cuneiforms, the longest shaft of the metatarsals, and a rounded head.",
+      "fact": "Its recessed base makes it the most rigid metatarsal and the usual site of the march (stress) fracture."
+    }
   },
   {
     "slug": "metatarsal-3",
@@ -1505,7 +1901,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left third metatarsal bone", "Right third metatarsal bone"],
-    "info": {}
+    "info": {
+      "articulations": "Lateral cuneiform at its base, the second and fourth metatarsals at its sides, and its proximal phalanx in front.",
+      "landmarks": "Base with facets for the lateral cuneiform and neighbouring metatarsals, a slender shaft, and a rounded head.",
+      "fact": "The middle of the five; metatarsals two to four look alike, so count from the great toe."
+    }
   },
   {
     "slug": "metatarsal-4",
@@ -1523,7 +1923,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left fourth metatarsal bone", "Right fourth metatarsal bone"],
-    "info": {}
+    "info": {
+      "articulations": "Cuboid at its base, the lateral cuneiform medially, the third and fifth metatarsals beside it, and its proximal phalanx.",
+      "landmarks": "Base carrying both cuboid and cuneiform facets, a slender shaft, and a rounded head.",
+      "fact": "It straddles the cuboid and the lateral cuneiform, marking where the lateral column of the foot begins."
+    }
   },
   {
     "slug": "metatarsal-5",
@@ -1543,7 +1947,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Left fifth metatarsal bone", "Right fifth metatarsal bone"],
-    "info": {}
+    "info": {
+      "articulations": "Cuboid at its base, the fourth metatarsal medially, and the proximal phalanx of the fifth toe.",
+      "landmarks": "Prominent tuberosity (styloid process) on the lateral base for fibularis brevis, plus the shaft and head.",
+      "fact": "Inversion injury can avulse that tuberosity; a fracture just distal to it is the Jones fracture."
+    }
   },
   {
     "slug": "phalanx-proximal-hallux",
@@ -1563,7 +1971,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Proximal phalanx of left big toe", "Proximal phalanx of right big toe"],
-    "info": {}
+    "info": {
+      "articulations": "First metatarsal at its base and the distal phalanx of the great toe at its head.",
+      "landmarks": "Concave oval base, a short stout shaft, and a trochlear head; flexor hallucis brevis attaches at the base.",
+      "fact": "The largest phalanx in the foot, and the great toe has only two phalanges, so no middle one exists."
+    }
   },
   {
     "slug": "phalanx-distal-hallux",
@@ -1582,7 +1994,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Distal phalanx of left big toe", "Distal phalanx of right big toe"],
-    "info": {}
+    "info": {
+      "articulations": "Only the proximal phalanx of the great toe, at its base.",
+      "landmarks": "Base, a very short shaft, and a flattened distal tuberosity supporting the nail bed.",
+      "fact": "Flexor hallucis longus inserts on its base, giving the great toe its powerful push-off at the end of stance."
+    }
   },
   {
     "slug": "phalanx-proximal-toe-2",
@@ -1599,7 +2015,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Proximal phalanx of left second toe", "Proximal phalanx of right second toe"],
-    "info": {}
+    "info": {
+      "articulations": "Second metatarsal at its base and the middle phalanx of the second toe at its head.",
+      "landmarks": "Concave base, a slender shaft, and a trochlear head, with the extensor expansion spread over its dorsal surface.",
+      "fact": "The second toe is often the longest; when it outreaches the great toe this is called Morton's toe."
+    }
   },
   {
     "slug": "phalanx-middle-toe-2",
@@ -1616,7 +2036,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Middle phalanx of left second toe", "Middle phalanx of right second toe"],
-    "info": {}
+    "info": {
+      "articulations": "Proximal phalanx behind and the distal phalanx of the second toe in front.",
+      "landmarks": "Broad base with two concave facets, a very short shaft, and a small trochlear head.",
+      "fact": "Flexor digitorum brevis inserts here after splitting to let flexor digitorum longus pass through to the distal phalanx."
+    }
   },
   {
     "slug": "phalanx-distal-toe-2",
@@ -1633,7 +2057,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Distal phalanx of left second toe", "Distal phalanx of right second toe"],
-    "info": {}
+    "info": {
+      "articulations": "Only the middle phalanx of the second toe, at its base.",
+      "landmarks": "Base, a tiny shaft, and a distal tuberosity that broadens to support the nail.",
+      "fact": "Flexor digitorum longus inserts on its base; the lesser distal phalanges are the smallest bones of the foot."
+    }
   },
   {
     "slug": "phalanx-proximal-toe-3",
@@ -1650,7 +2078,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Proximal phalanx of left third toe", "Proximal phalanx of right third toe"],
-    "info": {}
+    "info": {
+      "articulations": "Third metatarsal at its base and the middle phalanx of the third toe at its head.",
+      "landmarks": "Concave base, slender shaft, and trochlear head, with lumbricals and interossei attaching near the base.",
+      "fact": "Persistent extension here with flexion further along the toe produces the hammer toe deformity seen with tight shoes."
+    }
   },
   {
     "slug": "phalanx-middle-toe-3",
@@ -1667,7 +2099,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Middle phalanx of left third toe", "Middle phalanx of right third toe"],
-    "info": {}
+    "info": {
+      "articulations": "Proximal phalanx behind and the distal phalanx of the third toe in front.",
+      "landmarks": "Broad base with paired concave facets, a short shaft, and a small trochlear head.",
+      "fact": "Middle phalanges exist only in toes two to five, the quickest way to rule out the great toe."
+    }
   },
   {
     "slug": "phalanx-distal-toe-3",
@@ -1684,7 +2120,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Distal phalanx of left third toe", "Distal phalanx of right third toe"],
-    "info": {}
+    "info": {
+      "articulations": "Only the middle phalanx of the third toe, at its base.",
+      "landmarks": "Base, a very short shaft, and a flattened tuberosity lying under the nail.",
+      "fact": "Distal phalanges are recognised by that spade-like tuberosity, which anchors the fleshy pulp and the nail bed."
+    }
   },
   {
     "slug": "phalanx-proximal-toe-4",
@@ -1701,7 +2141,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Proximal phalanx of left fourth toe", "Proximal phalanx of right fourth toe"],
-    "info": {}
+    "info": {
+      "articulations": "Fourth metatarsal at its base and the middle phalanx of the fourth toe at its head.",
+      "landmarks": "Concave base, slender shaft, and trochlear head, with the plantar plate and extensor expansion attached around it.",
+      "fact": "Proximal phalanges are the longest of the three rows, so a long slim toe bone is proximal."
+    }
   },
   {
     "slug": "phalanx-middle-toe-4",
@@ -1718,7 +2162,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Middle phalanx of left fourth toe", "Middle phalanx of right fourth toe"],
-    "info": {}
+    "info": {
+      "articulations": "Proximal phalanx behind and the distal phalanx of the fourth toe in front.",
+      "landmarks": "Broad base with two facets, a stubby shaft, and a small trochlear head.",
+      "fact": "Lesser middle phalanges are so short they are mistaken for distal ones until you look for the tuberosity."
+    }
   },
   {
     "slug": "phalanx-distal-toe-4",
@@ -1735,7 +2183,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Distal phalanx of left fourth toe", "Distal phalanx of right fourth toe"],
-    "info": {}
+    "info": {
+      "articulations": "Only the middle phalanx of the fourth toe, at its base.",
+      "landmarks": "Base, barely any shaft, and a small distal tuberosity beneath the nail.",
+      "fact": "Fractures of a lesser toe like this are usually managed by taping it to the neighbouring toe."
+    }
   },
   {
     "slug": "phalanx-proximal-toe-5",
@@ -1753,7 +2205,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Proximal phalanx of left little toe", "Proximal phalanx of right little toe"],
-    "info": {}
+    "info": {
+      "articulations": "Fifth metatarsal at its base and the middle phalanx of the fifth toe at its head.",
+      "landmarks": "Concave base, short shaft, and trochlear head, with flexor digiti minimi brevis attaching at the base.",
+      "fact": "This is the bone that takes the hit when a little toe catches the furniture, the classic stubbed toe."
+    }
   },
   {
     "slug": "phalanx-middle-toe-5",
@@ -1771,7 +2227,11 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Middle phalanx of left little toe", "Middle phalanx of right little toe"],
-    "info": {}
+    "info": {
+      "articulations": "Proximal phalanx behind and, when it stays separate, the distal phalanx of the fifth toe in front.",
+      "landmarks": "Small base, almost no shaft, and a tiny head; it is often fused with the distal phalanx.",
+      "fact": "In many people the little toe's middle and distal phalanges fuse, leaving that toe with only two bones."
+    }
   },
   {
     "slug": "phalanx-distal-toe-5",
@@ -1789,6 +2249,10 @@
     "paired": true,
     "optional": false,
     "meshNames": ["Distal phalanx of left little toe", "Distal phalanx of right little toe"],
-    "info": {}
+    "info": {
+      "articulations": "Only the middle phalanx of the fifth toe, at its base, when the two have not fused.",
+      "landmarks": "Base, minimal shaft, and a small tuberosity supporting the nail.",
+      "fact": "The smallest bone in the foot, and commonly fused to the middle phalanx of the little toe."
+    }
   }
 ]
